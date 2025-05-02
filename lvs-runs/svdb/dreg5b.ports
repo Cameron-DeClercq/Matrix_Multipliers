@@ -1,0 +1,15 @@
+# SVDB: Port Table (ports)
+# SVDB: Layout Primary dreg5b
+A0P 13 A0P -1990 8230 metal1_conn
+PHI 1 PHI -8490 11100 metal2_conn
+VDD 2 VDD -7940 10680 metal1_conn
+GND 3 GND -7940 6160 metal1_conn
+A4 4 A4 -8670 -14720 metal1_conn
+A4P 5 A4P -1990 -14340 metal1_conn
+A3 6 A3 -8670 -9070 metal1_conn
+A3P 7 A3P -1990 -8690 metal1_conn
+A2 8 A2 -8670 -3430 metal1_conn
+A2P 9 A2P -1990 -3050 metal1_conn
+A1 10 A1 -8670 2210 metal1_conn
+A1P 11 A1P -1990 2590 metal1_conn
+A0 12 A0 -8670 7850 metal1_conn

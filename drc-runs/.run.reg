@@ -1,0 +1,67 @@
+# This Pegasus GUI File Index Registry was created automatically
+# Do not attempt to modify this file as any change may lead
+# to Pegasus GUI Tools malfunction.
+# 
+"Run Directory" internal none /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs
+"Current Directory" internal none /home/ece558_658_2024/cdeclercq/559/unppl_design
+"Cadence Directory" internal none /home/ece558_658_2024/cdeclercq/559/unppl_design/.cadence/
+"Job Signature" internal none IPVS_1745960186_1294145
+"Pegasus Job Mode" internal none drc
+"GUI Flow" internal none virtuoso6
+"GUI Preset" internal none /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/.preset.autosave
+"Technology Name" internal none "gpdk045"
+"Technology RuleSet" internal none "default"
+"Technology Mapping File" internal none /ece558_658/pdk/verification/pvtech.lib
+"Technology Rule File" internal none /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/.technology.rul
+"Pegasus Version" internal none 22.20-p009
+"Binary Name" internal none pegasusgui
+"Pegasus Build Date" internal none "Wed Jan 18 17:06:09 PST 2023"
+"Pegasus Job Time" internal none 1745960189
+"DFII version" internal none 6.1.8.0
+"Run Directory" internal none /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs
+"Pegasus Job Mode" internal none drc
+"Rule File" input text /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/.technology.rul
+"Cell Tree" output text /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/cell_tree.txt
+"Layout Scale" internal none 0.0005
+"Layout TechLib" internal none gpdk045
+"Layout Library Name" internal none systolic_array
+"Layout Cell Name" internal none Multiplier_ppl
+"Layout View Name" internal none layout
+"Layout ConvertPin" internal text geometryAndText
+"Layout HierDepth" internal none 32
+"Layout MaxVertices" internal none 2048
+"Layout Top Cell" internal none Multiplier_ppl
+"Layout GDSII" input none /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/Multiplier_ppl.gds.gz
+"Intermediate GDSII File" output none /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/Multiplier_ppl.gds.gz
+"Intermediate GDSII File creation Errors" internal text /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/PIPO1.LOG
+"Intermediate OASIS File creation Errors" internal text /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/PIPO1.LOG
+"Layout ReplaceBusBitChar" input none nil
+"Layout NoConvertHalfWidthPath" input none nil
+"Job Signature" internal none IPVS_1745960186_1294145
+"Do not check rules files before run" internal none ENABLED
+"Control File" input text /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/pegasusdrcctl
+"Pegasus Job Log" log text /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/pegasusuidrc.log
+"It is Pegasus flow" internal none ENABLED
+"Pegasus Log Dir" internal none LOGS
+"PIPO Setup File I" internal text  /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/pipo1.setup
+"PIPO Log I" log text  /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/PIPO1.LOG
+"PIPO Output I" internal text  /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/PIPO1.OUT
+"Input Layout" input none OA: systolic_array Multiplier_ppl layout
+"Output Layout Cellmap I" internal text /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/lay_cellMap.txt
+"Pegasus Version" internal none 22.20-p009
+"Binary Name" internal none pegasusvirt
+"Pegasus Build Date" internal none "Wed Jan 18 17:06:09 PST 2023"
+"Pegasus Job Time" internal none 1745960205
+"Pegasus Job Mode" internal none drc
+"Rule File" input text /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/.technology.rul
+"Layout GDSII" input none /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/Multiplier_ppl.gds.gz
+"DRC Summary" output text /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/Multiplier_ppl.sum
+"ASCII DRC Report Database" output rdb /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/Multiplier_ppl.drc_errors.ascii
+"Run Directory" internal none /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/
+"UI Data" internal none ENABLED
+"Pegasus Mode Info" internal none MGFMFLKCJBHPHNGJNAPKIKPJCKJMJFDF
+"Report MaxResults" internal none 1000
+"Pegasus Version" internal none 22.20-p009
+"Binary Name" internal none Pegasus
+"Pegasus Build Date" internal none "Wed Jan 18 17:06:09 PST 2023"
+"Pegasus Job Time" internal none 1745960210

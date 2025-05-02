@@ -1,0 +1,43 @@
+# Placement Hierarchy File (lph)
+# 
+# 
+# 
+% pmos1v_CDNS_9 4
+M0 M 4
+% FlipFlop 9
+X42 pmos1v_CDNS_9 4
+M0 M 4
+M1 M 4
+M2 M 4
+M3 M 4
+% dreg5b 13
+X15 FlipFlop 9
+X16 FlipFlop 9
+X17 FlipFlop 9
+X18 FlipFlop 9
+X19 FlipFlop 9
+M0 M 4
+M1 M 4
+M2 M 4
+M3 M 4
+M4 M 4
+M5 M 4
+M6 M 4
+M7 M 4
+M8 M 4
+M9 M 4
+M10 M 4
+M11 M 4
+M12 M 4
+M13 M 4
+M14 M 4
+M15 M 4
+M16 M 4
+M17 M 4
+M18 M 4
+M19 M 4
+M20 M 4
+M21 M 4
+M22 M 4
+M23 M 4
+M24 M 4

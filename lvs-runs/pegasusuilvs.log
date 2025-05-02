@@ -1,0 +1,1028 @@
+Running: /opt/cadence/pegasus/tools.lnx86/Pegasus/bin/64bit/pegasusvirt \
+  -isPegasus \
+  -mode lvs \
+  -global_log_file /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/pegasusuilvs.log \
+  -control /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/pegasuslvsctl \
+  -df2_version 6.1.8.0 \
+  -run_dir /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs \
+  -no_rules_check \
+  -qrc_data \
+  -schLibName systolic_array \
+  -schCellName sys_arr_unp \
+  -schViewName schematic \
+  -simViewList auCdl\ schematic \
+  -simStopList auCdl \
+  -displayPinInfo \
+  -source_cdl /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_unp.cdl \
+  -spice /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_unp.spi \
+  -layLibName systolic_array \
+  -layCellName sys_arr_unp \
+  -layViewName layout \
+  -igds /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_unp.gds.gz \
+  -layScale 0.0005 \
+  -layTechLib gpdk045 \
+  -convertPin geometryAndText \
+  -replaceBusBitChar nil \
+  -noConvertHalfWidthPath nil \
+  -layHierDepth 32 \
+  -layMaxVertices 2048 \
+  -rulesFile /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/.technology.rul \
+  -log_dir LOGS
+
+
+
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.01s.
+*WARNING* '/home/ece558_658_2024/cdeclercq/559/unppl_design/cds.lib', Line 2, Repeat of INCLUDE of '/opt/cadence/ic618/share/cdssetup/cds.lib'.
+*WARNING* '/opt/cadence/ic618/share/cdssetup/cds.lib', Line 1, Repeat of INCLUDE of '/opt/cadence/ic618/share/cdssetup/dfII/cds.lib'.
+*WARNING* LIB cdsDefTechLib from File /opt/cadence/ic618/share/cdssetup/dfII/cds.lib Line 1 redefines
+LIB cdsDefTechLib from the same file (defined earlier.)
+*WARNING* '/opt/cadence/ic618/share/cdssetup/dfII/cds.lib', Line 2, Repeat of INCLUDE of '/opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib'.
+*WARNING* LIB basic from File /opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib Line 1 redefines
+LIB basic from the same file (defined earlier.)
+*WARNING* LIB US_8ths from File /opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib Line 2 redefines
+LIB US_8ths from the same file (defined earlier.)
+*WARNING* '/opt/cadence/ic618/share/cdssetup/dfII/cds.lib', Line 3, Repeat of INCLUDE of '/opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib'.
+*WARNING* LIB analogLib from File /opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib Line 1 redefines
+LIB analogLib from the same file (defined earlier.)
+*WARNING* LIB functional from File /opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib Line 2 redefines
+LIB functional from the same file (defined earlier.)
+*WARNING* '/opt/cadence/ic618/share/cdssetup/dfII/cds.lib', Line 4, Repeat of INCLUDE of '/opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib'.
+*WARNING* LIB rfLib from File /opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib Line 6 redefines
+LIB rfLib from the same file (defined earlier.)
+*WARNING* LIB rfExamples from File /opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib Line 7 redefines
+LIB rfExamples from the same file (defined earlier.)
+*WARNING* LIB ahdlLib from File /opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib Line 8 redefines
+LIB ahdlLib from the same file (defined earlier.)
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version 6.1.8-64b 10/01/2018 19:51 (ip-172-18-22-52) $
+          : sub-version  IC6.1.8-64b.83 
+Started at: 20-Apr-2025  22:37:58
+User Name : cdeclercq
+Host Name : vlsicad.ecs.umass.edu
+Directory : /home/ece558_658_2024/cdeclercq/559/unppl_design
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+*WARNING* LIB rfTlineLib from File /opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib Line 9 redefines
+LIB rfTlineLib from the same file (defined earlier.)
+Loading gpdk045/libInit.il ...
+	Loading gpdk045/loadCxt.ile ... done!
+	Loading context 'gpdk045' from library 'gpdk045' ... done!
+	Loading context 'pdkUtils' from library 'gpdk045' ... done!
+	Loading gpdk045/gpdk045_customFilter.il ... done!
+	Loading gpdk045/libInitCustomExit.il ... 
+	Loading Environment Settings ...
+	Loading gpdk045/gpdk045_PDKRegistrations.il ... done!
+
+  *************************************************************           
+  *              Cadence Design Systems, Inc.                 *           
+  *                                                           *           
+  *                    Generic 45nm PDK                       *           
+  *                        (gpdk045)                          *           
+  *                                                           *           
+  *************************************************************           
+	
+
+	VERSION: 6.0 (09-September-2019)
+
+done!
+Loaded gpdk045/libInit.il successfully!
+WARNING (XSTRM-20): Output Stream file '/home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_unp.gds.gz' already exists. It will be overwritten.
+INFO (XSTRM-217): Reading the layer map file, /opt/cadence/gpdk045/gpdk045_v_6_0/gpdk045/gpdk045.layermap
+INFO (XSTRM-280): The output file will be a compressed file because the file name has extension .gz
+INFO (XSTRM-162): You have not used the viaMap option. If the OpenAccess design has native oaVia instances, use the -viaMap option for preserving oaVia instances in a Stream Out - Stream In round trip. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design.  For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+
+Summary of Options :
+library                                 systolic_array
+strmFile                                /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_unp.gds.gz
+topCell                                 sys_arr_unp
+view                                    layout
+runDir                                  /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs
+logFile                                 /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/PIPO1.LOG
+techLib                                 gpdk045
+hierDepth                               32
+maxVertices                             2048
+layerMap                                /opt/cadence/gpdk045/gpdk045_v_6_0/gpdk045/gpdk045.layermap
+userSkillFile                           /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/strmout.il
+labelDepth                              32
+case                                    Preserve
+convertDot                              node
+convertPin                              geometryAndText
+
+INFO (XSTRM-223): 1. Translating cellView gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_1.
+INFO (XSTRM-223): 2. Translating cellView gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_2.
+INFO (XSTRM-223): 3. Translating cellView gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_3.
+INFO (XSTRM-223): 4. Translating cellView gpdk045/M1_PO/layout as STRUCTURE M1_PO_CDNS_4.
+INFO (XSTRM-223): 5. Translating cellView gpdk045/M1_NWELL/layout as STRUCTURE M1_NWELL_CDNS_5.
+INFO (XSTRM-223): 6. Translating cellView gpdk045/M1_PSUB/layout as STRUCTURE M1_PSUB_CDNS_6.
+INFO (XSTRM-223): 7. Translating cellView gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_7.
+INFO (XSTRM-223): 8. Translating cellView gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_8.
+INFO (XSTRM-223): 9. Translating cellView gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_9.
+INFO (XSTRM-223): 10. Translating cellView gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_10.
+INFO (XSTRM-223): 11. Translating cellView accumulator_bitslice/XOR/layout as STRUCTURE XOR.
+INFO (XSTRM-317): The 'accumulator_bitslice/XOR/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (2605, 2890). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'accumulator_bitslice/XOR/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (2105, 5680). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-223): 12. Translating cellView lab1_virt/NAND/layout as STRUCTURE NAND.
+INFO (XSTRM-223): 13. Translating cellView systolic_array/Full_Adder/layout as STRUCTURE Full_Adder.
+INFO (XSTRM-223): 14. Translating cellView accumulator_bitslice/inv/layout as STRUCTURE inv.
+INFO (XSTRM-223): 15. Translating cellView accumulator_bitslice/FlipFlop/layout as STRUCTURE FlipFlop.
+INFO (XSTRM-317): The 'accumulator_bitslice/FlipFlop/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (-1215, 1190). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'accumulator_bitslice/FlipFlop/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (1185, 1140). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-223): 16. Translating cellView systolic_array/faabs/layout as STRUCTURE faabs.
+INFO (XSTRM-223): 17. Translating cellView systolic_array/Half_Adder/layout as STRUCTURE Half_Adder.
+INFO (XSTRM-317): The 'systolic_array/Half_Adder/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (1555, 2240). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'systolic_array/Half_Adder/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (2055, -650). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-223): 18. Translating cellView systolic_array/AND/layout as STRUCTURE AND.
+INFO (XSTRM-223): 19. Translating cellView systolic_array/Multiplier/layout as STRUCTURE Multiplier.
+INFO (XSTRM-223): 20. Translating cellView systolic_array/proc_el/layout as STRUCTURE proc_el.
+INFO (XSTRM-180): You have not used the objectMap option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the objectMap option to translate/preserve these objects using XStream. For details on the objectMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+INFO (XSTRM-223): 21. Translating cellView systolic_array/sys_arr_unp/layout as STRUCTURE sys_arr_unp.
+
+Summary of Objects Translated:
+	Scalar Instances:                       113
+	Array Instances:                        16
+	Polygons:                               0
+	Paths:                                  0
+	Rectangles:                             270
+	Lines:                                  0
+	Arcs:                                   0
+	Donuts:                                 0
+	Dots:                                   0
+	Ellipses:                               0
+	Boundaries:                             0
+	Area Blockages:                         0
+	Layer Blockages:                        0
+	Area Halos:                             0
+	Markers:                                0
+	Rows:                                   0
+	Standard Vias                           657
+	Custom Vias:                            0
+	CdsGen Vias:                            0
+	Pathsegs:                               801
+	Text:                                   257
+	TextDisplay:                            0
+	Cells:                                  21
+
+Elapsed Time: 0.1s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 6900KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '1' warning(s) found.
+
+Creation of CDL for systolic_array/sys_arr_unp/schematic is started
+ si -batch /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/ >/home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/SI.OUT 2>/home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/SI.LOG 
+*Error* eval: undefined function - _lbuiNextLicenseDialog
+*Error* eval: undefined function - _lbuiNextLicenseDialog
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.01s.
+
+Running simulation in directory: "/home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/".
+
+*WARNING* '/home/ece558_658_2024/cdeclercq/559/unppl_design/cds.lib', Line 2, Repeat of INCLUDE of '/opt/cadence/ic618/share/cdssetup/cds.lib'.
+*WARNING* '/opt/cadence/ic618/share/cdssetup/cds.lib', Line 1, Repeat of INCLUDE of '/opt/cadence/ic618/share/cdssetup/dfII/cds.lib'.
+*WARNING* LIB cdsDefTechLib from File /opt/cadence/ic618/share/cdssetup/dfII/cds.lib Line 1 redefines
+LIB cdsDefTechLib from the same file (defined earlier.)
+*WARNING* '/opt/cadence/ic618/share/cdssetup/dfII/cds.lib', Line 2, Repeat of INCLUDE of '/opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib'.
+*WARNING* LIB basic from File /opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib Line 1 redefines
+LIB basic from the same file (defined earlier.)
+*WARNING* LIB US_8ths from File /opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib Line 2 redefines
+LIB US_8ths from the same file (defined earlier.)
+*WARNING* '/opt/cadence/ic618/share/cdssetup/dfII/cds.lib', Line 3, Repeat of INCLUDE of '/opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib'.
+*WARNING* LIB analogLib from File /opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib Line 1 redefines
+LIB analogLib from the same file (defined earlier.)
+*WARNING* LIB functional from File /opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib Line 2 redefines
+LIB functional from the same file (defined earlier.)
+*WARNING* '/opt/cadence/ic618/share/cdssetup/dfII/cds.lib', Line 4, Repeat of INCLUDE of '/opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib'.
+*WARNING* LIB rfLib from File /opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib Line 6 redefines
+LIB rfLib from the same file (defined earlier.)
+*WARNING* LIB rfExamples from File /opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib Line 7 redefines
+LIB rfExamples from the same file (defined earlier.)
+*WARNING* LIB ahdlLib from File /opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib Line 8 redefines
+LIB ahdlLib from the same file (defined earlier.)
+*WARNING* LIB rfTlineLib from File /opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib Line 9 redefines
+LIB rfTlineLib from the same file (defined earlier.)
+*WARNING* '/home/ece558_658_2024/cdeclercq/559/unppl_design/cds.lib', Line 2, Repeat of INCLUDE of '/opt/cadence/ic618/share/cdssetup/cds.lib'.
+*WARNING* '/opt/cadence/ic618/share/cdssetup/cds.lib', Line 1, Repeat of INCLUDE of '/opt/cadence/ic618/share/cdssetup/dfII/cds.lib'.
+*WARNING* LIB cdsDefTechLib from File /opt/cadence/ic618/share/cdssetup/dfII/cds.lib Line 1 redefines
+LIB cdsDefTechLib from the same file (defined earlier.)
+*WARNING* '/opt/cadence/ic618/share/cdssetup/dfII/cds.lib', Line 2, Repeat of INCLUDE of '/opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib'.
+*WARNING* LIB basic from File /opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib Line 1 redefines
+LIB basic from the same file (defined earlier.)
+*WARNING* LIB US_8ths from File /opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib Line 2 redefines
+LIB US_8ths from the same file (defined earlier.)
+*WARNING* '/opt/cadence/ic618/share/cdssetup/dfII/cds.lib', Line 3, Repeat of INCLUDE of '/opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib'.
+*WARNING* LIB analogLib from File /opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib Line 1 redefines
+LIB analogLib from the same file (defined earlier.)
+*WARNING* LIB functional from File /opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib Line 2 redefines
+LIB functional from the same file (defined earlier.)
+*WARNING* '/opt/cadence/ic618/share/cdssetup/dfII/cds.lib', Line 4, Repeat of INCLUDE of '/opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib'.
+*WARNING* LIB rfLib from File /opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib Line 6 redefines
+LIB rfLib from the same file (defined earlier.)
+*WARNING* LIB rfExamples from File /opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib Line 7 redefines
+LIB rfExamples from the same file (defined earlier.)
+*WARNING* LIB ahdlLib from File /opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib Line 8 redefines
+LIB ahdlLib from the same file (defined earlier.)
+*WARNING* LIB rfTlineLib from File /opt/cadence/ic618/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib Line 9 redefines
+LIB rfTlineLib from the same file (defined earlier.)
+Loading gpdk045/libInit.il ...
+	Loading gpdk045/loadCxt.ile ... done!
+	Loading context 'gpdk045' from library 'gpdk045' ... done!
+	Loading context 'pdkUtils' from library 'gpdk045' ... done!
+	Loading gpdk045/gpdk045_customFilter.il ... done!
+	Loading gpdk045/libInitCustomExit.il ... 
+	Loading Environment Settings ...
+	Loading gpdk045/gpdk045_PDKRegistrations.il ... done!
+
+  *************************************************************           
+  *              Cadence Design Systems, Inc.                 *           
+  *                                                           *           
+  *                    Generic 45nm PDK                       *           
+  *                        (gpdk045)                          *           
+  *                                                           *           
+  *************************************************************           
+	
+
+	VERSION: 6.0 (09-September-2019)
+
+done!
+Loaded gpdk045/libInit.il successfully!
+Running Artist Hierarchical Netlisting ...
+Loading cdf.cxt 
+End netlisting Apr 20 22:37:58 2025
+
+Running simin
+
+Running runSim()...
+
+
+Running runsim with simulator: "auCdl"
+Begin simulation:    Apr 20 22:37:58 2025
+
+auCdl netlisting completed
+End simulation:      Apr 20 22:37:58 2025
+INFO (AUCDL-21): (Analog) CDL netlisting completed successfully.
+
+Pegasus 22.20-p009 7OBTvxYo9jId0i1pvusGmw 2025-04-20 22:38:01 892328 vlsicad.ecs.umass.edu
+Copyright 2023 Cadence Design Systems, Inc.
+All rights reserved worldwide.
+
+INFO:    Command Line Options: -lvs -top_cell sys_arr_unp -log_dir LOGS -source_top_cell sys_arr_unp -spice /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_unp.spi -qrc_data -control /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/pegasuslvsctl -ui_data -gdb_data /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/.technology.rul
+INFO:    Launch host CPU: Model: Intel(R) Xeon(R) Silver 4216 CPU @ 2.10GHz, OS: Red Hat Enterprise Linux release 8.10 (Ootpa), Logical cores: 64, Physical cores: 32, Cache: 22528 KB, CPU Speed: 3200 MHz
+         Launch host Memory: MemTotal: 257032 MB,  MemFree: 2929 MB,  SwapTotal: 4095 MB,  SwapFree: 2794 MB,  VmallocTotal: 33554431 MB,  VmallocUsed: 261 MB
+INFO:    Current path: /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs
+INFO:    Run directory same as current path
+INFO:    Log directory: /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/LOGS
+INFO:    PVL parsing results:
+WARNING: In technology 'gpdk045', the rule set 'default' is not a Pegasus rule set.
+It will be accepted for this run but should be changed to a pegasusRuleSet.
+WARNING: TEXT_DEPTH at line 35 in file /ece558_658/pdk/verification/pvs/./pvlLVS.rul is skipped. It is set in control file.
+
+INFO:    See "/home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/LOGS/pvl.log" for additional details.
+
+INFO:    Checking out 1 license(s) of feature: 'Pegasus_LVS' version 22.2
+INFO:    License checkout successful ... 2025-04-20 22:38:04
+
+INFO:    Checking out 1 license(s) of feature: 'Pegasus_16nm' version 22.2
+INFO:    License checkout successful ... 2025-04-20 22:38:04
+WARNING: Neither hcell nor -automatch option is specified.
+INFO:    Worker 0 started on host vlsicad.ecs.umass.edu with 1 cpu(s)
+         CPU: Model: Intel(R) Xeon(R) Silver 4216 CPU @ 2.10GHz, OS: Red Hat Enterprise Linux release 8.10 (Ootpa), Logical cores: 64, Physical cores: 32, Cache: 22528 KB, CPU Speed: 2988.89 MHz
+         Memory: MemTotal: 257032 MB,  MemFree: 2921 MB,  SwapTotal: 4095 MB,  SwapFree: 2794 MB,  VmallocTotal: 33554431 MB,  VmallocUsed: 261 MB
+INFO:    LVS report file: /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_unp.rep 
+INFO:    Extracted layout netlist: /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_unp.spi 
+INFO:    Setting LAYOUT_PATH to: /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_unp.gds.gz 
+INFO:    Setting LAYOUT_PRIMARY to: sys_arr_unp 
+INFO:    Setting SCHEMATIC_PATH to: /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_unp.cdl 
+INFO:    Setting SCHEMATIC_PRIMARY to: sys_arr_unp 
+
+INFO:    Gdsii input summary
+         File name: /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_unp.gds.gz
+         File size: 18426
+         Version: 5.0
+         Library name: systolic_array
+         Last modified: 2025-4-20 20:58:54
+         Last accessed: 2025-4-20 22:37:58
+         Database unit in user units: 0.0005
+         Database unit in meters: 5e-10
+         Magnification: 1 
+
+INFO:    Cell Summary:
+         ----------------------------------------------------------------------------
+             CELL               INSTANCE    GEOMETRY      LABELS        HREF        FREF
+         ----------------------------------------------------------------------------
+         M2_M1_CDNS_1                  0           3           0         539       37680
+         M2_M1_CDNS_2                  0           4           0          57       19504
+         M2_M1_CDNS_3                  0           6           0          14        3584
+         M1_PO_CDNS_4                  0           3           0          33       10464
+         M1_NWELL_CDNS_5               0           8           0           6        2320
+         M1_PSUB_CDNS_6                0           7           0           8        2928
+         pmos1v_CDNS_7                 0          21           2          14        3584
+         nmos1v_CDNS_8                 0          16           2          16        6112
+         nmos1v_CDNS_9                 0          14           2           9        2016
+         pmos1v_CDNS_10                0          17           2          11        4544
+         FlipFlop                     46          45           5           9         256
+         NAND                         19          19           5          10        1040
+         XOR                          60          64           5           2         544
+         Full_Adder                   21          41           7          10         272
+         inv                          12          11           4           1         128
+         faabs                        23          48           8           8         128
+         AND                          29          24           5          18         288
+         Half_Adder                   79          80           6           4          64
+         Multiplier                  266         335          18           1          16
+         proc_el                     215         302          28          16          16
+         sys_arr_unp                  16           0         166           1           1
+         ----------------------------------------------------------------------------
+         TOTAL CELL = 21;  INSTANCE = 786;  GEOMETRY = 1068;  LABEL = 265
+
+INFO:    Layer Summary:
+         ----------------------------------------------------------------------------
+             LAYER                ID       HPN      HTC        FPN       FTC
+         ----------------------------------------------------------------------------
+         BJTdum                 1000         0         0         0         0
+         Bondpad                1001         0         0         0         0
+         Cap3dum                1002         0         0         0         0
+         CapMetal               1003         0         0         0         0
+         Capdum                 1004         0         0         0         0
+         Cont                   1005        27         0    106784         0
+         DIOdummy               1006         0         0         0         0
+         IND2dummy              1007         0         0         0         0
+         INDdummy               1008         0         0         0         0
+         M1Resdum               1009         0         0         0         0
+         M2Resdum               1010         0         0         0         0
+         M3Resdum               1011         0         0         0         0
+         M4Resdum               1012         0         0         0         0
+         M5Resdum               1013         0         0         0         0
+         M6Resdum               1014         0         0         0         0
+         M7Resdum               1015         0         0         0         0
+         M8Resdum               1016         0         0         0         0
+         M9Resdum               1017         0         0         0         0
+         M10Resdum              1018         0         0         0         0
+         M11Resdum              1019         0         0         0         0
+         Metal1                 1020       528         0    159216         0
+         Metal2                 1021       371         0     97120         0
+         Metal3                 1022         0         0         0         0
+         Metal4                 1023         0         0         0         0
+         Metal5                 1024         0         0         0         0
+         Metal6                 1025         0         0         0         0
+         Metal7                 1026         0         0         0         0
+         Metal8                 1027         0         0         0         0
+         Metal9                 1028         0         0         0         0
+         Metal10                1029         0         0         0         0
+         Metal11                1030         0         0         0         0
+         NPN2dum                1031         0         0         0         0
+         NPN5dum                1032         0         0         0         0
+         NPN10dum               1033         0         0         0         0
+         NPNdummy               1034         0         0         0         0
+         Nburied                1035         0         0         0         0
+         Nhvt                   1036         0         0         0         0
+         Nimp                   1037         5         0     18576         0
+         Nlvt                   1038         0         0         0         0
+         Nwell                  1039        38         0     13712         0
+         Nzvt                   1040         0         0         0         0
+         Oxide                  1041        14         0     54016         0
+         Oxide_thk              1042         0         0         0         0
+         PNPdummy               1043         0         0         0         0
+         Phvt                   1044         0         0         0         0
+         Pimp                   1045         5         0     19184         0
+         Plvt                   1046         0         0         0         0
+         Poly                   1047        73         0    108928         0
+         Psub                   1048         0         0         0         0
+         ResWdum                1049         0         0         0         0
+         Resdum                 1050         0         0         0         0
+         SiProt                 1051         0         0         0         0
+         Via1                   1052         7         0     91024         0
+         Via2                   1053         0         0         0         0
+         Via3                   1054         0         0         0         0
+         Via4                   1055         0         0         0         0
+         Via5                   1056         0         0         0         0
+         Via6                   1057         0         0         0         0
+         Via7                   1058         0         0         0         0
+         Via8                   1059         0         0         0         0
+         Via9                   1060         0         0         0         0
+         Via10                  1061         0         0         0         0
+         ind10_text             1062         0         0         0         0
+         ind11_text             1063         0         0         0         0
+         metal1_conn_text       1064         0       237         0     47222
+         metal2_conn_text       1065         0        28         0       656
+         metal3_conn_text       1066         0         0         0         0
+         metal4_conn_text       1067         0         0         0         0
+         metal5_conn_text       1068         0         0         0         0
+         metal6_conn_text       1069         0         0         0         0
+         metal8_conn_text       1070         0         0         0         0
+         metal9_conn_text       1071         0         0         0         0
+         metal10_conn_text      1072         0         0         0         0
+         metal11_conn_text      1073         0         0         0         0
+         m1_label               1076         0         0         0         0
+         m2_label               1077         0         0         0         0
+         m3_label               1078         0         0         0         0
+         m4_label               1079         0         0         0         0
+         m5_label               1080         0         0         0         0
+         m6_label               1081         0         0         0         0
+         m7_label               1082         0         0         0         0
+         m8_label               1083         0         0         0         0
+         m9_label               1084         0         0         0         0
+         m10_label              1085         0         0         0         0
+         m11_label              1086         0         0         0         0
+         m1_pin                 1087         0         0         0         0
+         m2_pin                 1088         0         0         0         0
+         m3_pin                 1089         0         0         0         0
+         m4_pin                 1090         0         0         0         0
+         m5_pin                 1091         0         0         0         0
+         m6_pin                 1092         0         0         0         0
+         m7_pin                 1093         0         0         0         0
+         m8_pin                 1094         0         0         0         0
+         m9_pin                 1095         0         0         0         0
+         m10_pin                1096         0         0         0         0
+         m11_pin                1097         0         0         0         0
+         text                   1098         0         0         0         0
+         ----------------------------------------------------------------------------
+
+INFO:    CHIP EXTENT: -87320 -326510 261520 108540
+
+
+INFO:    Ports ...
+         ========================================================================
+
+INFO:    Texts For Connectivity ...
+         ========================================================================
+         VDD (-42.125, 52.605) 1064 sys_arr_unp
+         S33_7 (129.595, -163.005) 1064 sys_arr_unp
+         S33_6 (129.580, -161.595) 1064 sys_arr_unp
+         S33_5 (129.565, -154.545) 1064 sys_arr_unp
+         S33_4 (129.575, -147.490) 1064 sys_arr_unp
+         S33_3 (129.575, -140.445) 1064 sys_arr_unp
+         S33_2 (129.570, -133.410) 1064 sys_arr_unp
+         S33_1 (129.570, -126.355) 1064 sys_arr_unp
+         S33_0 (129.580, -119.320) 1064 sys_arr_unp
+         S32_7 (129.570, -108.645) 1064 sys_arr_unp
+         S32_6 (129.570, -107.225) 1064 sys_arr_unp
+         S32_5 (129.580, -100.175) 1064 sys_arr_unp
+         S32_4 (129.580, -93.130) 1064 sys_arr_unp
+         S32_3 (129.565, -86.100) 1064 sys_arr_unp
+         S32_2 (129.580, -79.045) 1064 sys_arr_unp
+         S32_1 (129.580, -71.995) 1064 sys_arr_unp
+         S32_0 (129.580, -64.965) 1064 sys_arr_unp
+         S31_7 (129.585, -54.270) 1064 sys_arr_unp
+         S31_6 (129.570, -52.855) 1064 sys_arr_unp
+         S31_5 (129.570, -45.820) 1064 sys_arr_unp
+         S31_4 (129.575, -38.770) 1064 sys_arr_unp
+         S31_3 (129.570, -31.730) 1064 sys_arr_unp
+         S31_2 (129.580, -24.670) 1064 sys_arr_unp
+         S31_1 (129.580, -17.635) 1064 sys_arr_unp
+         S31_0 (129.585, -10.590) 1064 sys_arr_unp
+         S30_7 (129.585, 0.090) 1064 sys_arr_unp
+         S30_6 (129.555, 1.510) 1064 sys_arr_unp
+         S30_5 (129.585, 8.550) 1064 sys_arr_unp
+         S30_4 (129.575, 15.600) 1064 sys_arr_unp
+         S30_3 (129.565, 22.635) 1064 sys_arr_unp
+         S30_2 (129.590, 29.680) 1064 sys_arr_unp
+         S30_1 (129.575, 36.725) 1064 sys_arr_unp
+         S30_0 (129.570, 43.765) 1064 sys_arr_unp
+         S23_7 (85.980, -163.005) 1064 sys_arr_unp
+         S23_6 (86.005, -161.585) 1064 sys_arr_unp
+         S23_5 (85.980, -154.545) 1064 sys_arr_unp
+         S23_4 (85.985, -147.505) 1064 sys_arr_unp
+         S23_3 (85.990, -140.455) 1064 sys_arr_unp
+         S23_2 (85.985, -133.415) 1064 sys_arr_unp
+         S23_1 (86.000, -126.355) 1064 sys_arr_unp
+         S23_0 (85.965, -119.325) 1064 sys_arr_unp
+         S22_7 (85.985, -108.635) 1064 sys_arr_unp
+         S22_6 (85.980, -107.220) 1064 sys_arr_unp
+         S22_5 (85.985, -100.170) 1064 sys_arr_unp
+         S22_4 (85.990, -93.120) 1064 sys_arr_unp
+         S22_3 (85.985, -86.100) 1064 sys_arr_unp
+         S22_2 (85.980, -79.045) 1064 sys_arr_unp
+         S22_1 (86.000, -72.000) 1064 sys_arr_unp
+         S22_0 (85.980, -64.955) 1064 sys_arr_unp
+         S21_7 (85.975, -54.275) 1064 sys_arr_unp
+         S21_6 (85.965, -52.860) 1064 sys_arr_unp
+         S21_5 (85.975, -45.800) 1064 sys_arr_unp
+         S21_4 (85.965, -38.760) 1064 sys_arr_unp
+         S21_3 (85.990, -31.720) 1064 sys_arr_unp
+         S21_2 (85.990, -24.675) 1064 sys_arr_unp
+         S21_1 (86.010, -17.640) 1064 sys_arr_unp
+         S21_0 (85.985, -10.595) 1064 sys_arr_unp
+         S20_7 (85.980, 0.090) 1064 sys_arr_unp
+         S20_6 (85.975, 1.505) 1064 sys_arr_unp
+         S20_5 (85.975, 8.555) 1064 sys_arr_unp
+         S20_4 (85.990, 15.595) 1064 sys_arr_unp
+         S20_3 (85.980, 22.640) 1064 sys_arr_unp
+         S20_2 (85.970, 29.680) 1064 sys_arr_unp
+         S20_1 (85.990, 36.720) 1064 sys_arr_unp
+         S20_0 (85.995, 43.770) 1064 sys_arr_unp
+         S13_7 (42.415, -163.005) 1064 sys_arr_unp
+         S13_6 (42.405, -161.580) 1064 sys_arr_unp
+         S13_5 (42.395, -154.550) 1064 sys_arr_unp
+         S13_4 (42.395, -147.495) 1064 sys_arr_unp
+         S13_3 (42.385, -140.455) 1064 sys_arr_unp
+         S13_2 (42.390, -133.410) 1064 sys_arr_unp
+         S13_1 (42.380, -126.375) 1064 sys_arr_unp
+         S13_0 (42.415, -119.320) 1064 sys_arr_unp
+         S12_7 (42.380, -108.640) 1064 sys_arr_unp
+         S12_6 (42.380, -107.220) 1064 sys_arr_unp
+         S12_5 (42.385, -100.170) 1064 sys_arr_unp
+         S12_4 (42.380, -93.130) 1064 sys_arr_unp
+         S12_3 (42.380, -86.090) 1064 sys_arr_unp
+         S12_2 (42.390, -79.030) 1064 sys_arr_unp
+         S12_1 (42.405, -72.000) 1064 sys_arr_unp
+         S12_0 (42.425, -64.955) 1064 sys_arr_unp
+         S11_7 (42.400, -54.275) 1064 sys_arr_unp
+         S11_6 (42.400, -52.850) 1064 sys_arr_unp
+         S11_5 (42.400, -45.810) 1064 sys_arr_unp
+         S11_4 (42.390, -38.770) 1064 sys_arr_unp
+         S11_3 (42.405, -31.725) 1064 sys_arr_unp
+         S11_2 (42.410, -24.685) 1064 sys_arr_unp
+         S11_1 (42.395, -17.645) 1064 sys_arr_unp
+         S11_0 (42.395, -10.595) 1064 sys_arr_unp
+         S10_7 (42.420, 0.095) 1064 sys_arr_unp
+         S10_6 (42.385, 1.505) 1064 sys_arr_unp
+         S10_5 (42.395, 8.555) 1064 sys_arr_unp
+         S10_4 (42.395, 15.595) 1064 sys_arr_unp
+         S10_3 (42.405, 22.635) 1064 sys_arr_unp
+         S10_2 (42.420, 29.675) 1064 sys_arr_unp
+         S10_1 (42.435, 36.725) 1064 sys_arr_unp
+         S10_0 (42.420, 43.775) 1064 sys_arr_unp
+         S03_7 (-1.185, -163.010) 1064 sys_arr_unp
+         S03_6 (-1.195, -161.590) 1064 sys_arr_unp
+         S03_5 (-1.205, -154.550) 1064 sys_arr_unp
+         S03_4 (-1.200, -147.495) 1064 sys_arr_unp
+         S03_3 (-1.220, -140.460) 1064 sys_arr_unp
+         S03_2 (-1.195, -133.410) 1064 sys_arr_unp
+         S03_1 (-1.190, -126.365) 1064 sys_arr_unp
+         S03_0 (-1.175, -119.320) 1064 sys_arr_unp
+         S02_7 (-1.185, -108.640) 1064 sys_arr_unp
+         S02_6 (-1.195, -107.215) 1064 sys_arr_unp
+         S02_5 (-1.205, -100.170) 1064 sys_arr_unp
+         S02_4 (-1.200, -93.120) 1064 sys_arr_unp
+         S02_3 (-1.185, -86.085) 1064 sys_arr_unp
+         S02_2 (-1.175, -79.035) 1064 sys_arr_unp
+         S02_1 (-1.190, -72.000) 1064 sys_arr_unp
+         S02_0 (-1.170, -64.955) 1064 sys_arr_unp
+         S01_7 (-1.175, -54.295) 1064 sys_arr_unp
+         S01_6 (-1.170, -52.850) 1064 sys_arr_unp
+         S01_5 (-1.220, -45.815) 1064 sys_arr_unp
+         S01_4 (-1.210, -38.765) 1064 sys_arr_unp
+         S01_3 (-1.190, -31.735) 1064 sys_arr_unp
+         S01_2 (-1.200, -24.685) 1064 sys_arr_unp
+         S01_1 (-1.180, -17.640) 1064 sys_arr_unp
+         S01_0 (-1.200, -10.595) 1064 sys_arr_unp
+         S00_7 (-1.165, 0.090) 1064 sys_arr_unp
+         S00_6 (-1.185, 1.505) 1064 sys_arr_unp
+         S00_5 (-1.185, 8.550) 1064 sys_arr_unp
+         S00_4 (-1.185, 15.595) 1064 sys_arr_unp
+         S00_3 (-1.185, 22.635) 1064 sys_arr_unp
+         S00_2 (-1.175, 29.680) 1064 sys_arr_unp
+         S00_1 (-1.155, 36.725) 1064 sys_arr_unp
+         S00_0 (-1.135, 43.770) 1064 sys_arr_unp
+         RST (-43.590, 53.875) 1064 sys_arr_unp
+         PHI (-43.600, 54.075) 1064 sys_arr_unp
+         GND (-43.560, 50.905) 1064 sys_arr_unp
+         GND (-43.560, -3.460) 1064 sys_arr_unp
+         GND (-43.560, -112.190) 1064 sys_arr_unp
+         A03_3 (-43.600, -109.415) 1064 sys_arr_unp
+         A03_2 (-43.610, -109.615) 1064 sys_arr_unp
+         A03_1 (-43.600, -109.815) 1064 sys_arr_unp
+         A03_0 (-43.585, -110.015) 1064 sys_arr_unp
+         A02_3 (-43.575, -55.050) 1064 sys_arr_unp
+         A02_2 (-43.580, -55.245) 1064 sys_arr_unp
+         A02_1 (-43.585, -55.450) 1064 sys_arr_unp
+         A02_0 (-43.580, -55.645) 1064 sys_arr_unp
+         A01_3 (-43.585, -0.685) 1064 sys_arr_unp
+         A01_2 (-43.575, -0.880) 1064 sys_arr_unp
+         A01_1 (-43.575, -1.090) 1064 sys_arr_unp
+         A01_0 (-43.580, -1.290) 1064 sys_arr_unp
+         A00_3 (-43.575, 53.680) 1064 sys_arr_unp
+         A00_2 (-43.570, 53.480) 1064 sys_arr_unp
+         A00_1 (-43.585, 53.280) 1064 sys_arr_unp
+         A00_0 (-43.580, 53.080) 1064 sys_arr_unp
+         B30_3 (87.370, 54.190) 1065 sys_arr_unp
+         B30_2 (87.525, 54.190) 1065 sys_arr_unp
+         B30_1 (87.670, 54.185) 1065 sys_arr_unp
+         B30_0 (87.825, 54.200) 1065 sys_arr_unp
+         B20_3 (43.775, 54.190) 1065 sys_arr_unp
+         B20_2 (43.925, 54.205) 1065 sys_arr_unp
+         B20_1 (44.080, 54.210) 1065 sys_arr_unp
+         B20_0 (44.230, 54.200) 1065 sys_arr_unp
+         B10_3 (0.190, 54.180) 1065 sys_arr_unp
+         B10_2 (0.340, 54.165) 1065 sys_arr_unp
+         B10_1 (0.490, 54.185) 1065 sys_arr_unp
+         B10_0 (0.640, 54.190) 1065 sys_arr_unp
+         B00_3 (-43.400, 54.195) 1065 sys_arr_unp
+         B00_2 (-43.255, 54.160) 1065 sys_arr_unp
+         B00_1 (-43.100, 54.165) 1065 sys_arr_unp
+         B00_0 (-42.945, 54.170) 1065 sys_arr_unp
+         VDD (-31.945, 51.810) 1064 proc_el
+         S7 (9.021, -0.707) 1064 proc_el
+         S6 (9.034, 0.718) 1064 proc_el
+         S5 (9.037, 7.766) 1064 proc_el
+         S4 (9.037, 14.809) 1064 proc_el
+         S3 (9.037, 21.852) 1064 proc_el
+         S2 (9.050, 28.892) 1064 proc_el
+         S1 (9.052, 35.931) 1064 proc_el
+         S0 (9.052, 42.971) 1064 proc_el
+         RST (-33.410, 53.080) 1064 proc_el
+         PHI (-33.420, 53.280) 1064 proc_el
+         GND (-31.940, 50.160) 1064 proc_el
+         A3P (10.080, 52.885) 1064 proc_el
+         A3 (-33.415, 52.885) 1064 proc_el
+         A2P (10.080, 52.685) 1064 proc_el
+         A2 (-33.415, 52.690) 1064 proc_el
+         A1P (10.080, 52.485) 1064 proc_el
+         A1 (-33.425, 52.485) 1064 proc_el
+         A0P (10.075, 52.285) 1064 proc_el
+         A0 (-33.425, 52.285) 1064 proc_el
+         B3P (-33.215, -0.925) 1065 proc_el
+         B3 (-33.220, 53.440) 1065 proc_el
+         B2P (-33.065, -0.925) 1065 proc_el
+         B2 (-33.070, 53.440) 1065 proc_el
+         B1P (-32.915, -0.920) 1065 proc_el
+         B1 (-32.920, 53.440) 1065 proc_el
+         B0P (-32.765, -0.925) 1065 proc_el
+         B0 (-32.770, 53.435) 1065 proc_el
+         VDD (4.500, 12.555) 1064 Multiplier
+         P7 (31.990, -24.505) 1064 Multiplier
+         P6 (31.985, -24.300) 1064 Multiplier
+         P5 (31.985, -24.145) 1064 Multiplier
+         P4 (31.985, -23.990) 1064 Multiplier
+         P3 (31.985, -23.835) 1064 Multiplier
+         P2 (31.985, -12.230) 1064 Multiplier
+         P1 (32.000, -0.275) 1064 Multiplier
+         P0 (31.995, 9.925) 1064 Multiplier
+         GND (4.505, 10.905) 1064 Multiplier
+         B3 (3.770, -14.580) 1064 Multiplier
+         B2 (3.765, -2.395) 1064 Multiplier
+         B1 (3.765, 9.770) 1064 Multiplier
+         B0 (3.765, 12.830) 1064 Multiplier
+         A3 (3.770, 13.630) 1064 Multiplier
+         A2 (3.770, 13.430) 1064 Multiplier
+         A1 (3.760, 13.230) 1064 Multiplier
+         A0 (3.765, 13.030) 1064 Multiplier
+         VDD (-1.660, 0.570) 1064 Half_Adder
+         SUM (2.665, -0.420) 1064 Half_Adder
+         GND (-1.655, 2.455) 1064 Half_Adder
+         COUT (2.645, 1.790) 1064 Half_Adder
+         B (-1.730, -0.395) 1064 Half_Adder
+         A (-1.715, -0.750) 1064 Half_Adder
+         Y (0.635, 0.850) 1064 AND
+         VDD (-1.355, 1.925) 1064 AND
+         GND (-1.355, 0.275) 1064 AND
+         B (-1.415, 0.860) 1064 AND
+         A (-1.420, 1.230) 1064 AND
+         VDD (-6.590, 4.720) 1064 faabs
+         SOUT (3.875, 0.610) 1064 faabs
+         GND (-6.590, 6.265) 1064 faabs
+         A (-6.635, 3.415) 1064 faabs
+         RST (0.120, 6.470) 1065 faabs
+         PHI (0.280, 6.470) 1065 faabs
+         COUT (-6.240, -0.680) 1065 faabs
+         CIN (-6.235, 6.460) 1065 faabs
+         Y (0.490, 0.400) 1064 inv
+         VDD (-0.475, 1.430) 1064 inv
+         GND (-0.465, -0.125) 1064 inv
+         A (-0.520, 0.635) 1064 inv
+         VDD (-4.685, 4.420) 1064 Full_Adder
+         SUM (1.725, 3.445) 1064 Full_Adder
+         GND (-4.685, 5.965) 1064 Full_Adder
+         COUT (1.705, 0.550) 1064 Full_Adder
+         CIN (-4.715, 1.700) 1064 Full_Adder
+         B (-4.740, 3.475) 1064 Full_Adder
+         A (-4.730, 3.115) 1064 Full_Adder
+         Y (1.660, 1.350) 1064 XOR
+         VDD (-1.395, 2.325) 1064 XOR
+         GND (-1.395, 3.870) 1064 XOR
+         B (-1.450, 1.380) 1064 XOR
+         A (-1.440, 1.020) 1064 XOR
+         Y (0.085, 0.340) 1064 NAND
+         VDD (-1.000, 1.235) 1064 NAND
+         GND (-1.000, -0.425) 1064 NAND
+         B (-1.045, 0.155) 1064 NAND
+         A (-1.040, 0.525) 1064 NAND
+         Y (1.530, 1.045) 1064 FlipFlop
+         VDD (-1.475, 2.270) 1064 FlipFlop
+         PHI (-1.505, 1.285) 1064 FlipFlop
+         GND (-1.475, 0.010) 1064 FlipFlop
+         A (-1.545, 0.855) 1064 FlipFlop
+         S_source_0 (-0.080, 0.120) 1064 pmos1v_CDNS_10
+         D_drain_1 (0.125, 0.120) 1064 pmos1v_CDNS_10
+         S_source_0 (-0.080, 0.060) 1064 nmos1v_CDNS_9
+         D_drain_1 (0.125, 0.060) 1064 nmos1v_CDNS_9
+         S_source_0 (-0.080, 0.120) 1064 nmos1v_CDNS_8
+         D_drain_1 (0.125, 0.120) 1064 nmos1v_CDNS_8
+         S_source_0 (-0.080, 0.240) 1064 pmos1v_CDNS_7
+         D_drain_1 (0.125, 0.240) 1064 pmos1v_CDNS_7
+
+INFO:    Texts For SELECT -LABEL ...
+         ========================================================================
+
+INFO:    Texts For EXPAND_TEXT_ORIGIN ...
+         ========================================================================
+
+INFO:    Texts For DFM_TEXT ...
+         ========================================================================
+
+INFO:    Texts For Device Text Model Layer ...
+         ========================================================================
+
+INFO:    Texts For Device Text Property Layer ...
+         ========================================================================
+
+INFO:    Layer Summary(Texts For Connectivity):
+         ----------------------------------------------------------------------------
+             LAYER                ID       TEXTS
+         ----------------------------------------------------------------------------
+         metal1_conn_text       1064       237
+         metal2_conn_text       1065        28
+         ----------------------------------------------------------------------------
+
+INFO:    Layer Summary(Texts For SELECT -LABEL):
+         ----------------------------------------------------------------------------
+             LAYER                ID       TEXTS
+         ----------------------------------------------------------------------------
+         ----------------------------------------------------------------------------
+
+INFO:    Layer Summary(Texts For EXPAND_TEXT_ORIGIN):
+         ----------------------------------------------------------------------------
+             LAYER                ID       TEXTS
+         ----------------------------------------------------------------------------
+         ----------------------------------------------------------------------------
+
+INFO:    Layer Summary(Texts For DFM_TEXT):
+         ----------------------------------------------------------------------------
+             LAYER                ID       TEXTS
+         ----------------------------------------------------------------------------
+         ----------------------------------------------------------------------------
+
+INFO:    Expanded Cell Summary
+INFO:    Status: Runset 100% complete as of 2025-04-20 22:38:05   Elapsed: 00:00:01
+         Worker: Active CPUs  Total Mem(MB)  Active Mem(MB)  CPU time(s)
+              0:    1 /   1             28              15            1
+INFO:	 Status: Finishing as of 2025-04-20 22:38:05   Elapsed: 00:00:01   CPU time[s]: 1
+INFO:    Resource usage by worker at exit:
+                  CPU      Elapsed  CPUs       CPU       Peak        Peak engine
+         Worker:  time[s]  time[s]  Allocated  usage[%]  Memory[MB]  Memory[MB]
+              0:        1        1          1     89.95          28           15
+         Worker resource usage  summary: Total CPU[s]: 1  Run duration[s]: 1  Max peak memory[MB]: 28
+         Worker CPU utilization summary: 1 of 1 available CPU seconds (100.00%) with 1 average available CPU(s)
+INFO:    Extraction result: CLEAN (Reporter)
+INFO:    Generating summary in /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_unp.sum
+INFO:    All selected rules completed
+         Total CPU Time                    : 1(s)
+         Total Real Time                   : 2(s)
+         Total Original Geometry           : 1068(668560)
+         Total ERC RuleChecks              : 0
+         Total ERC Results                 : 0 (0)
+INFO:    Pegasus extracted connectivity database creation started
+INFO:    CmdLine: /opt/cadence/pegasus/tools.lnx86/Pegasus/bin/64bit/edbToEcdb -kf -edb sys_arr_unp_892328.db -ecdb ./ -topcell sys_arr_unp -netlist /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/svdb/sys_arr_unp.net -layermap /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/svdb/sys_arr_unp.ecdbmap -textmap /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/svdb/sys_arr_unp.ports -dependmap sys_arr_unp.lmap.perc -kvp ifs:8VO -lvsfile /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/svdb/sys_arr_unp.lvsfile -saveFloatingNets .sys_arr_unp.info.softchk 
+INFO:    Opening layer file 'sys_arr_unp_892328.db/__layer'...
+INFO:    Loading layer map file '/home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/svdb/sys_arr_unp.ecdbmap'...
+INFO:    Loading text map file '/home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/svdb/sys_arr_unp.ports'...
+INFO:    Loading dependency map file 'sys_arr_unp.lmap.perc'...
+INFO:    Pre loading edb directory contents...
+INFO:    ECDB file name './/.sys_arr_unp.ecdb'...
+INFO:    Loading lvs file '/home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/svdb/sys_arr_unp.lvsfile'...
+INFO:    Writing db header information...(0s)
+INFO:    Transfering cdl structures to ecdb structures...
+INFO:    Read Netlist (32 threads)...
+INFO:      DONE - (2s)
+INFO:    Process (32 threads)...
+INFO:    Cell(       0):   4% Done...(2s), M2_M1_CDNS_1                            
+INFO:    Cell(       5):   9% Done...(2s), M1_PSUB_CDNS_6                          
+INFO:    Cell(       2):  13% Done...(2s), M2_M1_CDNS_3                            
+INFO:    Cell(       1):  18% Done...(2s), M2_M1_CDNS_2                            
+INFO:    Cell(      20):  22% Done...(2s), MASCO__A1                               
+INFO:    Cell(      14):  27% Done...(2s), inv                                     
+INFO:    Cell(       7):  31% Done...(2s), nmos1v_CDNS_8                           
+INFO:    Cell(      10):  36% Done...(2s), FlipFlop                                
+INFO:    Cell(       9):  40% Done...(2s), pmos1v_CDNS_10                          
+INFO:    Cell(      11):  45% Done...(2s), NAND                                    
+INFO:    Cell(       6):  50% Done...(2s), pmos1v_CDNS_7                           
+INFO:    Cell(      13):  54% Done...(2s), Full_Adder                              
+INFO:    Cell(      15):  59% Done...(2s), faabs                                   
+INFO:    Cell(      17):  63% Done...(2s), Half_Adder                              
+INFO:    Cell(      19):  68% Done...(2s), proc_el                                 
+INFO:    Cell(      18):  72% Done...(2s), Multiplier                              
+INFO:    Cell(       3):  77% Done...(3s), M1_PO_CDNS_4                            
+INFO:    Cell(       8):  81% Done...(3s), nmos1v_CDNS_9                           
+INFO:    Cell(       4):  86% Done...(3s), M1_NWELL_CDNS_5                         
+INFO:    Cell(      21):  90% Done...(3s), sys_arr_unp                             
+INFO:    Cell(      12):  95% Done...(3s), XOR                                     
+INFO:    Cell(      16): 100% Done...(4s), AND                                     
+INFO:      DONE - (2s)
+INFO:    Cells creation time: (4s)
+INFO:    Write netlist items...         (4s)
+INFO:    Saving name table to db...
+INFO:    Save device templates to the db...
+INFO:    Save connect rules to the db...
+INFO:    Write calculated header information to the top of file...
+INFO:    Erasing cdl subckts...          (0s)
+
+INFO:    edbToEcdb Header Information:
+  ECDB file version   : 37
+  DevTmpl offset      : 132288
+  Connect offset      : 132388
+  NameTable offset    : 121428
+  Layer Map offset    : 167
+  Cell Start offset   : 119888
+  Cell End offset     : 121428
+  Aux Data offset     : 132692
+  Labels     offset   : 0
+  Layer RW   offset   : 0
+  NVP                 : ifs:0.01 
+  Scale               : 8000
+  GDS Scale           : 2000
+  File size (static)  : 142187
+  File size (dynamic) : 0
+  Cell count          : 22
+  ECDB create time    : 4
+  EDB info            : 10
+  Top Cell            : sys_arr_unp
+  EDB info (Trans)    : WRITTEN_64 W_NOT_NET_ORDER 
+
+INFO:    edbToEcdb Sizes written to disk (MB):
+  NameTbl             :     0.010860
+  Layers              :     0.004423
+  Shapes              :     0.031197
+  XYTree              :     0.023031
+  LookUpTbls          :     0.006723
+  Cells               :     0.002019
+  Insts               :     0.018774
+  Ports               :     0.018930
+  Nets                :     0.007432
+  Pins                :     0.001316
+  Labels              :     0.007420
+  DevTmpl             :     0.000100
+  Connect             :     0.000300
+  Header              :     0.000167
+  AuxData             :     0.009493
+  NvnLabels           :     0.000002
+---------------------------------
+  Total               :     0.142187
+
+INFO:    Manager summary: CPU(s): 0 Elapsed(s): 4 Peak memory(MB): 1583.93
+INFO:    Pegasus extracted connectivity database creation completed. 2025-04-20 22:38:09
+
+
+INFO:    Creating annotated GDS ...
+INFO:    Library name: sys_arr_unp_892328
+INFO:    GDSII file name: /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/svdb/sys_arr_unp.agf
+INFO:    Cells to be written out: sys_arr_unp
+INFO:    Source Library: sys_arr_unp_892328
+INFO:    Status: Task in progress ...
+INFO:    Pegasus creating annotated GDS completed. 2025-04-20 22:38:05
+INFO:    Pegasus REPORTDB creation started...
+INFO:    Processing file sys_arr_unp.rep
+INFO:    Manager summary: CPU(s): 0 Elapsed(s): 0 Peak memory(MB): 0.00
+INFO:    Pegasus REPORTDB creation completed. 2025-04-20 22:38:09
+
+
+INFO:    Comparing netlists ...
+INFO:    Setup VLDB (0s)
+INFO:    Init sch rules (0s)
+INFO:    Init lay rules (0s)
+INFO:    Init structures (0s)
+INFO:    Set cells to delete (0s)
+INFO:    Check expand on pin error (0s)
+INFO:    Reading schematic network
+INFO:     inputting cdl netlist /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/netlist...
+WARNING (NVN-13002): *.BIPOLAR is not supported.
+WARNING (NVN-13002): *.RESI is not supported.
+WARNING (NVN-13002): *.RESVAL is not supported.
+WARNING (NVN-13002): *.CAPVAL is not supported.
+WARNING (NVN-13002): *.DIOPERI is not supported.
+WARNING (NVN-13002): *.DIOAREA is not supported.
+WARNING (NVN-13002): *.EQUATION is not supported.
+WARNING (NVN-13003): "*.SCALE" is not supported. Use ".OPTION SCALE" instead or specify  'lvs_cdn_flow_options -cdl_use_scale' in the rule file.
+INFO:     finished loading cdl netlist /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/netlist (0s)
+INFO:     commit cdl netlist(s)...
+INFO:     finished committing cdl netlists (0s)
+INFO:    Post sch netlist rule processing (0s)
+INFO:    Reading layout network
+INFO:     inputting (fast parser) cdl netlist  /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/svdb/sys_arr_unp.net...
+INFO:     finished loading cdl netlist /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/svdb/sys_arr_unp.net (0s)
+INFO:     commit cdl netlist(s)...
+INFO:     finished committing cdl netlists (0s)
+INFO:    Post lay netlist rule processing (0s)
+INFO:    Processing blackBox rules (0s)
+INFO:    Processing bindings (0s)
+WARNING (NVN-15140): Cell 'pll_vco_indsym1p3' used in rule 'lvs_black_box' cannot be found in the layout. 
+Skipping this rule.
+WARNING (NVN-15140): Cell 'pll_vco_indsym1p3' used in rule 'lvs_black_box' cannot be found in the schematic. 
+Skipping this rule.
+INFO:    Commit sch verilog netlist (0s)
+INFO:    Commit lay verilog netlist (0s)
+INFO:    Erase netlist data (0s)
+INFO:    Set blackbox cells (0s)
+INFO:    Sch put cells in memory (0s)
+INFO:    Sch update netlist rules (0s)
+INFO:    Sch adjust device pins (0s)
+INFO:    Sch calc hier order (0s)
+INFO:    Sch process inherited connections (0s)
+INFO:    Sch generate qrc files (0s)
+INFO:    Sch handle global pins (0s)
+INFO:    Sch apply rule actions with processed netlist (0s)
+INFO:    Sch process cell supply (0s)
+INFO:    Lay put cells in memory (0s)
+INFO:    Lay update netlist rules (0s)
+INFO:    Lay calc hier order (0s)
+INFO:    Lay process inherited connections (0s)
+INFO:    Lay generate qrc files (0s)
+INFO:    Lay handle global pins (0s)
+INFO:    Lay apply rule actions with processed netlist (0s)
+INFO:    Lay process cell supply (0s)
+INFO:    Check if interposer flow (0s)
+INFO:    Check binding file (0s)
+INFO:    Set topcell global pin indicator (0s)
+INFO:    Calculate preserve parameterized cells (0s)
+INFO:    Check generic device bindings (0s)
+INFO:    Calculate primitive device bindings (0s)
+INFO:    Remove unused device parameters (0s)
+INFO:    Set instances to flatten inside cells (0s)
+INFO:    Calculate parameters (0s)
+INFO:    Start sch normalization (0s)
+INFO:    Start lay normalization (0s)
+INFO:    Calculate primitive device bindings (2nd time) (0s)
+INFO:    Finalize binding (0s)
+INFO:    Sch join nets (0s)
+INFO:    Sch setup hier normalization (0s)
+INFO:    Sch remove feedthroughs and black box cell instances (0s)
+INFO:    Sch remove identical pins (0s)
+INFO:    Sch calc connection counts (0s)
+INFO:    Run genHierCells (0s)
+INFO:    Reset normalization flags (0s)
+INFO:    Lay join nets (0s)
+INFO:    Lay setup hier normalization (0s)
+INFO:    Lay remove feedthroughs and black box cell instances (0s)
+INFO:    Lay remove identical pins (0s)
+INFO:    Lay calc connection counts (0s)
+INFO:    Normalize sch (0s)
+INFO:    Read in color file (0s)
+INFO:    Set scale factor per cell (0s)
+INFO:    Setup property init rules (0s)
+INFO:    Write sch vldb file (0s)
+INFO:    Write lay vldb file (0s)
+INFO:    Apply preserve parameterized cells (0s)
+INFO:    Cleanup after VLDB processing (0s)
+WARNING (NVN-15002): Rule 'lvs_recognize_gates -all' was set, but either
+           the power net or the ground net (or both) was missing as follows.
+               schematic power
+               schematic ground
+               layout power
+               layout ground
+           Rule 'lvs_recognize_gates -all' requires both power and ground nets to operate.
+           These can be identified using rules 'lvs_power_name' and 'lvs_ground_name'.
+           Resetting rule to 'lvs_recognize_gates -simple'
+INFO (NVN-10007): Found ecdb file .sys_arr_unp.ecdb, will use during comparison.
+
+INFO:    Cell comparison output format:
+            <Comparing|Top Cell> <Layout Cell> vs <Schematic Cell>
+               <Layout instances> insts vs <Schematic instances> insts  (<Time>)-<Status>
+
+         Top Cell  sys_arr_unp vs sys_arr_unp
+            11408 insts vs 11408 insts . . . . . . . . . . . . . . . . . . . . (1s)-match
+
+INFO:    Generating the LVS report...
+           Report Init (0s)
+           Load common queries (0s)
+           Create report (0s)
+           Cleanup (0s)
+INFO:    Report finished
+
+INFO:    Extraction Run Summary
+         Total CPU Time        : 1(s)
+         Total Real Time       : 2(s)
+         Peak Memory Used      : 28.00(M)
+
+
+INFO:    NVN Run Summary
+         Total CPU Time        : 1(s)
+         Total Real Time       : 1(s)
+         Peak Memory Used      : 263.21(M)
+
+
+INFO:    LVS Summary
+         Total CPU Time        : 2(s)
+         Total Real Time       : 3(s)
+         Peak Memory Used      : 263.21(M)
+
+    #######################################################################
+    #                                                                     #
+    # Run Result             : MATCH                                      #
+    #                                                                     #
+    # Run Summary            : [INFO]  ERC Results: Empty                 #
+    #                        : [INFO]  Extraction Clean                   #
+    #                        : [INFO]  Some Sections Have Been Truncated  #
+    #                                                                     #
+    # ERC Summary File       : sys_arr_unp.sum                            #
+    # Extraction Report File : sys_arr_unp.rep                            #
+    # Comparison Report File : sys_arr_unp.rep.cls                        #
+    #                                                                     #
+    #######################################################################
+
+
+INFO:    Creating cross reference database ...
+INFO:    Manager summary: CPU(s): 0 Elapsed(s): 0 Peak memory(MB): 86.36
+INFO:    Checking in all SoftShare licenses.
+INFO:    Creating cross reference database completed. Sun Apr 20 22:38:10 2025
+
+
+Pegasus finished normally. 2025-04-20 22:38:10
+
+

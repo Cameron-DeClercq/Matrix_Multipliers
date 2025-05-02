@@ -1,0 +1,45 @@
+# XXXX: Net Cross Reference (nxf) (File format 1)
+# XXXX: Layout Primary faabs
+# XXXX: End of header.
+% M 4 M 4 
+0 D 0 D
+0 G 0 G
+0 S 0 S
+0 B 0 B
+% faabs 8 faabs 8 
+0 4 0 net017
+0 7 0 net21
+0 8 0 net20
+0 A 0 A
+0 CIN 0 CIN
+0 COUT 0 COUT
+0 GND 0 GND
+0 PHI 0 PHI
+0 RST 0 RST
+0 SOUT 0 SOUT
+0 VDD 0 VDD
+0 18 0 XI0/net20
+0 17 0 XI0/net21
+0 14 0 XI0/net8
+0 X20/14 0 XI0/XI13/net010
+0 X20/13 0 XI0/XI13/net09
+0 X20/12 0 XI0/XI12/net010
+0 X20/11 0 XI0/XI12/net09
+0 19 0 XI2/net12
+0 20 0 XI2/net13
+0 21 0 XI1/net16
+0 X20/15 0 XI0/XI10/net16
+0 X20/21 0 XI0/XI11/net16
+0 X20/18 0 XI0/XI9/net16
+0 X20/25 0 XI0/XI13/net24
+0 X20/24 0 XI0/XI13/net25
+0 X20/20 0 XI0/XI13/net22
+0 X20/19 0 XI0/XI13/net23
+0 X20/23 0 XI0/XI12/net24
+0 X20/22 0 XI0/XI12/net25
+0 X20/17 0 XI0/XI12/net22
+0 X20/16 0 XI0/XI12/net23
+0 36 0 XI2/net26
+0 35 0 XI2/net28
+0 30 0 XI2/net25
+0 29 0 XI2/net27

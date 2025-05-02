@@ -1,0 +1,26 @@
+# Placement Hierarchy File (sph)
+# 
+# 
+# 
+% NOR 5
+MNM1 M 4
+MNM0 M 4
+MPM1 M 4
+MPM0 M 4
+% inv 4
+MNM0 M 4
+MPM0 M 4
+% XOR_ni 7
+MPM3 M 4
+MPM2 M 4
+MPM1 M 4
+MPM0 M 4
+MNM3 M 4
+MNM2 M 4
+MNM1 M 4
+MNM0 M 4
+% Half_Adder 6
+XI2 XOR_ni 7
+XI4 inv 4
+XI3 inv 4
+XI5 NOR 5

@@ -1,0 +1,348 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  systolic_array
+* Top Cell Name: sys_arr_unp
+* View Name:     schematic
+* Netlisted on:  Apr 20 22:37:58 2025
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: lab1_virt
+* Cell Name:    NAND
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT NAND A B GND VDD Y
+*.PININFO A:I B:I GND:I VDD:I Y:O
+MNM1 net16 B GND GND g45n1svt m=1 l=45n w=240n
+MNM0 Y A net16 GND g45n1svt m=1 l=45n w=240n
+MPM1 Y A VDD VDD g45p1svt m=1 l=45n w=240n
+MPM0 Y B VDD VDD g45p1svt m=1 l=45n w=240n
+.ENDS
+
+************************************************************************
+* Library Name: accumulator_bitslice
+* Cell Name:    inv
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inv A GND VDD Y
+*.PININFO A:I GND:I VDD:I Y:O
+MNM0 Y A GND GND g45n1svt m=1 l=45n w=120n
+MPM0 Y A VDD VDD g45p1svt m=1 l=45n w=240n
+.ENDS
+
+************************************************************************
+* Library Name: accumulator_bitslice
+* Cell Name:    XOR
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT XOR A B GND VDD Y
+*.PININFO A:I B:I GND:I VDD:I Y:O
+MPM3 Y A net24 VDD g45p1svt m=1 l=45n w=480n
+MPM2 Y net010 net25 VDD g45p1svt m=1 l=45n w=480n
+MPM1 net24 net09 VDD VDD g45p1svt m=1 l=45n w=480n
+MPM0 net25 B VDD VDD g45p1svt m=1 l=45n w=480n
+MNM3 net22 B GND GND g45n1svt m=1 l=45n w=240n
+MNM2 net23 net09 GND GND g45n1svt m=1 l=45n w=240n
+MNM1 Y A net22 GND g45n1svt m=1 l=45n w=240n
+MNM0 Y net010 net23 GND g45n1svt m=1 l=45n w=240n
+XI2 A GND VDD net010 / inv
+XI3 B GND VDD net09 / inv
+.ENDS
+
+************************************************************************
+* Library Name: systolic_array
+* Cell Name:    Full_Adder
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT Full_Adder A B CIN COUT GND SUM VDD
+*.PININFO A:I B:I CIN:I GND:I VDD:I COUT:O SUM:O
+XI10 B A GND VDD net20 / NAND
+XI11 net21 net20 GND VDD COUT / NAND
+XI9 net8 CIN GND VDD net21 / NAND
+XI13 net8 CIN GND VDD SUM / XOR
+XI12 A B GND VDD net8 / XOR
+.ENDS
+
+************************************************************************
+* Library Name: accumulator_bitslice
+* Cell Name:    FlipFlop
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT FlipFlop D GND PHI Q VDD
+*.PININFO D:I GND:I PHI:I VDD:I Q:O
+MPM3 Q net12 net26 VDD g45p1svt m=1 l=45n w=480n
+MPM2 net13 PHI net28 VDD g45p1svt m=1 l=45n w=480n
+MPM1 net26 net13 VDD VDD g45p1svt m=1 l=45n w=480n
+MPM0 net28 D VDD VDD g45p1svt m=1 l=45n w=480n
+MNM3 net25 net13 GND GND g45n1svt m=1 l=45n w=240n
+MNM2 net27 D GND GND g45n1svt m=1 l=45n w=240n
+MNM1 Q PHI net25 GND g45n1svt m=1 l=45n w=240n
+MNM0 net13 net12 net27 GND g45n1svt m=1 l=45n w=240n
+XI0 PHI GND VDD net12 / inv
+.ENDS
+
+************************************************************************
+* Library Name: systolic_array
+* Cell Name:    faabs
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT faabs A CIN COUT GND PHI RST SOUT VDD
+*.PININFO A:I CIN:I GND:I PHI:I RST:I VDD:I COUT:O SOUT:O
+XI0 A SOUT CIN COUT GND net017 VDD / Full_Adder
+XI1 RST net017 GND VDD net21 / NAND
+XI2 net21 GND PHI net20 VDD / FlipFlop
+XI3 net20 GND VDD SOUT / inv
+.ENDS
+
+************************************************************************
+* Library Name: systolic_array
+* Cell Name:    AND
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT AND A B GND VDD Y
+*.PININFO A:I B:I GND:I VDD:I Y:O
+MNM2 Y net14 GND GND g45n1svt m=1 l=45n w=120n
+MNM3 net14 A net24 GND g45n1svt m=1 l=45n w=240n
+MNM4 net24 B GND GND g45n1svt m=1 l=45n w=240n
+MPM0 net14 A VDD VDD g45p1svt m=1 l=45n w=240n
+MPM1 net14 B VDD VDD g45p1svt m=1 l=45n w=240n
+MPM2 Y net14 VDD VDD g45p1svt m=1 l=45n w=240n
+.ENDS
+
+************************************************************************
+* Library Name: systolic_array
+* Cell Name:    XOR_ni
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT XOR_ni A Abar B Bbar GND VDD Y
+*.PININFO A:I Abar:I B:I Bbar:I GND:I VDD:I Y:O
+MPM3 Y A net29 VDD g45p1svt m=1 l=45n w=480n
+MPM2 net29 Bbar VDD VDD g45p1svt m=1 l=45n w=480n
+MPM1 Y Abar net31 VDD g45p1svt m=1 l=45n w=480n
+MPM0 net31 B VDD VDD g45p1svt m=1 l=45n w=480n
+MNM3 net27 B GND GND g45n1svt m=1 l=45n w=240n
+MNM2 net28 Bbar GND GND g45n1svt m=1 l=45n w=240n
+MNM1 Y A net27 GND g45n1svt m=1 l=45n w=240n
+MNM0 Y Abar net28 GND g45n1svt m=1 l=45n w=240n
+.ENDS
+
+************************************************************************
+* Library Name: accumulator_bitslice
+* Cell Name:    NOR
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT NOR A B GND VDD Y
+*.PININFO A:I B:I GND:I VDD:I Y:O
+MNM1 Y B GND GND g45n1svt m=1 l=45n w=120n
+MNM0 Y A GND GND g45n1svt m=1 l=45n w=120n
+MPM1 Y B net17 VDD g45p1svt m=1 l=45n w=480n
+MPM0 net17 A VDD VDD g45p1svt m=1 l=45n w=480n
+.ENDS
+
+************************************************************************
+* Library Name: systolic_array
+* Cell Name:    Half_Adder
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT Half_Adder A B COUT GND SUM VDD
+*.PININFO A:I B:I GND:I VDD:I COUT:O SUM:O
+XI2 A net10 B net17 GND VDD SUM / XOR_ni
+XI4 B GND VDD net17 / inv
+XI3 A GND VDD net10 / inv
+XI5 net10 net17 GND VDD COUT / NOR
+.ENDS
+
+************************************************************************
+* Library Name: systolic_array
+* Cell Name:    Multiplier
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT Multiplier A0 A1 A2 A3 B0 B1 B2 B3 GND P0 P1 P2 P3 P4 P5 P6 P7 VDD
+*.PININFO A0:I A1:I A2:I A3:I B0:I B1:I B2:I B3:I GND:I VDD:I P0:O P1:O P2:O 
+*.PININFO P3:O P4:O P5:O P6:O P7:O
+XI23 B3 A3 GND VDD net079 / AND
+XI15 B2 A0 GND VDD net051 / AND
+XI14 B2 A1 GND VDD net050 / AND
+XI13 B2 A2 GND VDD net049 / AND
+XI7 B1 A0 GND VDD net48 / AND
+XI5 B1 A2 GND VDD net24 / AND
+XI4 B1 A1 GND VDD net62 / AND
+XI2 B0 A2 GND VDD net30 / AND
+XI1 B0 A1 GND VDD net47 / AND
+XI0 B0 A0 GND VDD P0 / AND
+XI22 B3 A2 GND VDD net081 / NAND
+XI21 B3 A1 GND VDD net082 / NAND
+XI20 B3 A0 GND VDD net083 / NAND
+XI12 B2 A3 GND VDD net052 / NAND
+XI6 B1 A3 GND VDD net39 / NAND
+XI3 B0 A3 GND VDD net42 / NAND
+XI31 net078 net083 net092 GND P3 VDD / Half_Adder
+XI32 net088 VDD net0107 GND P7 VDD / Half_Adder
+XI30 net60 net051 net053 GND P2 VDD / Half_Adder
+XI29 net47 net48 net45 GND P1 VDD / Half_Adder
+XI28 net072 net079 net090 net088 GND P6 VDD / Full_Adder
+XI27 net073 net081 net091 net090 GND P5 VDD / Full_Adder
+XI26 net076 net082 net092 net091 GND P4 VDD / Full_Adder
+XI19 net49 net052 net054 net072 GND net073 VDD / Full_Adder
+XI18 net50 net049 net055 net054 GND net076 VDD / Full_Adder
+XI17 net55 net050 net053 net055 GND net078 VDD / Full_Adder
+XI11 net39 VDD net54 net49 GND net50 VDD / Full_Adder
+XI10 net42 net24 net59 net54 GND net55 VDD / Full_Adder
+XI9 net30 net62 net45 net59 GND net60 VDD / Full_Adder
+.ENDS
+
+************************************************************************
+* Library Name: systolic_array
+* Cell Name:    proc_el
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT proc_el A0 A0P A1 A1P A2 A2P A3 A3P B0 B0P B1 B1P B2 B2P B3 B3P GND 
++ PHI RST S0 S1 S2 S3 S4 S5 S6 S7 VDD
+*.PININFO A0:I A1:I A2:I A3:I B0:I B1:I B2:I B3:I GND:I PHI:I RST:I VDD:I 
+*.PININFO A0P:O A1P:O A2P:O A3P:O B0P:O B1P:O B2P:O B3P:O S0:O S1:O S2:O S3:O 
+*.PININFO S4:O S5:O S6:O S7:O
+XI8 net13 net14 net21 GND PHI RST S7 VDD / faabs
+XI7 net12 net15 net14 GND PHI RST S6 VDD / faabs
+XI6 net11 net16 net15 GND PHI RST S5 VDD / faabs
+XI5 net10 net17 net16 GND PHI RST S4 VDD / faabs
+XI4 net9 net18 net17 GND PHI RST S3 VDD / faabs
+XI3 net8 net19 net18 GND PHI RST S2 VDD / faabs
+XI2 net7 net20 net19 GND PHI RST S1 VDD / faabs
+XI1 net6 GND net20 GND PHI RST S0 VDD / faabs
+XI9 A0 A1 A2 A3 B0 B1 B2 B3 GND net6 net7 net8 net9 net10 net11 net12 net13 
++ VDD / Multiplier
+XI44 RST B3 GND VDD net060 / AND
+XI45 RST B2 GND VDD net061 / AND
+XI46 RST B1 GND VDD net062 / AND
+XI47 RST B0 GND VDD net063 / AND
+XI48 RST A3 GND VDD net064 / AND
+XI49 RST A2 GND VDD net065 / AND
+XI50 RST A1 GND VDD net066 / AND
+XI51 RST A0 GND VDD net067 / AND
+XI35 net060 GND PHI B3P VDD / FlipFlop
+XI34 net061 GND PHI B2P VDD / FlipFlop
+XI33 net062 GND PHI B1P VDD / FlipFlop
+XI32 net063 GND PHI B0P VDD / FlipFlop
+XI31 net064 GND PHI A3P VDD / FlipFlop
+XI30 net065 GND PHI A2P VDD / FlipFlop
+XI29 net066 GND PHI A1P VDD / FlipFlop
+XI28 net067 GND PHI A0P VDD / FlipFlop
+.ENDS
+
+************************************************************************
+* Library Name: systolic_array
+* Cell Name:    sys_arr_unp
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT sys_arr_unp A00_0 A00_1 A00_2 A00_3 A01_0 A01_1 A01_2 A01_3 A02_0 
++ A02_1 A02_2 A02_3 A03_0 A03_1 A03_2 A03_3 B00_0 B00_1 B00_2 B00_3 B10_0 
++ B10_1 B10_2 B10_3 B20_0 B20_1 B20_2 B20_3 B30_0 B30_1 B30_2 B30_3 GND PHI 
++ RST S00_0 S00_1 S00_2 S00_3 S00_4 S00_5 S00_6 S00_7 S01_0 S01_1 S01_2 S01_3 
++ S01_4 S01_5 S01_6 S01_7 S02_0 S02_1 S02_2 S02_3 S02_4 S02_5 S02_6 S02_7 
++ S03_0 S03_1 S03_2 S03_3 S03_4 S03_5 S03_6 S03_7 S10_0 S10_1 S10_2 S10_3 
++ S10_4 S10_5 S10_6 S10_7 S11_0 S11_1 S11_2 S11_3 S11_4 S11_5 S11_6 S11_7 
++ S12_0 S12_1 S12_2 S12_3 S12_4 S12_5 S12_6 S12_7 S13_0 S13_1 S13_2 S13_3 
++ S13_4 S13_5 S13_6 S13_7 S20_0 S20_1 S20_2 S20_3 S20_4 S20_5 S20_6 S20_7 
++ S21_0 S21_1 S21_2 S21_3 S21_4 S21_5 S21_6 S21_7 S22_0 S22_1 S22_2 S22_3 
++ S22_4 S22_5 S22_6 S22_7 S23_0 S23_1 S23_2 S23_3 S23_4 S23_5 S23_6 S23_7 
++ S30_0 S30_1 S30_2 S30_3 S30_4 S30_5 S30_6 S30_7 S31_0 S31_1 S31_2 S31_3 
++ S31_4 S31_5 S31_6 S31_7 S32_0 S32_1 S32_2 S32_3 S32_4 S32_5 S32_6 S32_7 
++ S33_0 S33_1 S33_2 S33_3 S33_4 S33_5 S33_6 S33_7 VDD
+*.PININFO A00_0:I A00_1:I A00_2:I A00_3:I A01_0:I A01_1:I A01_2:I A01_3:I 
+*.PININFO A02_0:I A02_1:I A02_2:I A02_3:I A03_0:I A03_1:I A03_2:I A03_3:I 
+*.PININFO B00_0:I B00_1:I B00_2:I B00_3:I B10_0:I B10_1:I B10_2:I B10_3:I 
+*.PININFO B20_0:I B20_1:I B20_2:I B20_3:I B30_0:I B30_1:I B30_2:I B30_3:I 
+*.PININFO GND:I PHI:I RST:I VDD:I S00_0:O S00_1:O S00_2:O S00_3:O S00_4:O 
+*.PININFO S00_5:O S00_6:O S00_7:O S01_0:O S01_1:O S01_2:O S01_3:O S01_4:O 
+*.PININFO S01_5:O S01_6:O S01_7:O S02_0:O S02_1:O S02_2:O S02_3:O S02_4:O 
+*.PININFO S02_5:O S02_6:O S02_7:O S03_0:O S03_1:O S03_2:O S03_3:O S03_4:O 
+*.PININFO S03_5:O S03_6:O S03_7:O S10_0:O S10_1:O S10_2:O S10_3:O S10_4:O 
+*.PININFO S10_5:O S10_6:O S10_7:O S11_0:O S11_1:O S11_2:O S11_3:O S11_4:O 
+*.PININFO S11_5:O S11_6:O S11_7:O S12_0:O S12_1:O S12_2:O S12_3:O S12_4:O 
+*.PININFO S12_5:O S12_6:O S12_7:O S13_0:O S13_1:O S13_2:O S13_3:O S13_4:O 
+*.PININFO S13_5:O S13_6:O S13_7:O S20_0:O S20_1:O S20_2:O S20_3:O S20_4:O 
+*.PININFO S20_5:O S20_6:O S20_7:O S21_0:O S21_1:O S21_2:O S21_3:O S21_4:O 
+*.PININFO S21_5:O S21_6:O S21_7:O S22_0:O S22_1:O S22_2:O S22_3:O S22_4:O 
+*.PININFO S22_5:O S22_6:O S22_7:O S23_0:O S23_1:O S23_2:O S23_3:O S23_4:O 
+*.PININFO S23_5:O S23_6:O S23_7:O S30_0:O S30_1:O S30_2:O S30_3:O S30_4:O 
+*.PININFO S30_5:O S30_6:O S30_7:O S31_0:O S31_1:O S31_2:O S31_3:O S31_4:O 
+*.PININFO S31_5:O S31_6:O S31_7:O S32_0:O S32_1:O S32_2:O S32_3:O S32_4:O 
+*.PININFO S32_5:O S32_6:O S32_7:O S33_0:O S33_1:O S33_2:O S33_3:O S33_4:O 
+*.PININFO S33_5:O S33_6:O S33_7:O
+XI15 net385 net446 net384 net447 net383 net448 net382 net449 net406 net450 
++ net407 net451 net408 net452 net409 net453 GND PHI RST S33_0 S33_1 S33_2 
++ S33_3 S33_4 S33_5 S33_6 S33_7 VDD / proc_el
+XI14 net389 net385 net388 net384 net387 net383 net386 net382 net402 net454 
++ net403 net455 net404 net456 net405 net457 GND PHI RST S23_0 S23_1 S23_2 
++ S23_3 S23_4 S23_5 S23_6 S23_7 VDD / proc_el
+XI13 net393 net389 net392 net388 net391 net387 net390 net386 net394 net458 
++ net395 net459 net396 net460 net397 net461 GND PHI RST S13_0 S13_1 S13_2 
++ S13_3 S13_4 S13_5 S13_6 S13_7 VDD / proc_el
+XI12 A03_0 net393 A03_1 net392 A03_2 net391 A03_3 net390 net366 net462 net367 
++ net463 net368 net464 net369 net465 GND PHI RST S03_0 S03_1 S03_2 S03_3 S03_4 
++ S03_5 S03_6 S03_7 VDD / proc_el
+XI11 A02_0 net362 A02_1 net363 A02_2 net364 A02_3 net365 net361 net366 net360 
++ net367 net359 net368 net358 net369 GND PHI RST S02_0 S02_1 S02_2 S02_3 S02_4 
++ S02_5 S02_6 S02_7 VDD / proc_el
+XI10 net362 net401 net363 net400 net364 net399 net365 net398 net437 net394 
++ net436 net395 net435 net396 net434 net397 GND PHI RST S12_0 S12_1 S12_2 
++ S12_3 S12_4 S12_5 S12_6 S12_7 VDD / proc_el
+XI9 net401 net413 net400 net412 net399 net411 net398 net410 net433 net402 
++ net432 net403 net431 net404 net430 net405 GND PHI RST S22_0 S22_1 S22_2 
++ S22_3 S22_4 S22_5 S22_6 S22_7 VDD / proc_el
+XI8 net413 net466 net412 net467 net411 net468 net410 net469 net429 net406 
++ net428 net407 net427 net408 net426 net409 GND PHI RST S32_0 S32_1 S32_2 
++ S32_3 S32_4 S32_5 S32_6 S32_7 VDD / proc_el
+XI7 net425 net421 net424 net420 net423 net419 net422 net418 net374 net437 
++ net375 net436 net376 net435 net377 net434 GND PHI RST S11_0 S11_1 S11_2 
++ S11_3 S11_4 S11_5 S11_6 S11_7 VDD / proc_el
+XI6 A01_0 net425 A01_1 net424 A01_2 net423 A01_3 net422 net445 net361 net444 
++ net360 net443 net359 net442 net358 GND PHI RST S01_0 S01_1 S01_2 S01_3 S01_4 
++ S01_5 S01_6 S01_7 VDD / proc_el
+XI5 net421 net417 net420 net416 net419 net415 net418 net414 net441 net433 
++ net440 net432 net439 net431 net438 net430 GND PHI RST S21_0 S21_1 S21_2 
++ S21_3 S21_4 S21_5 S21_6 S21_7 VDD / proc_el
+XI4 net417 net470 net416 net471 net415 net472 net414 net473 net350 net429 
++ net351 net428 net352 net427 net353 net426 GND PHI RST S31_0 S31_1 S31_2 
++ S31_3 S31_4 S31_5 S31_6 S31_7 VDD / proc_el
+XI3 net354 net474 net355 net475 net356 net476 net357 net477 B30_0 net350 B30_1 
++ net351 B30_2 net352 B30_3 net353 GND PHI RST S30_0 S30_1 S30_2 S30_3 S30_4 
++ S30_5 S30_6 S30_7 VDD / proc_el
+XI2 net370 net354 net371 net355 net372 net356 net373 net357 B20_0 net441 B20_1 
++ net440 B20_2 net439 B20_3 net438 GND PHI RST S20_0 S20_1 S20_2 S20_3 S20_4 
++ S20_5 S20_6 S20_7 VDD / proc_el
+XI1 net378 net370 net478 net371 net380 net372 net381 net373 B10_0 net374 B10_1 
++ net375 B10_2 net376 B10_3 net377 GND PHI RST S10_0 S10_1 S10_2 S10_3 S10_4 
++ S10_5 S10_6 S10_7 VDD / proc_el
+XI0 A00_0 net378 A00_1 net478 A00_2 net380 A00_3 net381 B00_0 net445 B00_1 
++ net444 B00_2 net443 B00_3 net442 GND PHI RST S00_0 S00_1 S00_2 S00_3 S00_4 
++ S00_5 S00_6 S00_7 VDD / proc_el
+.ENDS
+

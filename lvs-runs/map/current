@@ -1,0 +1,38 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "sys_arr_unp"
+  repList "auCdl schematic"
+  stopList "auCdl"
+  hierDelim "."
+  netlistDir "/home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/"
+ )
+( model
+( "systolic_array/proc_el/schematic" "proc_el" )
+( "systolic_array/AND/schematic" "AND" )
+( "accumulator_bitslice/NOR/schematic" "NOR" )
+( "systolic_array/Full_Adder/schematic" "Full_Adder" )
+( "systolic_array/faabs/schematic" "faabs" )
+( "systolic_array/Half_Adder/schematic" "Half_Adder" )
+( "accumulator_bitslice/FlipFlop/schematic" "FlipFlop" )
+( "systolic_array/XOR_ni/schematic" "XOR_ni" )
+( "systolic_array/Multiplier/schematic" "Multiplier" )
+( "systolic_array/sys_arr_unp/schematic" "sys_arr_unp" )
+( "accumulator_bitslice/XOR/schematic" "XOR" )
+( "lab1_virt/NAND/schematic" "NAND" )
+( "accumulator_bitslice/inv/schematic" "inv" )
+ )
+( "AND" "ihnl/cds6/map" )
+( "sys_arr_unp" "ihnl/cds12/map" )
+( "XOR_ni" "ihnl/cds7/map" )
+( "Multiplier" "ihnl/cds10/map" )
+( "Half_Adder" "ihnl/cds9/map" )
+( "faabs" "ihnl/cds5/map" )
+( "FlipFlop" "ihnl/cds4/map" )
+( "Full_Adder" "ihnl/cds3/map" )
+( "XOR" "ihnl/cds2/map" )
+( "inv" "ihnl/cds1/map" )
+( "NOR" "ihnl/cds8/map" )
+( "proc_el" "ihnl/cds11/map" )
+( "NAND" "ihnl/cds0/map" )
+ )

@@ -1,0 +1,21 @@
+# XXXX: Instance Cross Reference (ixf) (File format 1)
+# XXXX: Layout Primary Half_Adder
+# XXXX: End of header.
+% M 4 M 4
+% Half_Adder 6 Half_Adder 6
+0 M13 0 XI2/MPM3  
+0 M11 0 XI2/MPM2  
+0 M10 0 XI2/MPM1  
+0 M8 0 XI2/MPM0  
+0 M3 0 XI2/MNM3  
+0 M0 0 XI2/MNM2  
+0 M5 0 XI2/MNM1  
+0 M2 0 XI2/MNM0  
+0 M12 0 XI4/MPM0  
+0 M4 0 XI4/MNM0  
+0 M9 0 XI3/MPM0  
+0 M1 0 XI3/MNM0  
+0 M14 0 XI5/MPM1 X
+0 M15 0 XI5/MPM0 X
+0 M6 0 XI5/MNM1  
+0 M7 0 XI5/MNM0  

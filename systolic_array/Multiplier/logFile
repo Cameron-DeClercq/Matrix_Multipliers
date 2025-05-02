@@ -1,0 +1,40 @@
+header
+"PSFversion" "1.00"
+"simulator" "HSPICE"
+"version" "T-2022.06-3 linux64"
+"rundate" "22:30:43 03/21/2025 "
+"runtitle" "* first line is treated as comment                                "
+"runtype" "logFile"
+TYPE
+"analysisInst" STRUCT(
+"analysisType" STRING *
+"dataFile" STRING *
+"format" STRING *
+"parent" STRING *
+"sweepVariable" ARRAY ( * ) STRING *
+"description" STRING * )
+VALUE
+"element" "analysisInst" ( 
+"Element Information"
+"mult.el0"
+"PSF"
+""
+()
+"Element Information"
+)
+"timeSweep" "analysisInst" ( 
+"Transient Analysis"
+"mult.tr0"
+"PSF"
+""
+()
+"Transient Analysis"
+)
+"summary" "analysisInst" ( 
+"Summary Information"
+"mult.su0"
+"PSF"
+""
+()
+"Summary Information"
+)

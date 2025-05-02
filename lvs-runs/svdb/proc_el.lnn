@@ -1,0 +1,121 @@
+# SVDB: Layout Netlist Names (lnn)
+# SVDB: Layout Primary proc_el
+% M2_M1_CDNS_1 1
+% M2_M1_CDNS_2 1
+% M2_M1_CDNS_3 1
+% M1_PO_CDNS_4 1
+% M1_NWELL_CDNS_5 1
+% M1_PSUB_CDNS_6 1
+% pmos1v_CDNS_7 5
+1 S_source_0
+2 D_drain_1
+% nmos1v_CDNS_8 4
+1 S_source_0
+3 D_drain_1
+% nmos1v_CDNS_9 3
+1 S_source_0
+2 D_drain_1
+% pmos1v_CDNS_10 4
+1 S_source_0
+3 D_drain_1
+% FlipFlop 11
+1 VDD
+2 GND
+3 A
+4 PHI
+6 Y
+% NAND 6
+1 VDD
+2 GND
+3 Y
+4 B
+5 A
+% XOR 11
+1 B
+2 A
+3 GND
+4 VDD
+5 Y
+% Full_Adder 14
+1 B
+2 A
+3 VDD
+4 GND
+5 CIN
+6 SUM
+7 COUT
+% inv 4
+1 VDD
+2 GND
+3 A
+4 Y
+% faabs 17
+1 SOUT
+2 CIN
+3 COUT
+4 GND
+5 VDD
+6 A
+7 RST
+8 PHI
+% AND 7
+1 VDD
+2 GND
+3 B
+4 A
+5 Y
+% Half_Adder 13
+1 B
+2 A
+3 GND
+4 VDD
+5 SUM
+6 COUT
+% Multiplier 52
+1 A0
+2 A1
+3 A2
+4 A3
+5 B0
+6 B1
+7 B2
+8 B3
+9 P0
+10 VDD
+11 GND
+12 P3
+13 P1
+14 P2
+15 P4
+16 P5
+17 P6
+18 P7
+% proc_el 28
+1 B3P
+2 B3
+3 B2P
+4 B2
+5 B1P
+6 B1
+7 B0P
+8 B0
+9 VDD
+11 GND
+12 RST
+13 PHI
+17 A0
+20 A0P
+21 A1
+29 S7
+30 A1P
+31 A2
+32 A2P
+33 A3
+34 A3P
+48 S6
+50 S5
+52 S4
+54 S3
+56 S2
+58 S1
+60 S0

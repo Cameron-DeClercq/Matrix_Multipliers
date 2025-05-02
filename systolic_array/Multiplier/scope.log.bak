@@ -1,0 +1,284 @@
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 900x785+8+85
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 851x958+1+31
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile /home/ece558_658_2024/cdeclercq/559/unppl_design/systolic_array/Multiplier/mult.tr0 1 openonly
+# PF:1
+wm geometry .sigmgr._PF:1 232x242+853+533
+wm geometry .sigmgr._PF:1 232x242+615+704
+Mdi:ArrangeIcons
+wm geometry .sigmgr 367x204+475+110
+wm geometry .sigmgr 367x204+503+126
+Mdi:Resize 490 814
+Mdi:Move 5 5
+wm geometry .sigmgr._PF:1 232x573+615+373
+wm geometry .sigmgr._PF:1 232x242+615+704
+wm geometry .sigmgr 376x204+466+110
+Mdi:ArrangeIcons
+wm geometry .sigmgr 367x204+475+110
+wm geometry .sigmgr 367x204+503+126
+wm geometry .sigmgr._PF:1 232x573+615+373
+pf:read PF:1 v(p0)
+# WF:1:1
+Graph addsignal WF:1:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:1 v(p1)
+# WF:1:15
+Graph addsignal WF:1:15 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+pf:read PF:1 v(p2)
+# WF:1:14
+Graph addsignal WF:1:14 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+pf:read PF:1 v(p3)
+# WF:1:16
+Graph addsignal WF:1:16 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+pf:read PF:1 v(p4)
+# WF:1:17
+Graph addsignal WF:1:17 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal4
+pf:read PF:1 v(p5)
+# WF:1:18
+Graph addsignal WF:1:18 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal5
+pf:read PF:1 v(p6)
+# WF:1:19
+Graph addsignal WF:1:19 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal6
+pf:read PF:1 v(p7)
+# WF:1:20
+Graph addsignal WF:1:20 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal7
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 1707x967+0+23
+Mdi:ArrangeIcons
+wm geometry . 851x958+1+31
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 1707x967+0+23
+Mdi:ArrangeIcons
+wm geometry . 1707x967+8+31
+Mdi:ArrangeIcons
+wm geometry . 1707x967+0+23
+Mdi:ArrangeIcons
+wm geometry . 900x785+8+85
+Mdi:ArrangeIcons
+wm geometry . 1707x967+8+31
+Mdi:ArrangeIcons
+wm geometry . 1707x967+0+23
+Mdi:ArrangeIcons
+wm geometry . 900x785+8+85
+Mdi:ArrangeIcons
+wm geometry . 851x958+1+31
+Mdi:ArrangeIcons
+wm geometry . 851x958+0+0
+Mdi:ArrangeIcons
+wm geometry . 851x958+1+31
+Mdi:ArrangeIcons
+wm geometry . 851x958+0+0
+Mdi:ArrangeIcons
+wm geometry . 851x958+1+31
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 900x785+8+85
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 900x958+8+31
+Graph:Select Graph0
+Graph:DSel
+Graph itemselect Signal5 add
+# Signal5
+Mdi:ArrangeIcons
+Graph sigconfig Signal5 -region 3 -rgnindex 1
+Graph sigconfig Signal5 -region 5 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #89ffbb -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p5) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+Graph:DSel
+Graph itemselect Signal4 add
+# Signal4
+Graph sigconfig Signal4 -region 3 -rgnindex 1
+Graph sigconfig Signal4 -region 4 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #FF8000 -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p4) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+Graph sigconfig Signal4 -region 3 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #FF8000 -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p4) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+Graph sigconfig Signal4 -region 4 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #FF8000 -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p4) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+Graph sigconfig Signal4 -region 3 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #FF8000 -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p4) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+Graph sigconfig Signal4 -region 4 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #FF8000 -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p4) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+Graph sigconfig Signal4 -region 3 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #FF8000 -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p4) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+wm geometry .sigmgr 367x204+523+121
+Mdi:ArrangeIcons
+wm geometry . 900x958+0+0
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 900x958+8+31
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 900x785+8+85
+Mdi:ArrangeIcons
+wm geometry . 900x958+8+31
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 900x785+8+85
+Mdi:ArrangeIcons
+wm geometry . 900x785+0+0
+Mdi:ArrangeIcons
+Graph:DSel
+Mdi:ArrangeIcons
+wm geometry . 900x785+8+85
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 851x958+1+31
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry .sigmgr 367x204+511+121
+wm geometry .sigmgr 367x204+523+121
+Mdi:ArrangeIcons
+wm geometry .sigmgr 367x204+511+121
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:Reload 0 {{(1) mult.tr0}}
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:Reload 0 {{(1) mult.tr0}}
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 851x958+0+0
+Mdi:ArrangeIcons
+wm geometry . 851x958+1+31
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 851x958+0+0
+Mdi:ArrangeIcons
+wm geometry . 851x958+1+31
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 900x785+8+85
+Mdi:ArrangeIcons
+wm geometry . 851x958+1+31
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 900x785+8+85
+ScopeSigMgr:Unload 0 {{(1) mult.tr0}}
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile /home/ece558_658_2024/cdeclercq/559/unppl_design/systolic_array/Multiplier/mult.tr0 1 openonly
+# PF:4
+wm geometry .sigmgr._PF:4 232x242+853+533
+Mdi:ArrangeIcons
+wm geometry . 851x958+1+31
+wm geometry .sigmgr._PF:4 232x242+629+682
+wm geometry .sigmgr._PF:4 232x554+629+370
+wm geometry .sigmgr._PF:4 232x554+605+367
+wm geometry .sigmgr._PF:4 232x242+853+533
+Mdi:ArrangeIcons
+wm geometry .sigmgr._PF:4 232x242+629+682
+wm geometry .sigmgr._PF:4 232x554+629+370
+wm geometry .sigmgr._PF:4 232x554+605+367
+GrXY:NewGraph
+# Graph1
+pf:read PF:4 v(p0)
+# WF:4:1
+Graph addsignal WF:4:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:4 v(p1)
+# WF:4:10
+Graph addsignal WF:4:10 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+pf:read PF:4 v(p2)
+# WF:4:11
+Graph addsignal WF:4:11 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+pf:read PF:4 v(p3)
+# WF:4:12
+Graph addsignal WF:4:12 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+pf:read PF:4 v(p4)
+# WF:4:13
+Graph addsignal WF:4:13 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal4
+pf:read PF:4 v(p5)
+# WF:4:14
+Graph addsignal WF:4:14 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal5
+pf:read PF:4 v(p6)
+# WF:4:15
+Graph addsignal WF:4:15 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal6
+pf:read PF:4 v(p7)
+# WF:4:16
+Graph addsignal WF:4:16 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal7
+Mdi:Resize 490 823
+Mdi:Move 5 5
+Graph:Select Graph1
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+Graph sigconfig Signal0 -region 1 -rgnindex 1
+Graph:DSel
+Graph itemselect Signal2 add
+# Signal2
+Graph sigconfig {Signal2 Signal0} -region {0 0} -rgnindex {1 2}
+Graph:DSel
+Graph itemselect Signal3 add
+# Signal3
+Graph sigconfig {Signal3 Signal2 Signal0} -region {0 0 0} -rgnindex {1 2 3}
+Graph:DSel
+Graph itemselect Signal4 add
+# Signal4
+Graph sigconfig {Signal4 Signal3 Signal2 Signal0} -region {0 0 0 0} -rgnindex {1 2 3 4}
+Graph:DSel
+Graph itemselect Signal5 add
+# Signal5
+Graph sigconfig {Signal5 Signal3 Signal2 Signal0} -region {0 0 0 0} -rgnindex {2 3 4 5}
+Graph:DSel
+Graph itemselect Signal6 add
+# Signal6
+Graph sigconfig {Signal6 Signal1 Signal4 Signal5 Signal3 Signal2 Signal0} -region {0 0 0 0 0 0 0} -rgnindex {0 1 2 3 4 5 6}
+Graph:DSel
+Graph itemselect Signal7 add
+# Signal7
+Graph sigconfig {Signal7 Signal1 Signal4 Signal5 Signal3 Signal2 Signal0} -region {0 0 0 0 0 0 0} -rgnindex {1 2 3 4 5 6 7}
+ScopeSigMgr:Unload 0 {{(1) mult.tr0}}
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons

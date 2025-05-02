@@ -1,0 +1,28 @@
+			*****************************************************
+			**                                                 **
+			**                L V S  R E P O R T               **
+			**                                                 **
+			*****************************************************
+
+
+Report File Name         : sys_arr_unp.rep
+ERC Summary File         : /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_unp.sum
+LVS Comparison Report    : sys_arr_unp.rep.cls
+LVS Softchk Report       : sys_arr_unp.softchk
+Layout Name              : /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_unp.gds.gz ("sys_arr_unp")
+User Name                : cdeclerc
+Creation Time            : Sun Apr 20 22:38:04 2025
+Current directory        : /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs
+Pegasus Version          : 22.20-p009 Wed Jan 18 17:06:09 PST 2023
+
+
+			*****************************************************
+			**                                                 **
+			**            D E V E X T  R E P O R T             **
+			**                                                 **
+			*****************************************************
+
+
+    LVS_SOFTCHK psubstrate -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK nwell_conn -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK Nburied -TYPE CONTACT   Total Result        0 (       0)

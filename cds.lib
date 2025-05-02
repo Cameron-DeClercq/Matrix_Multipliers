@@ -1,0 +1,11 @@
+SOFTINCLUDE /opt/cadence/ic618/share/cdssetup/cds.lib
+INCLUDE /opt/cadence/ic618/share/cdssetup/cds.lib
+DEFINE NCSU_TechLib_FreePDK45  $PDK_DIR/ncsu_basekit/lib/NCSU_TechLib_FreePDK45
+DEFINE NCSU_Devices_FreePDK45  $PDK_DIR/ncsu_basekit/lib/NCSU_Devices_FreePDK45
+DEFINE gpdk045 /opt/cadence/gpdk045/gpdk045_v_6_0/gpdk045
+DEFINE avTech /opt/cadence/assura/tools.lnx86/assura/etc/avtech/avTech
+DEFINE lab1_virt /home/ece558_658_2024/cdeclercq/lab1/lab1_virt
+#Removed by ddDeleteObj: DEFINE 1 /home/ece558_658_2024/cdeclercq/lab1/1
+DEFINE 1 /home/ece558_658_2024/cdeclercq/lab2/1
+DEFINE accumulator_bitslice /home/ece558_658_2024/cdeclercq/lab2/accumulator_bitslice
+DEFINE systolic_array /home/ece558_658_2024/cdeclercq/559/unppl_design/systolic_array

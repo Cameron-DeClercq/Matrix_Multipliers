@@ -1,0 +1,7 @@
+systolic_array Multiplier_ppl layout Multiplier_ppl
+systolic_array Half_Adder layout Half_Adder
+systolic_array Full_Adder layout Full_Adder
+accumulator_bitslice XOR layout XOR
+lab1_virt NAND layout NAND
+systolic_array AND layout AND
+accumulator_bitslice FlipFlop layout FlipFlop

@@ -1,0 +1,15 @@
+# XXXX: Instance Cross Reference (ixf) (File format 1)
+# XXXX: Layout Primary FlipFlop
+# XXXX: End of header.
+% M 4 M 4
+% FlipFlop 5 FlipFlop 5
+0 X43/M0 0 XI0/MNM0  
+0 X42/M0 0 XI0/MPM0  
+0 M2 0 MNM3  
+0 M0 0 MNM2  
+0 M3 0 MNM1  
+0 M1 0 MNM0  
+0 M7 0 MPM3  
+0 M5 0 MPM2  
+0 M6 0 MPM1  
+0 M4 0 MPM0  

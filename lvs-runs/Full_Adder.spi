@@ -1,0 +1,62 @@
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* CDL Netlist:                                              *
+*                                                           *
+* Cell Name  : Full_Adder                                   *
+* Netlisted  : Tue Apr 15 10:35:04 2025                     *
+* Pegasus Version: 22.20-p009 Wed Jan 18 17:06:09 PST 2023  *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+*.LDD
+*.DEVTMPLT 0 M(g45n1svt) _nmos1v ndiff_conn(D) poly_conn(G) ndiff_conn(S) psubstrate(B)
+*.DEVTMPLT 1 M(g45p1svt) _pmos1v pdiff_conn(D) poly_conn(G) pdiff_conn(S) nwell_conn(B)
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: XOR                                             *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt XOR B A GND VDD Y 6 7 8 9 10
++ 11
+*.DEVICECLIMB
+** N=11 EP=11 FDC=4
+M0 Y 7 10 GND g45n1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=3.52678 scb=0.000111658 scc=3.66286e-09 fw=2.4e-07 $X=-190 $Y=610 $dt=0
+M1 11 B GND GND g45n1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=3.52678 scb=0.000111658 scc=3.66286e-09 fw=2.4e-07 $X=1190 $Y=610 $dt=0
+M2 Y 7 8 VDD g45p1svt w=4.8e-07 l=4.5e-08 ad=6.72e-14 as=6.72e-14 pd=1.24e-06 ps=1.24e-06 sa=1.4e-07 sb=1.4e-07 sca=9.47395 scb=0.00759651 scc=0.000374483 fw=4.8e-07 $X=-190 $Y=3090 $dt=1
+M3 9 6 VDD VDD g45p1svt w=4.8e-07 l=4.5e-08 ad=6.72e-14 as=6.72e-14 pd=1.24e-06 ps=1.24e-06 sa=1.4e-07 sb=1.4e-07 sca=9.47395 scb=0.00759651 scc=0.000374483 fw=4.8e-07 $X=1190 $Y=3090 $dt=1
+.ends XOR
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: Full_Adder                                      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt Full_Adder A B CIN COUT GND SUM VDD
+** N=25 EP=7 FDC=36
+X16 B A GND VDD 5 11 12 22 23 15
++ 16 XOR $T=-6580 4190 0 0 $X=-9990 $Y=3980
+X17 CIN 5 GND VDD SUM 13 14 24 25 17
++ 18 XOR $T=230 4190 0 0 $X=-3180 $Y=3980
+M0 19 B GND GND g45n1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=7.55496 scb=0.00439692 scc=5.28262e-05 fw=2.4e-07 $X=-8320 $Y=-80 $dt=0
+M1 15 11 GND GND g45n1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=3.74562 scb=0.000165847 scc=1.15082e-08 fw=2.4e-07 $X=-8190 $Y=4800 $dt=0
+M2 12 A GND GND g45n1svt w=1.2e-07 l=4.5e-08 ad=1.68e-14 as=1.68e-14 pd=5.2e-07 ps=5.2e-07 sa=1.4e-07 sb=1.4e-07 sca=7.51692 scb=0.00440555 scc=4.26654e-05 fw=1.2e-07 $X=-8180 $Y=11050 $dt=0
+M3 4 A 19 GND g45n1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=7.15099 scb=0.00427132 scc=5.27961e-05 fw=2.4e-07 $X=-7070 $Y=-80 $dt=0
+M4 11 B GND GND g45n1svt w=1.2e-07 l=4.5e-08 ad=1.68e-14 as=1.68e-14 pd=5.2e-07 ps=5.2e-07 sa=1.4e-07 sb=1.4e-07 sca=7.31073 scb=0.00435535 scc=4.26584e-05 fw=1.2e-07 $X=-4520 $Y=11050 $dt=0
+M5 5 A 16 GND g45n1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=3.52678 scb=0.000111658 scc=3.66286e-09 fw=2.4e-07 $X=-4020 $Y=4800 $dt=0
+M6 20 5 GND GND g45n1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=7.15099 scb=0.00427132 scc=5.27961e-05 fw=2.4e-07 $X=-1700 $Y=-80 $dt=0
+M7 17 13 GND GND g45n1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=3.52678 scb=0.000111658 scc=3.66286e-09 fw=2.4e-07 $X=-1380 $Y=4800 $dt=0
+M8 14 5 GND GND g45n1svt w=1.2e-07 l=4.5e-08 ad=1.68e-14 as=1.68e-14 pd=5.2e-07 ps=5.2e-07 sa=1.4e-07 sb=1.4e-07 sca=7.31073 scb=0.00435535 scc=4.26584e-05 fw=1.2e-07 $X=-1370 $Y=11050 $dt=0
+M9 8 CIN 20 GND g45n1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=7.15099 scb=0.00427132 scc=5.27961e-05 fw=2.4e-07 $X=-450 $Y=-80 $dt=0
+M10 21 8 GND GND g45n1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=7.15099 scb=0.00427132 scc=5.27961e-05 fw=2.4e-07 $X=1510 $Y=-80 $dt=0
+M11 13 CIN GND GND g45n1svt w=1.2e-07 l=4.5e-08 ad=1.68e-14 as=1.68e-14 pd=5.2e-07 ps=5.2e-07 sa=1.4e-07 sb=1.4e-07 sca=8.21929 scb=0.00480361 scc=4.29843e-05 fw=1.2e-07 $X=2290 $Y=11050 $dt=0
+M12 COUT 4 21 GND g45n1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=10.2426 scb=0.00768835 scc=7.71844e-05 fw=2.4e-07 $X=2760 $Y=-80 $dt=0
+M13 SUM 5 18 GND g45n1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=6.87462 scb=0.0039663 scc=3.19255e-05 fw=2.4e-07 $X=2790 $Y=4800 $dt=0
+M14 4 B VDD VDD g45p1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=22.1446 scb=0.0211749 scc=0.0017623 fw=2.4e-07 $X=-8320 $Y=1800 $dt=1
+M15 22 B VDD VDD g45p1svt w=4.8e-07 l=4.5e-08 ad=6.72e-14 as=6.72e-14 pd=1.24e-06 ps=1.24e-06 sa=1.4e-07 sb=1.4e-07 sca=9.69279 scb=0.0076507 scc=0.000374491 fw=4.8e-07 $X=-8190 $Y=7280 $dt=1
+M16 12 A VDD VDD g45p1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=34.3484 scb=0.025207 scc=0.0044195 fw=2.4e-07 $X=-8180 $Y=9290 $dt=1
+M17 4 A VDD VDD g45p1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=20.4324 scb=0.0198648 scc=0.00175929 fw=2.4e-07 $X=-7070 $Y=1800 $dt=1
+M18 11 B VDD VDD g45p1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=34.1422 scb=0.0251568 scc=0.00441949 fw=2.4e-07 $X=-4520 $Y=9290 $dt=1
+M19 5 A 23 VDD g45p1svt w=4.8e-07 l=4.5e-08 ad=6.72e-14 as=6.72e-14 pd=1.24e-06 ps=1.24e-06 sa=1.4e-07 sb=1.4e-07 sca=9.47395 scb=0.00759651 scc=0.000374483 fw=4.8e-07 $X=-4020 $Y=7280 $dt=1
+M20 8 5 VDD VDD g45p1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=20.4324 scb=0.0198648 scc=0.00175929 fw=2.4e-07 $X=-1700 $Y=1800 $dt=1
+M21 24 CIN VDD VDD g45p1svt w=4.8e-07 l=4.5e-08 ad=6.72e-14 as=6.72e-14 pd=1.24e-06 ps=1.24e-06 sa=1.4e-07 sb=1.4e-07 sca=9.47395 scb=0.00759651 scc=0.000374483 fw=4.8e-07 $X=-1380 $Y=7280 $dt=1
+M22 14 5 VDD VDD g45p1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=34.1422 scb=0.0251568 scc=0.00441949 fw=2.4e-07 $X=-1370 $Y=9290 $dt=1
+M23 8 CIN VDD VDD g45p1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=20.4324 scb=0.0198648 scc=0.00175929 fw=2.4e-07 $X=-450 $Y=1800 $dt=1
+M24 COUT 8 VDD VDD g45p1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=20.4324 scb=0.0198648 scc=0.00175929 fw=2.4e-07 $X=1510 $Y=1800 $dt=1
+M25 13 CIN VDD VDD g45p1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=35.0507 scb=0.0256051 scc=0.00441982 fw=2.4e-07 $X=2290 $Y=9290 $dt=1
+M26 COUT 4 VDD VDD g45p1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=25.5159 scb=0.0267815 scc=0.00187996 fw=2.4e-07 $X=2760 $Y=1800 $dt=1
+M27 SUM 5 25 VDD g45p1svt w=4.8e-07 l=4.5e-08 ad=6.72e-14 as=6.72e-14 pd=1.24e-06 ps=1.24e-06 sa=1.4e-07 sb=1.4e-07 sca=12.8218 scb=0.0114511 scc=0.000406405 fw=4.8e-07 $X=2790 $Y=7280 $dt=1
+.ends Full_Adder

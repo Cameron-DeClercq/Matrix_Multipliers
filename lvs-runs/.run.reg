@@ -1,0 +1,83 @@
+# This Pegasus GUI File Index Registry was created automatically
+# Do not attempt to modify this file as any change may lead
+# to Pegasus GUI Tools malfunction.
+# 
+"Run Directory" internal none /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs
+"Current Directory" internal none /home/ece558_658_2024/cdeclercq/559/unppl_design
+"Cadence Directory" internal none /home/ece558_658_2024/cdeclercq/559/unppl_design/.cadence/
+"Job Signature" internal none IPVS_1745203075_891293
+"Pegasus Job Mode" internal none lvs
+"GUI Flow" internal none virtuoso6
+"GUI Preset" internal none /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/.preset.autosave
+"Technology Name" internal none "gpdk045"
+"Technology RuleSet" internal none "default"
+"Technology Mapping File" internal none /ece558_658/pdk/verification/pvtech.lib
+"Technology Rule File" internal none /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/.technology.rul
+"Pegasus Version" internal none 22.20-p009
+"Binary Name" internal none pegasusgui
+"Pegasus Build Date" internal none "Wed Jan 18 17:06:09 PST 2023"
+"Pegasus Job Time" internal none 1745203077
+"DFII version" internal none 6.1.8.0
+"Rule File" input text /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/.technology.rul
+"Layout Scale" internal none 0.0005
+"Layout TechLib" internal none gpdk045
+"Layout Library Name" internal none systolic_array
+"Layout Cell Name" internal none sys_arr_unp
+"Layout View Name" internal none layout
+"Layout ConvertPin" internal text geometryAndText
+"Layout HierDepth" internal none 32
+"Layout MaxVertices" internal none 2048
+"Layout Top Cell" internal none sys_arr_unp
+"Layout GDSII" input none /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_unp.gds.gz
+"Intermediate GDSII File" output none /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_unp.gds.gz
+"Intermediate GDSII File creation Errors" internal text /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/PIPO1.LOG
+"Intermediate OASIS File creation Errors" internal text /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/PIPO1.LOG
+"Layout ReplaceBusBitChar" input none nil
+"Layout NoConvertHalfWidthPath" input none nil
+"Schematic Library Name" internal none systolic_array
+"Schematic Cell Name" internal none sys_arr_unp
+"Schematic View Name" internal none schematic
+"Schematic Top Cell" internal none sys_arr_unp
+"Schematic Netlist" output text /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_unp.cdl
+"Extracted Spice File" output text /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_unp.spi
+"Quantus QRC Data" internal none ENABLED
+"Do not check rules files before run" internal none ENABLED
+"Control File" input text /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/pegasuslvsctl
+"CDL Out Stop List" internal text auCdl
+"CDL Out View List" internal text auCdl schematic
+"CDL Out Display Pin Information" internal none ENABLED
+"Pegasus Job Log" log text /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/pegasusuilvs.log
+"It is Pegasus flow" internal none ENABLED
+"Pegasus Log Dir" internal none LOGS
+"PIPO Setup File I" internal text /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/pipo1.setup
+"PIPO Log I" log text /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/PIPO1.LOG
+"PIPO Output I" internal text /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/PIPO1.OUT
+"SI Setup File" internal text /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/si.env
+"SI Log" log text /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/SI.LOG
+"SI Output" log text /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/SI.OUT
+"SI OSS Directory" internal none /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/
+"Simulator Mode" internal none auCdl
+"Input Layout" input none OA: systolic_array sys_arr_unp layout
+"Input Schematic" input none OA: systolic_array sys_arr_unp schematic
+"Output Layout Cellmap I" internal text /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/lay_cellMap.txt
+"Binary Name" internal none pegasusvirt
+"Comparison Report" output cls /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_unp.rep.cls
+"Extraction Report" output erc /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_unp.rep
+"Mask SVDB Directory" internal none /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/svdb
+"QRC Top Cell" internal none sys_arr_unp
+"LVS Report Options" internal none -none
+"SCONNECT RDB" output rdb /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_unp.softchk
+"ERC Summary" output text /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_unp.sum
+"Extraction Result" internal none CLEAN
+"ERC Result" internal none EMPTY
+"UI Data" internal none ENABLED
+"Pegasus Mode Info" internal none MGFMFLKCJBHPHNGJMFIDOKIDHLLIMOME
+"Report MaxResults" internal none 1000
+"Binary Name" internal none Pegasus
+"Schematic Netlist" input text /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/netlist
+"Comparison Result" internal none MATCH
+"LVS Run Name" internal none sys_arr_unp.rep
+"Pegasus Version" internal none 22.20-p009
+"Binary Name" internal none pegasusnvn
+"Pegasus Build Date" internal none "Wed Jan 18 17:06:09 PST 2023"
+"Pegasus Job Time" internal none 1745203089

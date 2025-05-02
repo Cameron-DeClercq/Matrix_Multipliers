@@ -1,0 +1,6 @@
+#!/bin/sh -f
+#--------------------------------------------------------------------------------------
+# THE RUN FILE created by Cadence Extraction Quantus UI Version 21.2.0-p060
+#--------------------------------------------------------------------------------------
+
+qrc  -log_file /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/svdb/qrc.sys_arr_unp.log -cmd /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/svdb/qrc.sys_arr_unp.ccl 

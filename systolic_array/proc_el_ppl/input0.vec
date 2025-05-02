@@ -1,0 +1,21 @@
+radix 111111111
+io iiiiiiiii
+vname a3 a2 a1 a0 b3 b2 b1 b0 rst
+
+tunit ps
+trise tris
+tfall tfall
+period tper
+
+idelay 50
+
+vih vdd_val
+vil 0
+
+000000000
+001000111
+111100011
+000000001
+
+;01
+;11

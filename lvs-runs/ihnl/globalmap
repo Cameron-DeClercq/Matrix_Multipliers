@@ -1,0 +1,20 @@
+CADENCE IHNL11140
+$model
+accumulator_bitslice/inv/schematic inv
+lab1_virt/NAND/schematic NAND
+systolic_array/AND/schematic AND
+systolic_array/sys_arr_unp/schematic sys_arr_unp
+accumulator_bitslice/XOR/schematic XOR
+systolic_array/Multiplier/schematic Multiplier
+systolic_array/Full_Adder/schematic Full_Adder
+accumulator_bitslice/FlipFlop/schematic FlipFlop
+systolic_array/XOR_ni/schematic XOR_ni
+systolic_array/Half_Adder/schematic Half_Adder
+systolic_array/proc_el/schematic proc_el
+accumulator_bitslice/NOR/schematic NOR
+systolic_array/faabs/schematic faabs
+$endmodel
+$net
+$endnet
+$param
+$endparam

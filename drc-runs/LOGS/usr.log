@@ -1,0 +1,10 @@
+Pegasus 22.20-p009 7OBTvxYo9jId0i1pvusGmw 2025-04-29 16:56:45 1301894 vlsicad.ecs.umass.edu
+Copyright 2023 Cadence Design Systems, Inc.
+All rights reserved worldwide.
+
+INFO:    Command Line Options: --log_dir LOGS -top_cell Multiplier_ppl -ui_data --control /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/pegasusdrcctl /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/.technology.rul
+INFO:    Launch host CPU: Model: Intel(R) Xeon(R) Silver 4216 CPU @ 2.10GHz, OS: Red Hat Enterprise Linux release 8.10 (Ootpa), Logical cores: 64, Physical cores: 32, Cache: 22528 KB, CPU Speed: 3200 MHz
+         Launch host Memory: MemTotal: 257032 MB,  MemFree: 73838 MB,  SwapTotal: 4095 MB,  SwapFree: 118 MB,  VmallocTotal: 33554431 MB,  VmallocUsed: 261 MB
+INFO:    Current path: /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs
+INFO:    Run directory same as current path
+INFO:    Log directory: /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/LOGS

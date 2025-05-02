@@ -1,0 +1,30 @@
+# SVDB: Port Table (ports)
+# SVDB: Layout Primary proc_el
+PHI 13 PHI -66840 106560 metal1_conn
+S4 52 S4 18075 29617 metal1_conn
+B3P 1 B3P -66430 -1850 metal2_conn
+B3 2 B3 -66440 106880 metal2_conn
+S3 54 S3 18075 43705 metal1_conn
+S7 29 S7 18043 -1413 metal1_conn
+B2P 3 B2P -66130 -1850 metal2_conn
+B2 4 B2 -66140 106880 metal2_conn
+S2 56 S2 18100 57784 metal1_conn
+A0 17 A0 -66850 104570 metal1_conn
+A1P 30 A1P 20160 104970 metal1_conn
+B1P 5 B1P -65830 -1840 metal2_conn
+A2 31 A2 -66830 105380 metal1_conn
+B1 6 B1 -65840 106880 metal2_conn
+S1 58 S1 18103 71862 metal1_conn
+A2P 32 A2P 20160 105370 metal1_conn
+B0P 7 B0P -65530 -1850 metal2_conn
+A0P 20 A0P 20150 104570 metal1_conn
+A3 33 A3 -66830 105770 metal1_conn
+B0 8 B0 -65540 106870 metal2_conn
+A3P 34 A3P 20160 105770 metal1_conn
+S0 60 S0 18103 85942 metal1_conn
+A1 21 A1 -66850 104970 metal1_conn
+VDD 9 VDD -63890 103620 metal1_conn
+S6 48 S6 18067 1435 metal1_conn
+S5 50 S5 18075 15531 metal1_conn
+GND 11 GND -63880 100320 metal1_conn
+RST 12 RST -66820 106160 metal1_conn

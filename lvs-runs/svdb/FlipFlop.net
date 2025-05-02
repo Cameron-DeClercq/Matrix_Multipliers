@@ -1,0 +1,129 @@
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* CDL Netlist:                                              *
+*                                                           *
+* Cell Name  : FlipFlop                                     *
+* Netlisted  : Tue Apr  8 11:16:04 2025                     *
+* Pegasus Version: 22.20-p009 Wed Jan 18 17:06:09 PST 2023  *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+*.LDD
+*.DEVTMPLT 0 M(g45n1svt) _nmos1v ndiff_conn(D) poly_conn(G) ndiff_conn(S) psubstrate(B)
+*.DEVTMPLT 1 M(g45p1svt) _pmos1v pdiff_conn(D) poly_conn(G) pdiff_conn(S) nwell_conn(B)
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: M2_M1_CDNS_1                                    *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt M2_M1_CDNS_1 1
+** N=1 EP=1 FDC=0
+.ends M2_M1_CDNS_1
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: M2_M1_CDNS_2                                    *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt M2_M1_CDNS_2 1
+** N=1 EP=1 FDC=0
+.ends M2_M1_CDNS_2
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: M1_PO_CDNS_3                                    *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt M1_PO_CDNS_3 1
+** N=1 EP=1 FDC=0
+.ends M1_PO_CDNS_3
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: M2_M1_CDNS_4                                    *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt M2_M1_CDNS_4 1
+** N=1 EP=1 FDC=0
+.ends M2_M1_CDNS_4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: pmos1v_CDNS_7                                   *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt pmos1v_CDNS_7 S_source_0 D_drain_1 3 4 5
+*.DEVICECLIMB
+** N=5 EP=5 FDC=0
+.ends pmos1v_CDNS_7
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: nmos1v_CDNS_8                                   *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt nmos1v_CDNS_8 S_source_0 D_drain_1 3 4
+*.DEVICECLIMB
+** N=4 EP=4 FDC=0
+.ends nmos1v_CDNS_8
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: pmos1v_CDNS_9                                   *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt pmos1v_CDNS_9 S_source_0 D_drain_1 3 4
+** N=4 EP=4 FDC=1
+M0 D_drain_1 3 S_source_0 S_source_0 g45p1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=15.0576 scb=0.0142053 scc=0.000386892 fw=2.4e-07 $X=0 $Y=0 $dt=1
+.ends pmos1v_CDNS_9
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: nmos1v_CDNS_10                                  *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt nmos1v_CDNS_10 S_source_0 D_drain_1 3
+** N=3 EP=3 FDC=1
+M0 D_drain_1 3 S_source_0 S_source_0 g45n1svt w=1.2e-07 l=4.5e-08 ad=1.68e-14 as=1.68e-14 pd=5.2e-07 ps=5.2e-07 sa=1.4e-07 sb=1.4e-07 sca=9.25021 scb=0.00593959 scc=4.13487e-05 fw=1.2e-07 $X=0 $Y=0 $dt=0
+.ends nmos1v_CDNS_10
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: FlipFlop                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt FlipFlop A GND PHI VDD Y
+** N=11 EP=5 FDC=10
+X0 VDD M2_M1_CDNS_1 $T=-1420 3380 0 0 $X=-1500 $Y=2830
+X1 2 M2_M1_CDNS_1 $T=200 3400 0 0 $X=120 $Y=2850
+X2 VDD M2_M1_CDNS_1 $T=980 3380 0 0 $X=900 $Y=2830
+X3 Y M2_M1_CDNS_1 $T=2570 3400 0 0 $X=2490 $Y=2850
+X4 GND M2_M1_CDNS_2 $T=-2660 760 0 0 $X=-2740 $Y=490
+X5 VDD M2_M1_CDNS_2 $T=-2660 3400 0 0 $X=-2740 $Y=3130
+X6 5 M2_M1_CDNS_2 $T=-2250 760 0 0 $X=-2330 $Y=490
+X7 5 M2_M1_CDNS_2 $T=-2250 3400 0 0 $X=-2330 $Y=3130
+X8 GND M2_M1_CDNS_2 $T=-1410 760 0 0 $X=-1490 $Y=490
+X9 2 M2_M1_CDNS_2 $T=200 750 0 0 $X=120 $Y=480
+X10 GND M2_M1_CDNS_2 $T=990 760 0 0 $X=910 $Y=490
+X11 Y M2_M1_CDNS_2 $T=2570 750 0 0 $X=2490 $Y=480
+X12 PHI M1_PO_CDNS_3 $T=-2450 2560 0 0 $X=-2550 $Y=2440
+X13 A M1_PO_CDNS_3 $T=-1210 1715 0 0 $X=-1310 $Y=1595
+X14 5 M1_PO_CDNS_3 $T=-5 1330 0 0 $X=-105 $Y=1210
+X15 PHI M1_PO_CDNS_3 $T=-5 2570 0 0 $X=-105 $Y=2450
+X16 2 M1_PO_CDNS_3 $T=1180 1715 0 0 $X=1080 $Y=1595
+X17 PHI M1_PO_CDNS_3 $T=2365 1330 0 0 $X=2265 $Y=1210
+X18 5 M1_PO_CDNS_3 $T=2365 2570 0 0 $X=2265 $Y=2450
+X19 GND M2_M1_CDNS_4 $T=-2660 -120 0 0 $X=-2740 $Y=-250
+X20 VDD M2_M1_CDNS_4 $T=-2660 4390 0 0 $X=-2740 $Y=4260
+X21 5 M2_M1_CDNS_4 $T=-2250 1340 0 0 $X=-2330 $Y=1210
+X22 VDD M2_M1_CDNS_4 $T=-1420 4420 0 0 $X=-1500 $Y=4290
+X23 GND M2_M1_CDNS_4 $T=-1410 -110 0 0 $X=-1490 $Y=-240
+X24 PHI M2_M1_CDNS_4 $T=-450 2130 0 0 $X=-530 $Y=2000
+X25 PHI M2_M1_CDNS_4 $T=-450 2560 0 0 $X=-530 $Y=2430
+X26 2 M2_M1_CDNS_4 $T=200 1720 0 0 $X=120 $Y=1590
+X27 5 M2_M1_CDNS_4 $T=530 1330 0 0 $X=450 $Y=1200
+X28 5 M2_M1_CDNS_4 $T=530 2570 0 0 $X=450 $Y=2440
+X29 VDD M2_M1_CDNS_4 $T=980 4420 0 0 $X=900 $Y=4290
+X30 GND M2_M1_CDNS_4 $T=990 -110 0 0 $X=910 $Y=-240
+X31 PHI M2_M1_CDNS_4 $T=1770 1330 0 0 $X=1690 $Y=1200
+X32 PHI M2_M1_CDNS_4 $T=1770 2130 0 0 $X=1690 $Y=2000
+X33 Y M2_M1_CDNS_4 $T=2570 2090 0 0 $X=2490 $Y=1960
+X34 VDD 8 A GND VDD pmos1v_CDNS_7 $T=-1260 2910 0 0 $X=-1680 $Y=2710
+X35 8 2 PHI GND VDD pmos1v_CDNS_7 $T=-50 2920 0 0 $X=-470 $Y=2720
+X36 VDD 9 2 GND VDD pmos1v_CDNS_7 $T=1140 2910 0 0 $X=720 $Y=2710
+X37 9 Y 5 GND VDD pmos1v_CDNS_7 $T=2320 2920 0 0 $X=1900 $Y=2720
+X38 GND 10 A GND nmos1v_CDNS_8 $T=-1260 510 0 0 $X=-1680 $Y=310
+X39 10 2 5 GND nmos1v_CDNS_8 $T=-50 510 0 0 $X=-470 $Y=310
+X40 GND 11 2 GND nmos1v_CDNS_8 $T=1140 510 0 0 $X=720 $Y=310
+X41 11 Y PHI GND nmos1v_CDNS_8 $T=2320 510 0 0 $X=1900 $Y=310
+X42 VDD 5 PHI GND pmos1v_CDNS_9 $T=-2500 3160 0 0 $X=-2920 $Y=2960
+X43 GND 5 PHI nmos1v_CDNS_10 $T=-2500 640 0 0 $X=-2920 $Y=440
+M0 10 A GND GND g45n1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=5.88263 scb=0.00221927 scc=1.16088e-05 fw=2.4e-07 $X=-1260 $Y=510 $dt=0
+M1 2 5 10 GND g45n1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=5.88263 scb=0.00221927 scc=1.16088e-05 fw=2.4e-07 $X=-50 $Y=510 $dt=0
+M2 11 2 GND GND g45n1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=5.88263 scb=0.00221927 scc=1.16088e-05 fw=2.4e-07 $X=1140 $Y=510 $dt=0
+M3 Y PHI 11 GND g45n1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=8.66681 scb=0.00512421 scc=2.86179e-05 fw=2.4e-07 $X=2320 $Y=510 $dt=0
+M4 8 A VDD VDD g45p1svt w=4.8e-07 l=4.5e-08 ad=6.72e-14 as=6.72e-14 pd=1.24e-06 ps=1.24e-06 sa=1.4e-07 sb=1.4e-07 sca=16.1286 scb=0.0134283 scc=0.00129853 fw=4.8e-07 $X=-1260 $Y=2910 $dt=1
+M5 2 PHI 8 VDD g45p1svt w=4.8e-07 l=4.5e-08 ad=6.72e-14 as=6.72e-14 pd=1.24e-06 ps=1.24e-06 sa=1.4e-07 sb=1.4e-07 sca=15.6391 scb=0.0131208 scc=0.00120734 fw=4.8e-07 $X=-50 $Y=2920 $dt=1
+M6 9 2 VDD VDD g45p1svt w=4.8e-07 l=4.5e-08 ad=6.72e-14 as=6.72e-14 pd=1.24e-06 ps=1.24e-06 sa=1.4e-07 sb=1.4e-07 sca=16.1286 scb=0.0134283 scc=0.00129853 fw=4.8e-07 $X=1140 $Y=2910 $dt=1
+M7 Y 5 9 VDD g45p1svt w=4.8e-07 l=4.5e-08 ad=6.72e-14 as=6.72e-14 pd=1.24e-06 ps=1.24e-06 sa=1.4e-07 sb=1.4e-07 sca=18.4233 scb=0.0160258 scc=0.00122435 fw=4.8e-07 $X=2320 $Y=2920 $dt=1
+.ends FlipFlop

@@ -1,0 +1,7 @@
+# SVDB: Port Table (ports)
+# SVDB: Layout Primary FlipFlop
+PHI 6 PHI -3010 2570 metal1_conn
+Y 3 Y 3060 2090 metal1_conn
+GND 4 GND -2950 20 metal1_conn
+A 7 A -3090 1710 metal1_conn
+VDD 1 VDD -2950 4540 metal1_conn

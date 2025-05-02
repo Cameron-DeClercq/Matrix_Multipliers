@@ -1,0 +1,29 @@
+# Placement Hierarchy File (sph)
+# 
+# 
+# 
+% inv 4
+MNM0 M 4
+MPM0 M 4
+% XOR 5
+MPM3 M 4
+MPM2 M 4
+MPM1 M 4
+MPM0 M 4
+MNM3 M 4
+MNM2 M 4
+MNM1 M 4
+MNM0 M 4
+XI2 inv 4
+XI3 inv 4
+% NAND 5
+MNM1 M 4
+MNM0 M 4
+MPM1 M 4
+MPM0 M 4
+% Full_Adder 7
+XI10 NAND 5
+XI11 NAND 5
+XI9 NAND 5
+XI13 XOR 5
+XI12 XOR 5

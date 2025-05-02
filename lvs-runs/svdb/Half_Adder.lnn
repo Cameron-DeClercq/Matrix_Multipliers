@@ -1,0 +1,26 @@
+# SVDB: Layout Netlist Names (lnn)
+# SVDB: Layout Primary Half_Adder
+% M1_PSUB_CDNS_1 1
+% M1_PO_CDNS_3 1
+% M2_M1_CDNS_4 1
+% M2_M1_CDNS_5 1
+% M2_M1_CDNS_6 1
+% pmos1v_CDNS_7 5
+1 S_source_0
+2 D_drain_1
+% nmos1v_CDNS_8 4
+1 S_source_0
+2 D_drain_1
+% nmos1v_CDNS_9 3
+1 S_source_0
+2 D_drain_1
+% pmos1v_CDNS_10 4
+1 S_source_0
+2 D_drain_1
+% Half_Adder 6
+1 GND
+3 B
+4 A
+6 VDD
+7 SUM
+8 COUT

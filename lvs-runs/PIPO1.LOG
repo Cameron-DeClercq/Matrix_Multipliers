@@ -1,0 +1,90 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version 6.1.8-64b 10/01/2018 19:51 (ip-172-18-22-52) $
+          : sub-version  IC6.1.8-64b.83 
+Started at: 20-Apr-2025  22:37:58
+User Name : cdeclercq
+Host Name : vlsicad.ecs.umass.edu
+Directory : /home/ece558_658_2024/cdeclercq/559/unppl_design
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+WARNING (XSTRM-20): Output Stream file '/home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_unp.gds.gz' already exists. It will be overwritten.
+INFO (XSTRM-217): Reading the layer map file, /opt/cadence/gpdk045/gpdk045_v_6_0/gpdk045/gpdk045.layermap
+INFO (XSTRM-280): The output file will be a compressed file because the file name has extension .gz
+INFO (XSTRM-162): You have not used the viaMap option. If the OpenAccess design has native oaVia instances, use the -viaMap option for preserving oaVia instances in a Stream Out - Stream In round trip. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design.  For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+
+Summary of Options :
+library                                 systolic_array
+strmFile                                /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_unp.gds.gz
+topCell                                 sys_arr_unp
+view                                    layout
+runDir                                  /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs
+logFile                                 /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/PIPO1.LOG
+techLib                                 gpdk045
+hierDepth                               32
+maxVertices                             2048
+layerMap                                /opt/cadence/gpdk045/gpdk045_v_6_0/gpdk045/gpdk045.layermap
+userSkillFile                           /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/strmout.il
+labelDepth                              32
+case                                    Preserve
+convertDot                              node
+convertPin                              geometryAndText
+
+INFO (XSTRM-223): 1. Translating cellView gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_1.
+INFO (XSTRM-223): 2. Translating cellView gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_2.
+INFO (XSTRM-223): 3. Translating cellView gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_3.
+INFO (XSTRM-223): 4. Translating cellView gpdk045/M1_PO/layout as STRUCTURE M1_PO_CDNS_4.
+INFO (XSTRM-223): 5. Translating cellView gpdk045/M1_NWELL/layout as STRUCTURE M1_NWELL_CDNS_5.
+INFO (XSTRM-223): 6. Translating cellView gpdk045/M1_PSUB/layout as STRUCTURE M1_PSUB_CDNS_6.
+INFO (XSTRM-223): 7. Translating cellView gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_7.
+INFO (XSTRM-223): 8. Translating cellView gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_8.
+INFO (XSTRM-223): 9. Translating cellView gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_9.
+INFO (XSTRM-223): 10. Translating cellView gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_10.
+INFO (XSTRM-223): 11. Translating cellView accumulator_bitslice/XOR/layout as STRUCTURE XOR.
+INFO (XSTRM-317): The 'accumulator_bitslice/XOR/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (2605, 2890). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'accumulator_bitslice/XOR/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (2105, 5680). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-223): 12. Translating cellView lab1_virt/NAND/layout as STRUCTURE NAND.
+INFO (XSTRM-223): 13. Translating cellView systolic_array/Full_Adder/layout as STRUCTURE Full_Adder.
+INFO (XSTRM-223): 14. Translating cellView accumulator_bitslice/inv/layout as STRUCTURE inv.
+INFO (XSTRM-223): 15. Translating cellView accumulator_bitslice/FlipFlop/layout as STRUCTURE FlipFlop.
+INFO (XSTRM-317): The 'accumulator_bitslice/FlipFlop/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (-1215, 1190). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'accumulator_bitslice/FlipFlop/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (1185, 1140). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-223): 16. Translating cellView systolic_array/faabs/layout as STRUCTURE faabs.
+INFO (XSTRM-223): 17. Translating cellView systolic_array/Half_Adder/layout as STRUCTURE Half_Adder.
+INFO (XSTRM-317): The 'systolic_array/Half_Adder/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (1555, 2240). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'systolic_array/Half_Adder/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (2055, -650). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-223): 18. Translating cellView systolic_array/AND/layout as STRUCTURE AND.
+INFO (XSTRM-223): 19. Translating cellView systolic_array/Multiplier/layout as STRUCTURE Multiplier.
+INFO (XSTRM-223): 20. Translating cellView systolic_array/proc_el/layout as STRUCTURE proc_el.
+INFO (XSTRM-180): You have not used the objectMap option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the objectMap option to translate/preserve these objects using XStream. For details on the objectMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+INFO (XSTRM-223): 21. Translating cellView systolic_array/sys_arr_unp/layout as STRUCTURE sys_arr_unp.
+
+Summary of Objects Translated:
+	Scalar Instances:                       113
+	Array Instances:                        16
+	Polygons:                               0
+	Paths:                                  0
+	Rectangles:                             270
+	Lines:                                  0
+	Arcs:                                   0
+	Donuts:                                 0
+	Dots:                                   0
+	Ellipses:                               0
+	Boundaries:                             0
+	Area Blockages:                         0
+	Layer Blockages:                        0
+	Area Halos:                             0
+	Markers:                                0
+	Rows:                                   0
+	Standard Vias                           657
+	Custom Vias:                            0
+	CdsGen Vias:                            0
+	Pathsegs:                               801
+	Text:                                   257
+	TextDisplay:                            0
+	Cells:                                  21
+
+Elapsed Time: 0.1s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 6900KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '1' warning(s) found.

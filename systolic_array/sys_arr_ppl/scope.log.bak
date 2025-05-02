@@ -1,0 +1,28 @@
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 900x785+8+85
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 1920x980+0+23
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 1920x980+8+31
+Mdi:ArrangeIcons
+wm geometry . 1920x980+0+23
+Mdi:ArrangeIcons
+wm geometry . 1920x980+8+31
+Mdi:ArrangeIcons
+wm geometry . 1920x980+0+23
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile /home/ece558_658_2024/cdeclercq/559/unppl_design/systolic_array/sys_arr_ppl/sap.tr0 1 openonly
+# PF:1
+wm geometry .sigmgr._PF:1 232x242+1813+540
+wm geometry .sigmgr._PF:1 232x242+1618+349
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons

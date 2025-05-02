@@ -1,0 +1,14 @@
+
+
+vuipreRcxFormTable = '(
+	runName  "sys_arr_unp"
+	runDir  "/home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/svdb"
+	assuraTech  "/ece558_658/pdk/verification/pvtech.lib"
+	tech  "gpdk045"
+	mapFile  ""
+	netProp  5
+	instProp  6
+	devProp  7
+)
+
+

@@ -1,0 +1,31 @@
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* CDL Netlist:                                              *
+*                                                           *
+* Cell Name  : AND                                          *
+* Netlisted  : Tue Apr  8 14:25:42 2025                     *
+* Pegasus Version: 22.20-p009 Wed Jan 18 17:06:09 PST 2023  *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+*.LDD
+*.DEVTMPLT 0 M(g45n1svt) _nmos1v ndiff_conn(D) poly_conn(G) ndiff_conn(S) psubstrate(B)
+*.DEVTMPLT 1 M(g45p1svt) _pmos1v pdiff_conn(D) poly_conn(G) pdiff_conn(S) nwell_conn(B)
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: nmos1v_CDNS_8                                   *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt nmos1v_CDNS_8 S_source_0 D_drain_1 3
+** N=3 EP=3 FDC=1
+M0 D_drain_1 3 S_source_0 S_source_0 g45n1svt w=1.2e-07 l=4.5e-08 ad=1.68e-14 as=1.68e-14 pd=5.2e-07 ps=5.2e-07 sa=1.4e-07 sb=1.4e-07 sca=10.0405 scb=0.00715176 scc=5.42465e-05 fw=1.2e-07 $X=0 $Y=0 $dt=0
+.ends nmos1v_CDNS_8
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: AND                                             *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt AND A B GND VDD Y
+** N=7 EP=5 FDC=6
+X26 GND Y 3 nmos1v_CDNS_8 $T=420 1020 0 0 $X=0 $Y=820
+M0 7 A GND GND g45n1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=10.136 scb=0.00751359 scc=6.9702e-05 fw=2.4e-07 $X=-2110 $Y=920 $dt=0
+M1 3 B 7 GND g45n1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=6.87617 scb=0.00381027 scc=4.05166e-05 fw=2.4e-07 $X=-830 $Y=920 $dt=0
+M2 3 A VDD VDD g45p1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=16.0927 scb=0.0154531 scc=0.000419743 fw=2.4e-07 $X=-2110 $Y=2770 $dt=1
+M3 3 B VDD VDD g45p1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=12.8329 scb=0.0117498 scc=0.000390557 fw=2.4e-07 $X=-830 $Y=2770 $dt=1
+M4 Y 3 VDD VDD g45p1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=15.9246 scb=0.0151668 scc=0.000414946 fw=2.4e-07 $X=420 $Y=2770 $dt=1
+.ends AND

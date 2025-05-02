@@ -1,0 +1,10 @@
+1745960227 0 1745960227 "/home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs" "pegasusrv" "" "" "" "" "" "" "" "" "" "" "" true
+1745960217 0 1745960217 "/home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/Multiplier_ppl.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
+1745203094 0 1745203094 "/home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs" "pegasusrv" "" "" "" "" "" "" "" "" "" "" "" true
+1745197052 0 1745197052 "/home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/sys_arr_unp.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
+1745192134 0 1745192134 "/home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/proc_el.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
+1744995142 0 1744995142 "/home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/faabs.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
+1744992985 0 1744992985 "/home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/Multiplier.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
+1744727684 0 1744727684 "/home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/Full_Adder.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
+1744333443 0 1744333443 "/home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/dreg8b.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
+1744147439 0 1744147439 "/home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/dreg8b.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true

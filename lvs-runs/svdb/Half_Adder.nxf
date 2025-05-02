@@ -1,0 +1,22 @@
+# XXXX: Net Cross Reference (nxf) (File format 1)
+# XXXX: Layout Primary Half_Adder
+# XXXX: End of header.
+% M 4 M 4 
+0 D 0 D
+0 G 0 G
+0 S 0 S
+0 B 0 B
+% Half_Adder 6 Half_Adder 6 
+0 5 0 net10
+0 2 0 net17
+0 A 0 A
+0 B 0 B
+0 COUT 0 COUT
+0 GND 0 GND
+0 SUM 0 SUM
+0 VDD 0 VDD
+0 10 0 XI2/net29
+0 9 0 XI2/net31
+0 13 0 XI2/net27
+0 12 0 XI2/net28
+0 11 0 XI5/net17

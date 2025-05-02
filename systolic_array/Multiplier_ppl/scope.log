@@ -1,0 +1,122 @@
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 900x785+8+85
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 900x785+2213+104
+Mdi:ArrangeIcons
+wm geometry . 1707x967+1920+23
+Mdi:ArrangeIcons
+wm geometry . 900x785+2213+104
+Mdi:ArrangeIcons
+wm geometry . 1707x967+1920+23
+Mdi:ArrangeIcons
+wm geometry . 1707x967+1920+31
+Mdi:ArrangeIcons
+wm geometry . 1707x967+1920+23
+Mdi:ArrangeIcons
+wm geometry . 1707x967+0+0
+Mdi:ArrangeIcons
+wm geometry . 1707x967+1920+31
+Mdi:ArrangeIcons
+wm geometry . 1707x967+1920+23
+Mdi:ArrangeIcons
+wm geometry . 1707x967+0+0
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 1707x967+1920+23
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 1707x967+0+0
+Mdi:ArrangeIcons
+wm geometry . 1707x967+1920+23
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 1707x967+1920+31
+Mdi:ArrangeIcons
+wm geometry . 1707x967+1920+23
+Mdi:ArrangeIcons
+wm geometry . 1707x967+1920+31
+Mdi:ArrangeIcons
+wm geometry . 1707x967+1920+23
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile /home/ece558_658_2024/cdeclercq/559/unppl_design/systolic_array/Multiplier_ppl/mppl.tr0 1 openonly
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile /home/ece558_658_2024/cdeclercq/559/unppl_design/systolic_array/Multiplier_ppl/mppl.tr0 1 openonly
+# PF:2
+wm geometry .sigmgr._PF:2 232x242+1813+540
+wm geometry .sigmgr._PF:2 232x242+3326+334
+wm geometry .sigmgr._PF:2 232x610+3326+334
+Mdi:Resize 1297 833
+Mdi:Move 5 5
+Mdi:ArrangeIcons
+wm geometry .sigmgr._PF:2 232x242+3326+334
+wm geometry .sigmgr._PF:2 232x610+3326+334
+Mdi:ArrangeIcons
+pf:read PF:2 v(p0)
+# WF:2:1
+Graph addsignal WF:2:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:2 v(p1)
+# WF:2:2
+Graph addsignal WF:2:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+pf:read PF:2 v(p2)
+# WF:2:3
+Graph addsignal WF:2:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+pf:read PF:2 v(p3)
+# WF:2:4
+Graph addsignal WF:2:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+pf:read PF:2 v(p5)
+# WF:2:5
+Graph addsignal WF:2:5 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal4
+Graph:Select Graph0
+Graph:DSel
+Graph itemselect Signal4 add
+# Signal4
+Graph delsignal selected
+Graph:DSel
+pf:read PF:2 v(p4)
+# WF:2:6
+Graph addsignal WF:2:6 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal5
+pf:read PF:2 v(p5)
+# WF:2:5
+Graph addsignal WF:2:5 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal6
+pf:read PF:2 v(p6)
+# WF:2:7
+Graph addsignal WF:2:7 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal7
+pf:read PF:2 v(p7)
+# WF:2:8
+Graph addsignal WF:2:8 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal8
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons

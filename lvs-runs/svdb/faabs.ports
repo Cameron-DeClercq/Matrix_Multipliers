@@ -1,0 +1,10 @@
+# SVDB: Port Table (ports)
+# SVDB: Layout Primary faabs
+PHI 6 PHI 560 12940 metal2_conn
+SOUT 3 SOUT 7750 1220 metal1_conn
+VDD 9 VDD -13180 9440 metal1_conn
+GND 10 GND -13180 12530 metal1_conn
+COUT 1 COUT -12480 -1360 metal2_conn
+RST 5 RST 240 12940 metal2_conn
+CIN 2 CIN -12470 12920 metal2_conn
+A 11 A -13270 6830 metal1_conn

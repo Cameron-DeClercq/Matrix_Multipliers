@@ -1,0 +1,16 @@
+case	"preserve"
+convertDot	"node"
+convertPin	"geometryAndText"
+hierDepth	32
+labelCase	"preserve"
+labelDepth	32
+library	"systolic_array"
+logFile	"/home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/PIPO1.LOG"
+maxVertices	2048
+pinAttNum	0
+runDir	"/home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs"
+strmFile	"/home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_unp.gds.gz"
+strmVersion	5
+techLib	"gpdk045"
+topCell	"sys_arr_unp"
+view	"layout"

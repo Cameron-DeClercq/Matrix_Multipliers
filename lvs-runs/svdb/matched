@@ -1,0 +1,35 @@
+##############################################################################################################
+#####  
+#####                                       Pegasus LVS COMPARISON
+#####  
+#####  Version                       :   22.20-p009
+#####  NVN Run Start                 :   Sun Apr 20 22:38:09 2025
+#####  ERC Summary File              :   sys_arr_unp.sum
+#####  Extraction Report File        :   sys_arr_unp.rep
+#####  Comparison Report File        :   sys_arr_unp.rep.cls
+#####  Top Cell                      :   sys_arr_unp  <vs>  sys_arr_unp
+#####  
+#####  Run Result                    :   MATCH
+#####  
+#####  Run Summary                   :   [INFO]  ERC Results: Empty
+#####                                :   [INFO]  Extraction Clean
+#####                                :   [INFO]  Some Sections Have Been Truncated
+#####  
+#####  Layout Design                 :   systolic_array sys_arr_unp layout
+#####  Schematic File                :   /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_unp.cdl (cdl)
+#####  Rules File                    :   /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/.technology.rul
+#####  Pin Swap File                 :   sys_arr_unp.rep.cps
+#####  
+#####  Extraction CPU Time           :   0h 0m 1s - (1s)
+#####  Extraction Exec Time          :   0h 0m 2s - (2s)
+#####  Extraction Peak Memory Usage  :   28.00MB
+#####  NVN CPU Time                  :   0h 0m 0s - (0s)                 
+#####  NVN Exec Time                 :   0h 0m 1s - (1s)                 
+#####  NVN Peak Memory Usage         :   263.21MB
+#####  LVS Total CPU Time            :   0h 0m 1s - (1s)                 
+#####  LVS Total Exec Time           :   0h 0m 3s - (3s)                 
+#####  LVS Total Peak Memory Usage   :   263.21MB
+#####  
+##############################################################################################################
+
+

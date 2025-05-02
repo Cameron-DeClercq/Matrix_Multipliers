@@ -1,0 +1,8 @@
+# SVDB: Port Table (ports)
+# SVDB: Layout Primary Half_Adder
+B 3 B -3460 -790 metal1_conn
+VDD 6 VDD -3320 1140 metal1_conn
+GND 1 GND -3310 4910 metal1_conn
+A 4 A -3430 -1500 metal1_conn
+SUM 7 SUM 5330 -840 metal1_conn
+COUT 8 COUT 5290 3580 metal1_conn

@@ -1,0 +1,17 @@
+
+/opt/cadence/pegasus/tools.lnx86/Pegasus/bin/64bit/edbToEcdb Output Summary
+========================================================================
+
+Delete EDB      : N
+EDB Library dir : sys_arr_unp_892328.db
+ECDB dir        : ./
+Top Cell        : sys_arr_unp
+CDL netlist     : /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/svdb/sys_arr_unp.net
+Layer map file  : /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/svdb/sys_arr_unp.ecdbmap
+Text map file   : /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/svdb/sys_arr_unp.ports
+Dependency map  : sys_arr_unp.lmap.perc
+Lvs file        : /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/svdb/sys_arr_unp.lvsfile
+Float net file  : .sys_arr_unp.info.softchk
+threads         : 32
+debug           : 0
+Source Library  : sys_arr_unp_892328
