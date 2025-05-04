@@ -1,6 +1,6 @@
 # Matrix_Multipliers
 Repo Structure:
-Component
+\nComponent
   - Schematic
   - Symbol (In all folders except those containing highest level design)
   - Layout
