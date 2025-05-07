@@ -1,7 +1,7 @@
 # Matrix_Multipliers
 Keywords:
 - First Design (Includes Unpipelined Multiplier Block in Processing Elements)
-- Second Design Includes (Pipelined Multiplier Block in Processing Elements)
+- Second Design (Includes Pipelined Multiplier Block in Processing Elements)
 
 Working Change Notes:
 **In the following working changes, a 4x4 * 4x4 matrix multiplication is meant when refering to a "full matrix multiplication"
