@@ -10,7 +10,7 @@ Working Change Notes:
 - The second design will be altered similarly to support the above change, except the reset logic associated with the input propogation registers will be removed. This way a full matrix multiplication can be realized every 5 cycles after the intial 7-cycle filling of the pipeline without a 6th cycle being necessary as 0's propagate through the pipelined multiplier in the cycle following a reset.
 
 
-Repo Structure: 
+Repo Structure: (in systolic_array)
 
 Component
   - Schematic
