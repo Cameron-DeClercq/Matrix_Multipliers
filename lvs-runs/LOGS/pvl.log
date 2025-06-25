@@ -25,19 +25,19 @@ LVS_ABORT -softchk no;
 LVS_ABORT -supply_error no;
 LVS_FIND_SHORTS no;
 SCONNECT_UPPER_SHAPE_COUNT no;
-LVS_REPORT_FILE "sys_arr_unp.rep";
+LVS_REPORT_FILE "sys_arr_ppl.rep";
 LVS_REPORT_MAX 50 -mismatched_net_limit 100;
 LVS_RUN_ERC_CHECKS yes;
 LVS_REPORT_OPT -none;
-REPORT_SUMMARY -erc "sys_arr_unp.sum" -replace;
+REPORT_SUMMARY -erc "sys_arr_ppl.sum" -replace;
 MAX_RESULTS -erc 1000;
-RESULTS_DB -erc "/home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_unp.erc_errors.ascii" -ascii;
+RESULTS_DB -erc "/home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_ppl.erc_errors.ascii" -ascii;
 MASK_SVDB_DIR /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/svdb;
 SCHEMATIC_FORMAT cdl;
-SCHEMATIC_PATH "/home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_unp.cdl";
+SCHEMATIC_PATH "/home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_ppl.cdl";
 ABORT_ON_LAYOUT_ERROR yes;
 LAYOUT_FORMAT gdsii;
-LAYOUT_PATH "/home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_unp.gds.gz";
+LAYOUT_PATH "/home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/sys_arr_ppl.gds.gz";
 
 ########################################################################
 Parsing Rule File /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/.technology.rul ...
@@ -3104,6 +3104,6 @@ operation group: 236/236
 Completed execution after parsing the rules, as requested by the "-p" flag or "-get_rules" flag 
 
 
-Netlist extraction finished normally. Sun Apr 20 22:38:03 2025
+Netlist extraction finished normally. Thu May 15 10:15:17 2025
 
 

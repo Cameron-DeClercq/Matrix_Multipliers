@@ -7,16 +7,16 @@ All rights reserved worldwide.
 
 Build O/S:       Linux x86_64 3.10.0-693.el7.x86_64
 Executed on:     vlsicad.ecs.umass.edu (Linux x86_64 4.18.0-553.16.1.el8_10.x86_64)
-Process Id:      892532
-Starting Time:   Sun Apr 20 22:38:05 2025 (Mon Apr 21 02:38:05 2025 GMT)
-With parameters: sys_arr_unp_892328 /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/svdb/sys_arr_unp.agf sys_arr_unp -lmap lmaplEMyqn -netmap /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/svdb/sys_arr_unp.lnn -property_nqrc -gds_scale 2000 -vircolon 
+Process Id:      2850731
+Starting Time:   Thu May 15 10:15:18 2025 (Thu May 15 14:15:18 2025 GMT)
+With parameters: sys_arr_ppl_2850467 /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/svdb/sys_arr_ppl.agf sys_arr_ppl -lmap lmapkDs1xR -netmap /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/svdb/sys_arr_ppl.lnn -property_nqrc -gds_scale 2000 -vircolon 
 ********************************************************************************
 
-Library name: sys_arr_unp_892328
-GDSII file name: /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/svdb/sys_arr_unp.agf
-Cells to be written out: sys_arr_unp
-Source Library: sys_arr_unp_892328
-Layer mapping file(GDS <- DMC): lmaplEMyqn
+Library name: sys_arr_ppl_2850467
+GDSII file name: /home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/svdb/sys_arr_ppl.agf
+Cells to be written out: sys_arr_ppl
+Source Library: sys_arr_ppl_2850467
+Layer mapping file(GDS <- DMC): lmapkDs1xR
     23 (dt:0 tt:0) <- 23
     24 (dt:0 tt:0) <- 24
     55 (dt:0 tt:0) <- 55
@@ -126,40 +126,40 @@ Option: output object property for new qrc flow
                 Object Statistics of Cells                            
 Cell Name         Box  Polygon     Path   Label Instance Array    Total
 ----------------------------------------------------------------------
-sys_arr_unp         9       18        0       0     8      0        35
-MASCO__A1           1        7        0       0     2      0        10
-proc_el           337       12        0       0   215      0       564
+sys_arr_ppl        13       17        0       0    14      0        44
 M2_M1_CDNS_1        3        0        0       0     0      0         3
+MASCO__A1           4        4        0       0     2      0        10
+proc_el_ppl       322        3        0       0   204      0       529
 FlipFlop           32        6        0       0    46      0        84
 faabs              53        3        0       0    23      0        79
-AND                22        1        0       0    29      0        52
-Multiplier        422        1        0       0   254      0       677
-M2_M1_CDNS_2        4        0        0       0     0      0         4
-M2_M1_CDNS_3        6        0        0       0     0      0         6
+Multiplier_ppl      661        1        0       0   434      0      1096
+M2_M1_CDNS_2        6        0        0       0     0      0         6
+M2_M1_CDNS_3        4        0        0       0     0      0         4
 M1_PO_CDNS_4        3        0        0       0     0      0         3
 M1_NWELL_CDNS_5        8        0        0       0     0      0         8
 M1_PSUB_CDNS_6        7        0        0       0     0      0         7
 pmos1v_CDNS_7       15        0        0       0     0      0        15
 nmos1v_CDNS_8       10        0        0       0     0      0        10
-nmos1v_CDNS_9        9        0        0       0     0      0         9
-pmos1v_CDNS_10       11        0        0       0     0      0        11
+pmos1v_CDNS_9       11        0        0       0     0      0        11
+nmos1v_CDNS_10        9        0        0       0     0      0         9
 NAND               16        1        0       0    19      0        36
 Full_Adder         38        1        0       0    21      0        60
 inv                10        1        0       0    12      0        23
 Half_Adder         62        5        0       0    79      0       146
+AND                24        1        0       0    29      0        54
 XOR                47        4        0       0    60      0       111
 ----------------------------------------------------------------------
 
 Object Statistics of Layers
 Layer   Objects
 ----------------
-  14          57
-  27         242
-  46          33
+  14          53
+  27         293
+  46          50
   47           1
-  49         419
-  50         310
-  60          38
+  49         487
+  50         394
+  60          42
   61           5
   62          16
   63          40
@@ -172,17 +172,17 @@ Layer   Objects
 
 Object Summary
 ------------------
-     Box      1125
- Polygon        60
+     Box      1358
+ Polygon        47
     Path         0
    Label         0
-Instance       768
+Instance       943
    Array         0
 ------------------
-   Total      1953
+   Total      2348
 
 
-Output property: 1953
+Output property: 2348
 Total CPU Time          : 0(s)
 Total Real Time         : 0(s)
 Peak Memory Used        : 7(M)

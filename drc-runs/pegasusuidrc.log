@@ -5,9 +5,9 @@ Running: /opt/cadence/pegasus/tools.lnx86/Pegasus/bin/64bit/pegasusvirt \
   -control /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/pegasusdrcctl \
   -cell_tree /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/cell_tree.txt \
   -layLibName systolic_array \
-  -layCellName Multiplier_ppl \
+  -layCellName sys_arr_ppl \
   -layViewName layout \
-  -igds /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/Multiplier_ppl.gds.gz \
+  -igds /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/sys_arr_ppl.gds.gz \
   -layScale 0.0005 \
   -layTechLib gpdk045 \
   -convertPin geometryAndText \
@@ -18,7 +18,7 @@ Running: /opt/cadence/pegasus/tools.lnx86/Pegasus/bin/64bit/pegasusvirt \
   -rulesFile /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/.technology.rul \
   -log_dir LOGS \
   -df2_version 6.1.8.0 \
-  -sign IPVS_1745960186_1294145 \
+  -sign IPVS_1747318287_2840775 \
   -run_dir /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs \
   -no_rules_check
 
@@ -50,7 +50,7 @@ LIB ahdlLib from the same file (defined earlier.)
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version 6.1.8-64b 10/01/2018 19:51 (ip-172-18-22-52) $
           : sub-version  IC6.1.8-64b.83 
-Started at: 29-Apr-2025  16:56:44
+Started at: 15-May-2025  10:11:29
 User Name : cdeclercq
 Host Name : vlsicad.ecs.umass.edu
 Directory : /home/ece558_658_2024/cdeclercq/559/unppl_design
@@ -82,14 +82,15 @@ Loading gpdk045/libInit.il ...
 
 done!
 Loaded gpdk045/libInit.il successfully!
+WARNING (XSTRM-20): Output Stream file '/home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/sys_arr_ppl.gds.gz' already exists. It will be overwritten.
 INFO (XSTRM-217): Reading the layer map file, /opt/cadence/gpdk045/gpdk045_v_6_0/gpdk045/gpdk045.layermap
 INFO (XSTRM-280): The output file will be a compressed file because the file name has extension .gz
 INFO (XSTRM-162): You have not used the viaMap option. If the OpenAccess design has native oaVia instances, use the -viaMap option for preserving oaVia instances in a Stream Out - Stream In round trip. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design.  For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
 
 Summary of Options :
 library                                 systolic_array
-strmFile                                /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/Multiplier_ppl.gds.gz
-topCell                                 Multiplier_ppl
+strmFile                                /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/sys_arr_ppl.gds.gz
+topCell                                 sys_arr_ppl
 view                                    layout
 runDir                                  /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs
 logFile                                 /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/PIPO1.LOG
@@ -104,35 +105,39 @@ convertDot                              node
 convertPin                              geometryAndText
 
 INFO (XSTRM-223): 1. Translating cellView gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_1.
-INFO (XSTRM-223): 2. Translating cellView gpdk045/M1_PSUB/layout as STRUCTURE M1_PSUB_CDNS_2.
-INFO (XSTRM-223): 3. Translating cellView gpdk045/M1_NWELL/layout as STRUCTURE M1_NWELL_CDNS_3.
+INFO (XSTRM-223): 2. Translating cellView gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_2.
+INFO (XSTRM-223): 3. Translating cellView gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_3.
 INFO (XSTRM-223): 4. Translating cellView gpdk045/M1_PO/layout as STRUCTURE M1_PO_CDNS_4.
-INFO (XSTRM-223): 5. Translating cellView gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_5.
-INFO (XSTRM-223): 6. Translating cellView gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_6.
+INFO (XSTRM-223): 5. Translating cellView gpdk045/M1_NWELL/layout as STRUCTURE M1_NWELL_CDNS_5.
+INFO (XSTRM-223): 6. Translating cellView gpdk045/M1_PSUB/layout as STRUCTURE M1_PSUB_CDNS_6.
 INFO (XSTRM-223): 7. Translating cellView gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_7.
 INFO (XSTRM-223): 8. Translating cellView gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_8.
-INFO (XSTRM-223): 9. Translating cellView gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_9.
-INFO (XSTRM-223): 10. Translating cellView gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_10.
-INFO (XSTRM-223): 11. Translating cellView systolic_array/Half_Adder/layout as STRUCTURE Half_Adder.
-INFO (XSTRM-317): The 'systolic_array/Half_Adder/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (1555, 2240). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
-INFO (XSTRM-317): The 'systolic_array/Half_Adder/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (2055, -650). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-223): 9. Translating cellView gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_9.
+INFO (XSTRM-223): 10. Translating cellView gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_10.
+INFO (XSTRM-223): 11. Translating cellView accumulator_bitslice/FlipFlop/layout as STRUCTURE FlipFlop.
+INFO (XSTRM-317): The 'accumulator_bitslice/FlipFlop/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (-1215, 1190). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'accumulator_bitslice/FlipFlop/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (1185, 1140). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
 INFO (XSTRM-223): 12. Translating cellView accumulator_bitslice/XOR/layout as STRUCTURE XOR.
 INFO (XSTRM-317): The 'accumulator_bitslice/XOR/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (2605, 2890). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
 INFO (XSTRM-317): The 'accumulator_bitslice/XOR/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (2105, 5680). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
 INFO (XSTRM-223): 13. Translating cellView lab1_virt/NAND/layout as STRUCTURE NAND.
 INFO (XSTRM-223): 14. Translating cellView systolic_array/Full_Adder/layout as STRUCTURE Full_Adder.
-INFO (XSTRM-223): 15. Translating cellView systolic_array/AND/layout as STRUCTURE AND.
-INFO (XSTRM-223): 16. Translating cellView accumulator_bitslice/FlipFlop/layout as STRUCTURE FlipFlop.
-INFO (XSTRM-317): The 'accumulator_bitslice/FlipFlop/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (-1215, 1190). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
-INFO (XSTRM-317): The 'accumulator_bitslice/FlipFlop/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (1185, 1140). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
-INFO (XSTRM-223): 17. Translating cellView systolic_array/Multiplier_ppl/layout as STRUCTURE Multiplier_ppl.
+INFO (XSTRM-223): 15. Translating cellView accumulator_bitslice/inv/layout as STRUCTURE inv.
+INFO (XSTRM-223): 16. Translating cellView systolic_array/faabs/layout as STRUCTURE faabs.
+INFO (XSTRM-223): 17. Translating cellView systolic_array/Half_Adder/layout as STRUCTURE Half_Adder.
+INFO (XSTRM-317): The 'systolic_array/Half_Adder/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (1555, 2240). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-317): The 'systolic_array/Half_Adder/layout' has a pathSeg with diagonal orientation, or end style as custom or chamfer at (2055, -650). This pathSeg will be translated as a boundary record in the GDS file during Stream Out.
+INFO (XSTRM-223): 18. Translating cellView systolic_array/AND/layout as STRUCTURE AND.
+INFO (XSTRM-223): 19. Translating cellView systolic_array/Multiplier_ppl/layout as STRUCTURE Multiplier_ppl.
+INFO (XSTRM-223): 20. Translating cellView systolic_array/proc_el_ppl/layout as STRUCTURE proc_el_ppl.
+INFO (XSTRM-223): 21. Translating cellView systolic_array/sys_arr_ppl/layout as STRUCTURE sys_arr_ppl.
 
 Summary of Objects Translated:
-	Scalar Instances:                       92
+	Scalar Instances:                       143
 	Array Instances:                        0
 	Polygons:                               0
 	Paths:                                  0
-	Rectangles:                             195
+	Rectangles:                             311
 	Lines:                                  0
 	Arcs:                                   0
 	Donuts:                                 0
@@ -144,55 +149,55 @@ Summary of Objects Translated:
 	Area Halos:                             0
 	Markers:                                0
 	Rows:                                   0
-	Standard Vias                           436
+	Standard Vias                           824
 	Custom Vias:                            0
 	CdsGen Vias:                            0
-	Pathsegs:                               483
-	Text:                                   51
+	Pathsegs:                               892
+	Text:                                   258
 	TextDisplay:                            0
-	Cells:                                  17
+	Cells:                                  21
 
-Elapsed Time: 0.2s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 6612KB
-INFO (XSTRM-234): Translation completed. '0' error(s) and '0' warning(s) found.
+Elapsed Time: 0.1s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 6820KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '1' warning(s) found.
 
 
-Pegasus 22.20-p009 7OBTvxYo9jId0i1pvusGmw 2025-04-29 16:56:45 1301894 vlsicad.ecs.umass.edu
+Pegasus 22.20-p009 7OBTvxYo9jId0i1pvusGmw 2025-05-15 10:11:30 2848488 vlsicad.ecs.umass.edu
 Copyright 2023 Cadence Design Systems, Inc.
 All rights reserved worldwide.
 
-INFO:    Command Line Options: --log_dir LOGS -top_cell Multiplier_ppl -ui_data --control /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/pegasusdrcctl /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/.technology.rul
+INFO:    Command Line Options: --log_dir LOGS -top_cell sys_arr_ppl -ui_data --control /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/pegasusdrcctl /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/.technology.rul
 INFO:    Launch host CPU: Model: Intel(R) Xeon(R) Silver 4216 CPU @ 2.10GHz, OS: Red Hat Enterprise Linux release 8.10 (Ootpa), Logical cores: 64, Physical cores: 32, Cache: 22528 KB, CPU Speed: 3200 MHz
-         Launch host Memory: MemTotal: 257032 MB,  MemFree: 73838 MB,  SwapTotal: 4095 MB,  SwapFree: 118 MB,  VmallocTotal: 33554431 MB,  VmallocUsed: 261 MB
+         Launch host Memory: MemTotal: 257032 MB,  MemFree: 110595 MB,  SwapTotal: 4095 MB,  SwapFree: 22 MB,  VmallocTotal: 33554431 MB,  VmallocUsed: 263 MB
 INFO:    Current path: /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs
 INFO:    Run directory same as current path
 INFO:    Log directory: /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/LOGS
-INFO:    Setting LAYOUT_PRIMARY to: Multiplier_ppl 
+INFO:    Setting LAYOUT_PRIMARY to: sys_arr_ppl 
 INFO:    PVL parsing results:
 WARNING: In technology 'gpdk045', the rule set 'default' is not a Pegasus rule set.
 It will be accepted for this run but should be changed to a pegasusRuleSet.
 WARNING: LAYOUT_PATH at line 20 in file /ece558_658/pdk/verification/pvs/./pvlDRC.rul is skipped. It is set in control file.
-WARNING: Cmd-line override: LAYOUT_PRIMARY "Multiplier_ppl";
+WARNING: Cmd-line override: LAYOUT_PRIMARY "sys_arr_ppl";
 WARNING: RESULTS_DB -ascii at line 22 in file /ece558_658/pdk/verification/pvs/./pvlDRC.rul is skipped. It is set in control file.
 WARNING: TEXT_DEPTH at line 27 in file /ece558_658/pdk/verification/pvs/./pvlDRC.rul is skipped. It is set in control file.
 
 INFO:    See "/home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/LOGS/pvl.log" for additional details.
 
 INFO:    Checking out 1 license(s) of feature: 'Pegasus_DRC' version 22.2
-INFO:    License checkout successful ... 2025-04-29 16:56:51
+INFO:    License checkout successful ... 2025-05-15 10:11:35
 
 INFO:    Checking out 1 license(s) of feature: 'Pegasus_16nm' version 22.2
-INFO:    License checkout successful ... 2025-04-29 16:56:56
+INFO:    License checkout successful ... 2025-05-15 10:11:35
 INFO:    Worker 0 started on host vlsicad.ecs.umass.edu with 1 cpu(s)
-         CPU: Model: Intel(R) Xeon(R) Silver 4216 CPU @ 2.10GHz, OS: Red Hat Enterprise Linux release 8.10 (Ootpa), Logical cores: 64, Physical cores: 32, Cache: 22528 KB, CPU Speed: 2900 MHz
-         Memory: MemTotal: 257032 MB,  MemFree: 73492 MB,  SwapTotal: 4095 MB,  SwapFree: 118 MB,  VmallocTotal: 33554431 MB,  VmallocUsed: 262 MB
+         CPU: Model: Intel(R) Xeon(R) Silver 4216 CPU @ 2.10GHz, OS: Red Hat Enterprise Linux release 8.10 (Ootpa), Logical cores: 64, Physical cores: 32, Cache: 22528 KB, CPU Speed: 3200 MHz
+         Memory: MemTotal: 257032 MB,  MemFree: 110583 MB,  SwapTotal: 4095 MB,  SwapFree: 22 MB,  VmallocTotal: 33554431 MB,  VmallocUsed: 263 MB
 
 INFO:    Gdsii input summary
-         File name: /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/Multiplier_ppl.gds.gz
-         File size: 10821
+         File name: /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/sys_arr_ppl.gds.gz
+         File size: 20828
          Version: 5.0
          Library name: systolic_array
-         Last modified: 2025-4-29 16:55:47
-         Last accessed: 2025-4-29 16:56:45
+         Last modified: 2025-5-15 10:11:19
+         Last accessed: 2025-5-15 10:11:29
          Database unit in user units: 0.0005
          Database unit in meters: 5e-10
          Magnification: 1 
@@ -201,25 +206,29 @@ INFO:    Cell Summary:
          ----------------------------------------------------------------------------
              CELL               INSTANCE    GEOMETRY      LABELS        HREF        FREF
          ----------------------------------------------------------------------------
-         M2_M1_CDNS_1                  0           3           0         325        1233
-         M1_PSUB_CDNS_2                0           7           0           7          97
-         M1_NWELL_CDNS_3               0           8           0           5          75
-         M1_PO_CDNS_4                  0           3           0          32         372
-         M2_M1_CDNS_5                  0           6           0          14         136
-         M2_M1_CDNS_6                  0           4           0          53         667
-         pmos1v_CDNS_7                 0          21           4          14         136
-         nmos1v_CDNS_8                 0          16           4          16         214
-         nmos1v_CDNS_9                 0          14           4           8          72
-         pmos1v_CDNS_10                0          17           4          10         150
-         Half_Adder                   79          80           6           4           4
-         NAND                         19          19           5           9          33
-         XOR                          60          64           5           2          18
-         Full_Adder                   21          41           7           9           9
-         AND                          29          24           5          10          10
-         FlipFlop                     46          45           5          10          10
-         Multiplier_ppl              274         303          18           1           1
+         M2_M1_CDNS_1                  0           3           0         706       44518
+         M2_M1_CDNS_2                  0           6           0          14        4992
+         M2_M1_CDNS_3                  0           4           0          57       21040
+         M1_PO_CDNS_4                  0           3           0          33       12544
+         M1_NWELL_CDNS_5               0           8           0           6        2544
+         M1_PSUB_CDNS_6                0           7           0           8        3152
+         pmos1v_CDNS_7                 0          21           4          14        4992
+         nmos1v_CDNS_8                 0          16           4          16        7264
+         pmos1v_CDNS_9                 0          17           4          11        4512
+         nmos1v_CDNS_10                0          14           4           9        2240
+         FlipFlop                     46          45           5          31         608
+         NAND                         19          19           5          10        1040
+         XOR                          60          64           5           2         544
+         Full_Adder                   21          41           7          10         272
+         inv                          12          11           4           1         128
+         faabs                        23          48           8           8         128
+         Half_Adder                   79          80           6           4          64
+         AND                          29          24           5          10         160
+         Multiplier_ppl              452         520          19           1          16
+         proc_el_ppl                 204         246          29          16          16
+         sys_arr_ppl                  22           3         165           1           1
          ----------------------------------------------------------------------------
-         TOTAL CELL = 17;  INSTANCE = 528;  GEOMETRY = 675;  LABEL = 67
+         TOTAL CELL = 21;  INSTANCE = 967;  GEOMETRY = 1200;  LABEL = 274
 
 INFO:    Layer Summary:
          ----------------------------------------------------------------------------
@@ -227,7 +236,7 @@ INFO:    Layer Summary:
          ----------------------------------------------------------------------------
          Bondpad                              1000         0         0         0         0
          CapMetal                             1001         0         0         0         0
-         Cont                                 1002        27         0      3748         0
+         Cont                                 1002        27         0    126848         0
          ESDdummy                             1003         0         0         0         0
          INDdummy                             1004         0         0         0         0
          M1Resdum                             1005         0         0         0         0
@@ -241,8 +250,8 @@ INFO:    Layer Summary:
          M9Resdum                             1013         0         0         0         0
          M10Resdum                            1014         0         0         0         0
          M11Resdum                            1015         0         0         0         0
-         Metal1                               1016       325         0      5347         0
-         Metal2                               1017       199         0      3178         0
+         Metal1                               1016       572         0    183974         0
+         Metal2                               1017       455         0    111625         0
          Metal3                               1018         0         0         0         0
          Metal4                               1019         0         0         0         0
          Metal5                               1020         0         0         0         0
@@ -255,22 +264,22 @@ INFO:    Layer Summary:
          NPNdummy                             1027         0         0         0         0
          Nburied                              1028         0         0         0         0
          Nhvt                                 1029         0         0         0         0
-         Nimp                                 1030         5         0       647         0
+         Nimp                                 1030         5         0     21552         0
          Nlvt                                 1031         0         0         0         0
-         Nwell                                1032        23         0       459         0
+         Nwell                                1032        42         0     15600         0
          Nzvt                                 1033         0         0         0         0
-         Oxide                                1034        14         0      1888         0
+         Oxide                                1034        14         0     62720         0
          Oxide_thk                            1035         0         0         0         0
          PNPdummy                             1036         0         0         0         0
          Phvt                                 1037         0         0         0         0
-         Pimp                                 1038         5         0       669         0
+         Pimp                                 1038         5         0     22160         0
          Plvt                                 1039         0         0         0         0
-         Poly                                 1040        70         0      3830         0
+         Poly                                 1040        73         0    127648         0
          Psub                                 1041         0         0         0         0
          ResWdum                              1042         0         0         0         0
          Resdum                               1043         0         0         0         0
          SiProt                               1044         0         0         0         0
-         Via1                                 1045         7         0      3111         0
+         Via1                                 1045         7         0    106566         0
          Via2                                 1046         0         0         0         0
          Via3                                 1047         0         0         0         0
          Via4                                 1048         0         0         0         0
@@ -280,8 +289,8 @@ INFO:    Layer Summary:
          Via8                                 1052         0         0         0         0
          Via9                                 1053         0         0         0         0
          Via10                                1054         0         0         0         0
-         metal1_conn_text                     1055         0        59         0      1604
-         metal2_conn_text                     1056         0         0         0         0
+         metal1_conn_text                     1055         0       238         0     53877
+         metal2_conn_text                     1056         0        28         0       656
          metal3_conn_text                     1057         0         0         0         0
          metal4_conn_text                     1058         0         0         0         0
          metal5_conn_text                     1059         0         0         0         0
@@ -291,10 +300,10 @@ INFO:    Layer Summary:
          metal9_conn_text                     1063         0         0         0         0
          metal10_conn_text                    1064         0         0         0         0
          metal11_conn_text                    1065         0         0         0         0
-         poly_conn_text                       1066         0         8         0      1144
+         poly_conn_text                       1066         0         8         0     38016
          ----------------------------------------------------------------------------
 
-INFO:    CHIP EXTENT: -30120 -69070 26540 43430
+INFO:    CHIP EXTENT: -54450 -387070 294530 49020
 
 
 INFO:    Ports ...
@@ -302,34 +311,242 @@ INFO:    Ports ...
 
 INFO:    Texts For Connectivity ...
          ========================================================================
+         VDD (-25.355, 22.845) 1055 sys_arr_ppl
+         S33_7 (146.050, -193.185) 1055 sys_arr_ppl
+         S33_6 (146.055, -191.570) 1055 sys_arr_ppl
+         S33_5 (146.065, -184.715) 1055 sys_arr_ppl
+         S33_4 (146.065, -177.675) 1055 sys_arr_ppl
+         S33_3 (146.060, -170.640) 1055 sys_arr_ppl
+         S33_2 (146.075, -163.595) 1055 sys_arr_ppl
+         S33_1 (146.260, -156.185) 1055 sys_arr_ppl
+         S33_0 (146.090, -149.505) 1055 sys_arr_ppl
+         S32_7 (146.050, -138.675) 1055 sys_arr_ppl
+         S32_6 (146.055, -137.260) 1055 sys_arr_ppl
+         S32_5 (146.070, -130.210) 1055 sys_arr_ppl
+         S32_4 (146.090, -122.885) 1055 sys_arr_ppl
+         S32_3 (146.070, -116.130) 1055 sys_arr_ppl
+         S32_2 (146.080, -109.080) 1055 sys_arr_ppl
+         S32_1 (146.070, -102.040) 1055 sys_arr_ppl
+         S32_0 (146.085, -94.995) 1055 sys_arr_ppl
+         S31_7 (146.065, -84.185) 1055 sys_arr_ppl
+         S31_6 (146.070, -82.765) 1055 sys_arr_ppl
+         S31_5 (146.080, -75.720) 1055 sys_arr_ppl
+         S31_4 (146.080, -68.675) 1055 sys_arr_ppl
+         S31_3 (146.075, -61.630) 1055 sys_arr_ppl
+         S31_2 (146.080, -54.590) 1055 sys_arr_ppl
+         S31_1 (146.085, -47.545) 1055 sys_arr_ppl
+         S31_0 (146.080, -40.500) 1055 sys_arr_ppl
+         S30_7 (146.055, -29.670) 1055 sys_arr_ppl
+         S30_6 (146.065, -28.250) 1055 sys_arr_ppl
+         S30_5 (146.075, -21.210) 1055 sys_arr_ppl
+         S30_4 (146.070, -14.165) 1055 sys_arr_ppl
+         S30_3 (146.075, -7.115) 1055 sys_arr_ppl
+         S30_2 (146.100, -0.080) 1055 sys_arr_ppl
+         S30_1 (146.085, 6.965) 1055 sys_arr_ppl
+         S30_0 (146.095, 14.015) 1055 sys_arr_ppl
+         S23_7 (102.435, -193.190) 1055 sys_arr_ppl
+         S23_6 (102.445, -191.765) 1055 sys_arr_ppl
+         S23_5 (102.450, -184.720) 1055 sys_arr_ppl
+         S23_4 (102.455, -177.680) 1055 sys_arr_ppl
+         S23_3 (102.450, -170.640) 1055 sys_arr_ppl
+         S23_2 (102.465, -163.590) 1055 sys_arr_ppl
+         S23_1 (102.465, -156.545) 1055 sys_arr_ppl
+         S23_0 (102.470, -149.505) 1055 sys_arr_ppl
+         S22_7 (102.435, -138.680) 1055 sys_arr_ppl
+         S22_6 (102.450, -137.260) 1055 sys_arr_ppl
+         S22_5 (102.445, -130.205) 1055 sys_arr_ppl
+         S22_4 (102.450, -123.160) 1055 sys_arr_ppl
+         S22_3 (102.450, -116.125) 1055 sys_arr_ppl
+         S22_2 (102.465, -109.080) 1055 sys_arr_ppl
+         S22_1 (102.465, -102.040) 1055 sys_arr_ppl
+         S22_0 (102.475, -94.995) 1055 sys_arr_ppl
+         S21_7 (102.455, -84.175) 1055 sys_arr_ppl
+         S21_6 (102.465, -82.755) 1055 sys_arr_ppl
+         S21_5 (102.440, -75.720) 1055 sys_arr_ppl
+         S21_4 (102.450, -68.670) 1055 sys_arr_ppl
+         S21_3 (102.475, -61.630) 1055 sys_arr_ppl
+         S21_2 (102.480, -54.040) 1055 sys_arr_ppl
+         S21_1 (102.475, -47.545) 1055 sys_arr_ppl
+         S21_0 (102.480, -40.500) 1055 sys_arr_ppl
+         S20_7 (102.450, -29.670) 1055 sys_arr_ppl
+         S20_6 (102.455, -28.250) 1055 sys_arr_ppl
+         S20_5 (102.450, -21.205) 1055 sys_arr_ppl
+         S20_4 (102.455, -14.165) 1055 sys_arr_ppl
+         S20_3 (102.460, -7.120) 1055 sys_arr_ppl
+         S20_2 (102.480, -0.080) 1055 sys_arr_ppl
+         S20_1 (102.475, 6.965) 1055 sys_arr_ppl
+         S20_0 (102.475, 14.005) 1055 sys_arr_ppl
+         S13_7 (58.825, -193.185) 1055 sys_arr_ppl
+         S13_6 (58.835, -191.765) 1055 sys_arr_ppl
+         S13_5 (58.840, -184.450) 1055 sys_arr_ppl
+         S13_4 (58.840, -177.675) 1055 sys_arr_ppl
+         S13_3 (58.835, -170.640) 1055 sys_arr_ppl
+         S13_2 (58.855, -163.590) 1055 sys_arr_ppl
+         S13_1 (58.850, -156.545) 1055 sys_arr_ppl
+         S13_0 (58.865, -149.505) 1055 sys_arr_ppl
+         S12_7 (58.825, -138.675) 1055 sys_arr_ppl
+         S12_6 (58.835, -137.255) 1055 sys_arr_ppl
+         S12_5 (58.840, -130.210) 1055 sys_arr_ppl
+         S12_4 (58.840, -123.170) 1055 sys_arr_ppl
+         S12_3 (58.840, -116.120) 1055 sys_arr_ppl
+         S12_2 (58.845, -109.080) 1055 sys_arr_ppl
+         S12_1 (58.845, -102.035) 1055 sys_arr_ppl
+         S12_0 (58.855, -94.990) 1055 sys_arr_ppl
+         S11_7 (58.830, -84.180) 1055 sys_arr_ppl
+         S11_6 (58.840, -82.760) 1055 sys_arr_ppl
+         S11_5 (58.845, -75.710) 1055 sys_arr_ppl
+         S11_4 (58.845, -68.670) 1055 sys_arr_ppl
+         S11_3 (58.840, -61.625) 1055 sys_arr_ppl
+         S11_2 (58.840, -54.585) 1055 sys_arr_ppl
+         S11_1 (58.840, -47.540) 1055 sys_arr_ppl
+         S11_0 (58.870, -40.500) 1055 sys_arr_ppl
+         S11_0 (38.212, -28.970) 1055 sys_arr_ppl
+         S10_7 (58.840, -29.670) 1055 sys_arr_ppl
+         S10_6 (58.860, -28.255) 1055 sys_arr_ppl
+         S10_5 (58.865, -21.210) 1055 sys_arr_ppl
+         S10_4 (58.855, -14.160) 1055 sys_arr_ppl
+         S10_3 (58.855, -7.120) 1055 sys_arr_ppl
+         S10_2 (58.865, -0.075) 1055 sys_arr_ppl
+         S10_1 (58.870, 6.970) 1055 sys_arr_ppl
+         S10_0 (58.875, 14.005) 1055 sys_arr_ppl
+         S03_7 (15.205, -193.185) 1055 sys_arr_ppl
+         S03_6 (15.220, -191.765) 1055 sys_arr_ppl
+         S03_5 (15.220, -184.720) 1055 sys_arr_ppl
+         S03_4 (15.220, -177.670) 1055 sys_arr_ppl
+         S03_3 (15.215, -170.640) 1055 sys_arr_ppl
+         S03_2 (15.220, -163.595) 1055 sys_arr_ppl
+         S03_1 (15.235, -156.550) 1055 sys_arr_ppl
+         S03_0 (15.230, -149.505) 1055 sys_arr_ppl
+         S02_7 (15.205, -138.680) 1055 sys_arr_ppl
+         S02_6 (15.215, -137.250) 1055 sys_arr_ppl
+         S02_5 (15.220, -130.205) 1055 sys_arr_ppl
+         S02_4 (15.220, -123.170) 1055 sys_arr_ppl
+         S02_3 (15.205, -116.130) 1055 sys_arr_ppl
+         S02_2 (15.215, -109.080) 1055 sys_arr_ppl
+         S02_1 (15.240, -102.035) 1055 sys_arr_ppl
+         S02_0 (15.230, -94.995) 1055 sys_arr_ppl
+         S01_7 (15.210, -84.185) 1055 sys_arr_ppl
+         S01_6 (15.205, -82.130) 1055 sys_arr_ppl
+         S01_5 (15.220, -75.720) 1055 sys_arr_ppl
+         S01_4 (15.220, -68.670) 1055 sys_arr_ppl
+         S01_3 (15.225, -61.635) 1055 sys_arr_ppl
+         S01_2 (15.225, -54.585) 1055 sys_arr_ppl
+         S01_1 (15.225, -47.540) 1055 sys_arr_ppl
+         S01_0 (15.245, -40.500) 1055 sys_arr_ppl
+         S00_7 (15.235, -29.670) 1055 sys_arr_ppl
+         S00_6 (15.250, -28.255) 1055 sys_arr_ppl
+         S00_5 (15.250, -21.205) 1055 sys_arr_ppl
+         S00_4 (15.250, -14.165) 1055 sys_arr_ppl
+         S00_3 (15.245, -7.125) 1055 sys_arr_ppl
+         S00_2 (15.250, -0.085) 1055 sys_arr_ppl
+         S00_1 (15.245, 6.965) 1055 sys_arr_ppl
+         S00_0 (15.245, 14.010) 1055 sys_arr_ppl
+         RST (-27.135, -29.840) 1055 sys_arr_ppl
+         PHI (-27.165, 24.315) 1055 sys_arr_ppl
+         GND (-25.350, 21.195) 1055 sys_arr_ppl
+         A03_3 (-27.130, -139.595) 1055 sys_arr_ppl
+         A03_2 (-27.125, -139.795) 1055 sys_arr_ppl
+         A03_1 (-27.125, -139.995) 1055 sys_arr_ppl
+         A03_0 (-27.135, -140.195) 1055 sys_arr_ppl
+         A02_3 (-27.135, -85.085) 1055 sys_arr_ppl
+         A02_2 (-27.125, -85.280) 1055 sys_arr_ppl
+         A02_1 (-27.135, -85.480) 1055 sys_arr_ppl
+         A02_0 (-27.140, -85.685) 1055 sys_arr_ppl
+         A01_3 (-27.130, -30.590) 1055 sys_arr_ppl
+         A01_2 (-27.130, -30.790) 1055 sys_arr_ppl
+         A01_1 (-27.140, -30.985) 1055 sys_arr_ppl
+         A01_0 (-27.145, -31.190) 1055 sys_arr_ppl
+         A00_3 (-27.155, 23.920) 1055 sys_arr_ppl
+         A00_2 (-27.150, 23.720) 1055 sys_arr_ppl
+         A00_1 (-27.145, 23.520) 1055 sys_arr_ppl
+         A00_0 (-27.140, 23.320) 1055 sys_arr_ppl
+         B30_3 (103.880, 24.390) 1056 sys_arr_ppl
+         B30_2 (104.030, 24.390) 1056 sys_arr_ppl
+         B30_1 (104.180, 24.390) 1056 sys_arr_ppl
+         B30_0 (104.335, 24.385) 1056 sys_arr_ppl
+         B20_3 (60.265, 24.385) 1056 sys_arr_ppl
+         B20_2 (60.415, 24.390) 1056 sys_arr_ppl
+         B20_1 (60.570, 24.395) 1056 sys_arr_ppl
+         B20_0 (60.725, 24.385) 1056 sys_arr_ppl
+         B10_3 (16.650, 24.400) 1056 sys_arr_ppl
+         B10_2 (16.795, 24.390) 1056 sys_arr_ppl
+         B10_1 (16.955, 24.395) 1056 sys_arr_ppl
+         B10_0 (17.105, 24.390) 1056 sys_arr_ppl
+         B00_3 (-26.960, 24.395) 1056 sys_arr_ppl
+         B00_2 (-26.810, 24.390) 1056 sys_arr_ppl
+         B00_1 (-26.670, 24.390) 1056 sys_arr_ppl
+         B00_0 (-26.515, 24.395) 1056 sys_arr_ppl
+         VDD (-19.780, 24.230) 1055 proc_el_ppl
+         S7 (20.846, -28.287) 1055 proc_el_ppl
+         S6 (20.858, -26.863) 1055 proc_el_ppl
+         S5 (20.863, -19.814) 1055 proc_el_ppl
+         S4 (20.863, -12.771) 1055 proc_el_ppl
+         S3 (20.863, -5.728) 1055 proc_el_ppl
+         S2 (20.875, 1.312) 1055 proc_el_ppl
+         S1 (20.877, 8.351) 1055 proc_el_ppl
+         S0 (20.877, 15.391) 1055 proc_el_ppl
+         RSTP (21.880, -28.455) 1055 proc_el_ppl
+         RST (-21.565, -28.455) 1055 proc_el_ppl
+         PHI (-21.595, 25.700) 1055 proc_el_ppl
+         GND (-19.780, 22.580) 1055 proc_el_ppl
+         A3P (21.890, 25.305) 1055 proc_el_ppl
+         A3 (-21.590, 25.305) 1055 proc_el_ppl
+         A2P (21.895, 25.105) 1055 proc_el_ppl
+         A2 (-21.590, 25.110) 1055 proc_el_ppl
+         A1P (21.895, 24.905) 1055 proc_el_ppl
+         A1 (-21.600, 24.905) 1055 proc_el_ppl
+         A0P (21.890, 24.705) 1055 proc_el_ppl
+         A0 (-21.600, 24.705) 1055 proc_el_ppl
+         B3P (-21.390, -28.505) 1056 proc_el_ppl
+         B3 (-21.395, 25.860) 1056 proc_el_ppl
+         B2P (-21.240, -28.505) 1056 proc_el_ppl
+         B2 (-21.245, 25.860) 1056 proc_el_ppl
+         B1P (-21.090, -28.500) 1056 proc_el_ppl
+         B1 (-21.095, 25.860) 1056 proc_el_ppl
+         B0P (-20.940, -28.505) 1056 proc_el_ppl
+         B0 (-20.945, 25.855) 1056 proc_el_ppl
          VDD (-14.275, 20.575) 1055 Multiplier_ppl
-         P7 (13.215, -34.470) 1055 Multiplier_ppl
-         P6 (13.210, -34.265) 1055 Multiplier_ppl
-         P5 (13.210, -34.110) 1055 Multiplier_ppl
-         P4 (13.210, -33.955) 1055 Multiplier_ppl
-         P3 (13.210, -33.800) 1055 Multiplier_ppl
-         P2 (13.210, -15.150) 1055 Multiplier_ppl
-         P1 (13.225, 7.745) 1055 Multiplier_ppl
-         P0 (13.220, 17.945) 1055 Multiplier_ppl
+         PHI (-15.335, 22.045) 1055 Multiplier_ppl
+         P7 (13.215, -23.420) 1055 Multiplier_ppl
+         P6 (13.210, -23.215) 1055 Multiplier_ppl
+         P5 (13.210, -23.060) 1055 Multiplier_ppl
+         P4 (13.210, -22.905) 1055 Multiplier_ppl
+         P3 (13.210, -22.750) 1055 Multiplier_ppl
+         P2 (13.215, -9.560) 1055 Multiplier_ppl
+         P1 (13.220, 4.955) 1055 Multiplier_ppl
+         P0 (13.210, 18.135) 1055 Multiplier_ppl
          GND (-14.270, 18.925) 1055 Multiplier_ppl
-         B3 (-15.005, -24.545) 1055 Multiplier_ppl
-         B2 (-15.010, 5.625) 1055 Multiplier_ppl
-         B1 (-15.010, 17.790) 1055 Multiplier_ppl
-         B0 (-15.010, 20.850) 1055 Multiplier_ppl
-         A3 (-15.005, 21.650) 1055 Multiplier_ppl
-         A2 (-15.005, 21.450) 1055 Multiplier_ppl
-         A1 (-15.015, 21.250) 1055 Multiplier_ppl
-         A0 (-15.010, 21.050) 1055 Multiplier_ppl
-         Y (1.530, 1.045) 1055 FlipFlop
-         VDD (-1.475, 2.270) 1055 FlipFlop
-         PHI (-1.505, 1.285) 1055 FlipFlop
-         GND (-1.475, 0.010) 1055 FlipFlop
-         A (-1.545, 0.855) 1055 FlipFlop
+         B3 (-15.345, -7.890) 1055 Multiplier_ppl
+         B2 (-15.345, 6.875) 1055 Multiplier_ppl
+         B1 (-15.345, 17.790) 1055 Multiplier_ppl
+         B0 (-15.335, 20.850) 1055 Multiplier_ppl
+         A3 (-15.340, 21.650) 1055 Multiplier_ppl
+         A2 (-15.340, 21.450) 1055 Multiplier_ppl
+         A1 (-15.340, 21.250) 1055 Multiplier_ppl
+         A0 (-15.330, 21.050) 1055 Multiplier_ppl
          Y (0.635, 0.850) 1055 AND
          VDD (-1.355, 1.925) 1055 AND
          GND (-1.355, 0.275) 1055 AND
          B (-1.415, 0.860) 1055 AND
          A (-1.420, 1.230) 1055 AND
+         VDD (-1.660, 0.570) 1055 Half_Adder
+         SUM (2.665, -0.420) 1055 Half_Adder
+         GND (-1.655, 2.455) 1055 Half_Adder
+         COUT (2.645, 1.790) 1055 Half_Adder
+         B (-1.730, -0.395) 1055 Half_Adder
+         A (-1.715, -0.750) 1055 Half_Adder
+         VDD (-6.590, 4.720) 1055 faabs
+         SOUT (3.875, 0.610) 1055 faabs
+         GND (-6.590, 6.265) 1055 faabs
+         A (-6.635, 3.415) 1055 faabs
+         RST (0.120, 6.470) 1056 faabs
+         PHI (0.280, 6.470) 1056 faabs
+         COUT (-6.240, -0.680) 1056 faabs
+         CIN (-6.235, 6.460) 1056 faabs
+         Y (0.490, 0.400) 1055 inv
+         VDD (-0.475, 1.430) 1055 inv
+         GND (-0.465, -0.125) 1055 inv
+         A (-0.520, 0.635) 1055 inv
          VDD (-4.685, 4.420) 1055 Full_Adder
          SUM (1.725, 3.445) 1055 Full_Adder
          GND (-4.685, 5.965) 1055 Full_Adder
@@ -347,20 +564,19 @@ INFO:    Texts For Connectivity ...
          GND (-1.000, -0.425) 1055 NAND
          B (-1.045, 0.155) 1055 NAND
          A (-1.040, 0.525) 1055 NAND
-         VDD (-1.660, 0.570) 1055 Half_Adder
-         SUM (2.665, -0.420) 1055 Half_Adder
-         GND (-1.655, 2.455) 1055 Half_Adder
-         COUT (2.645, 1.790) 1055 Half_Adder
-         B (-1.730, -0.395) 1055 Half_Adder
-         A (-1.715, -0.750) 1055 Half_Adder
-         S_source_0 (-0.080, 0.120) 1055 pmos1v_CDNS_10
-         D_drain_1 (0.125, 0.120) 1055 pmos1v_CDNS_10
-         G_gate_1 (0.022, 0.315) 1066 pmos1v_CDNS_10
-         G_gate_1 (0.022, -0.075) 1066 pmos1v_CDNS_10
-         S_source_0 (-0.080, 0.060) 1055 nmos1v_CDNS_9
-         D_drain_1 (0.125, 0.060) 1055 nmos1v_CDNS_9
-         G_gate_1 (0.022, 0.195) 1066 nmos1v_CDNS_9
-         G_gate_1 (0.022, -0.075) 1066 nmos1v_CDNS_9
+         Y (1.530, 1.045) 1055 FlipFlop
+         VDD (-1.475, 2.270) 1055 FlipFlop
+         PHI (-1.505, 1.285) 1055 FlipFlop
+         GND (-1.475, 0.010) 1055 FlipFlop
+         A (-1.545, 0.855) 1055 FlipFlop
+         S_source_0 (-0.080, 0.060) 1055 nmos1v_CDNS_10
+         D_drain_1 (0.125, 0.060) 1055 nmos1v_CDNS_10
+         G_gate_1 (0.022, 0.195) 1066 nmos1v_CDNS_10
+         G_gate_1 (0.022, -0.075) 1066 nmos1v_CDNS_10
+         S_source_0 (-0.080, 0.120) 1055 pmos1v_CDNS_9
+         D_drain_1 (0.125, 0.120) 1055 pmos1v_CDNS_9
+         G_gate_1 (0.022, 0.315) 1066 pmos1v_CDNS_9
+         G_gate_1 (0.022, -0.075) 1066 pmos1v_CDNS_9
          S_source_0 (-0.080, 0.120) 1055 nmos1v_CDNS_8
          D_drain_1 (0.125, 0.120) 1055 nmos1v_CDNS_8
          G_gate_1 (0.022, 0.315) 1066 nmos1v_CDNS_8
@@ -383,7 +599,8 @@ INFO:    Layer Summary(Texts For Connectivity):
          ----------------------------------------------------------------------------
              LAYER                              ID       TEXTS
          ----------------------------------------------------------------------------
-         metal1_conn_text                     1055        59
+         metal1_conn_text                     1055       238
+         metal2_conn_text                     1056        28
          poly_conn_text                       1066         8
          ----------------------------------------------------------------------------
 
@@ -406,16 +623,18 @@ INFO:    Layer Summary(Texts For DFM_TEXT):
          ----------------------------------------------------------------------------
 
 INFO:    Expanded Cell Summary
+         Multiplier_ppl is expanded.
          M2_M1_CDNS_1 is expanded.
-         M1_PSUB_CDNS_2 is expanded.
-         M1_NWELL_CDNS_3 is expanded.
+         M2_M1_CDNS_2 is expanded.
+         M2_M1_CDNS_3 is expanded.
          M1_PO_CDNS_4 is expanded.
-         M2_M1_CDNS_5 is expanded.
-         M2_M1_CDNS_6 is expanded.
+         M1_NWELL_CDNS_5 is expanded.
+         M1_PSUB_CDNS_6 is expanded.
          pmos1v_CDNS_7 is expanded.
          nmos1v_CDNS_8 is expanded.
-         nmos1v_CDNS_9 is expanded.
-         pmos1v_CDNS_10 is expanded.
+         pmos1v_CDNS_9 is expanded.
+         nmos1v_CDNS_10 is expanded.
+         inv is expanded.
 INFO:    Rule offgrid_check completed with no violations, 1/576
 INFO:    Rule ortho_45_check completed with no violations, 2/576
 INFO:    Rule acute_check completed with no violations, 3/576
@@ -799,7 +1018,7 @@ INFO:    Rule METAL7.SP.3 completed with no violations, 379/576
 INFO:    Rule METAL8.SP.3 completed with no violations, 380/576
 INFO:    Rule METAL9.SP.3 completed with no violations, 381/576
 INFO:    Rule METAL1.A.1 completed with no violations, 382/576
-INFO:    Rule METAL2.A.1 completed with 50 violations, 383/576
+INFO:    Rule METAL2.A.1 completed with no violations, 383/576
 INFO:    Rule METAL3.A.1 completed with no violations, 384/576
 INFO:    Rule METAL4.A.1 completed with no violations, 385/576
 INFO:    Rule METAL5.A.1 completed with no violations, 386/576
@@ -975,8 +1194,8 @@ INFO:    Rule OXIDER.W.1.1 completed with no violations, 555/576
 INFO:    Rule POLYR.W.1.1 completed with no violations, 556/576
 INFO:    Rule soft_check_1 completed with no violations, 557/576
 INFO:    Rule soft_check_2 completed with no violations, 558/576
-INFO:    Rule soft_check_4 completed with 53 violations, 559/576
-INFO:    Rule soft_check_5 completed with 1 violations, 560/576
+INFO:    Rule soft_check_4 completed with no violations, 559/576
+INFO:    Rule soft_check_5 completed with no violations, 560/576
 INFO:    Rule soft_check_7 completed with no violations, 561/576
 INFO:    Rule soft_check_8 completed with no violations, 562/576
 INFO:    Rule soft_check_10 completed with no violations, 563/576
@@ -990,7 +1209,7 @@ INFO:    Rule soft_check_17 completed with no violations, 568/576
          Remaining rules: NW.SP.1  NW.SP.2_3  LATCHUP.3  LATCHUP.4  ESD.4  ESD.4_2  ESD.8  ESD.8_2 
 INFO:    Rule NW.SP.1 completed with no violations, 569/576
          Remaining rules: NW.SP.2_3  LATCHUP.3  LATCHUP.4  ESD.4  ESD.4_2  ESD.8  ESD.8_2 
-INFO:    Rule NW.SP.2_3 completed with 5 violations, 570/576
+INFO:    Rule NW.SP.2_3 completed with no violations, 570/576
          Remaining rules: LATCHUP.3  LATCHUP.4  ESD.4  ESD.4_2  ESD.8  ESD.8_2 
 INFO:    Rule LATCHUP.3 completed with no violations, 571/576
          Remaining rules: LATCHUP.4  ESD.4  ESD.4_2  ESD.8  ESD.8_2 
@@ -1003,26 +1222,26 @@ INFO:    Rule ESD.4_2 completed with no violations, 574/576
 INFO:    Rule ESD.8 completed with no violations, 575/576
          Remaining rules: ESD.8_2 
 INFO:    Rule ESD.8_2 completed with no violations, 576/576
-INFO:    Status: Runset 100% complete as of 2025-04-29 16:56:57   Elapsed: 00:00:06
+INFO:    Status: Runset 100% complete as of 2025-05-15 10:11:36   Elapsed: 00:00:01
          Worker: Active CPUs  Total Mem(MB)  Active Mem(MB)  CPU time(s)
-              0:    1 /   1             23              10            1
-INFO:	 Status: Finishing as of 2025-04-29 16:56:57   Elapsed: 00:00:06   CPU time[s]: 6
+              0:    1 /   1            111              10            1
+INFO:	 Status: Finishing as of 2025-05-15 10:11:36   Elapsed: 00:00:01   CPU time[s]: 1
 INFO:    Resource usage by worker at exit:
                   CPU      Elapsed  CPUs       CPU       Peak        Peak engine
          Worker:  time[s]  time[s]  Allocated  usage[%]  Memory[MB]  Memory[MB]
-              0:        1        6          1     23.77          23           10
-         Worker resource usage  summary: Total CPU[s]: 1  Run duration[s]: 6  Max peak memory[MB]: 23
-         Worker CPU utilization summary: 1 of 6 available CPU seconds (16.67%) with 1 average available CPU(s)
-INFO:    Generating summary in /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/Multiplier_ppl.sum
+              0:        1        1          1     90.79         111           10
+         Worker resource usage  summary: Total CPU[s]: 1  Run duration[s]: 1  Max peak memory[MB]: 111
+         Worker CPU utilization summary: 1 of 1 available CPU seconds (100.00%) with 1 average available CPU(s)
+INFO:    Generating summary in /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/sys_arr_ppl.sum
 INFO:    All selected rules completed
          Total CPU Time                    : 2(s)
-         Total Real Time                   : 7(s)
-         Total Original Geometry           : 675(22877)
+         Total Real Time                   : 2(s)
+         Total Original Geometry           : 1200(778693)
          Total DRC RuleChecks              : 576
-         Total DRC Results                 : 109 (113)
-         ASCII report database is /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/Multiplier_ppl.drc_errors.ascii
+         Total DRC Results                 : 0 (0)
+         ASCII report database is /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/sys_arr_ppl.drc_errors.ascii
 INFO:    Checking in all SoftShare licenses.
 
-Pegasus finished normally. 2025-04-29 16:56:57
+Pegasus finished normally. 2025-05-15 10:11:36
 
 

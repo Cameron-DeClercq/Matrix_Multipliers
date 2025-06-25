@@ -35,7 +35,7 @@ output_db -type spice \
 	 -sub_node_char "#"
 output_setup \
 	 -directory_name "/home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/svdb" \
-	 -file_name "/home/ece558_658_2024/cdeclercq/559/unppl_design/sys_arr_unp_pl.sp" \
+	 -file_name "/home/ece558_658_2024/cdeclercq/559/unppl_design/sau_prl.sp" \
 	 -net_name_space "SCHEMATIC" \
 	 -temporary_directory_name "sys_arr_unp"
 process_technology \

@@ -1,7 +1,7 @@
 ********************************************************************************
 *** Pegasus DRC SUMMARY
 ***
-Execute on Date/Time    : Sun Apr 20 20:57:29 2025
+Execute on Date/Time    : Thu May  8 15:20:22 2025
 Pegasus VERSION         : 22.20-p009 Wed Jan 18 17:06:09 PST 2023
 Rule Deck Path          : /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/.technology.rul
 Rule Deck Title         :
@@ -25,12 +25,13 @@ DRC Results Database    :
 --- RUNNING TIME WARNINGS
 ---
 /ece558_658/pdk/verification/pvs/./pvlDRC.rul:4253, -para only is set since -project with constraint only supported with -para only.
+/ece558_658/pdk/verification/pvs/./pvlDRC.rul:4270, -para only is set since -project with constraint only supported with -para only.
 --------------------------------------------------------------------------------
 --- ORIGINAL LAYER STATISTICS
 ---
 LAYER Bondpad .............................. Total Original Geometry:          0 (         0)
 LAYER CapMetal ............................. Total Original Geometry:          0 (         0)
-LAYER Cont ................................. Total Original Geometry:         27 (    106784)
+LAYER Cont ................................. Total Original Geometry:         27 (    107888)
 LAYER ESDdummy ............................. Total Original Geometry:          0 (         0)
 LAYER INDdummy ............................. Total Original Geometry:          0 (         0)
 LAYER M1Resdum ............................. Total Original Geometry:          0 (         0)
@@ -44,8 +45,8 @@ LAYER M8Resdum ............................. Total Original Geometry:          0
 LAYER M9Resdum ............................. Total Original Geometry:          0 (         0)
 LAYER M10Resdum ............................ Total Original Geometry:          0 (         0)
 LAYER M11Resdum ............................ Total Original Geometry:          0 (         0)
-LAYER Metal1 ............................... Total Original Geometry:        528 (    159216)
-LAYER Metal2 ............................... Total Original Geometry:        371 (     97120)
+LAYER Metal1 ............................... Total Original Geometry:        528 (    160531)
+LAYER Metal2 ............................... Total Original Geometry:        377 (     97894)
 LAYER Metal3 ............................... Total Original Geometry:          0 (         0)
 LAYER Metal4 ............................... Total Original Geometry:          0 (         0)
 LAYER Metal5 ............................... Total Original Geometry:          0 (         0)
@@ -58,22 +59,22 @@ LAYER Metal11 .............................. Total Original Geometry:          0
 LAYER NPNdummy ............................. Total Original Geometry:          0 (         0)
 LAYER Nburied .............................. Total Original Geometry:          0 (         0)
 LAYER Nhvt ................................. Total Original Geometry:          0 (         0)
-LAYER Nimp ................................. Total Original Geometry:          5 (     18576)
+LAYER Nimp ................................. Total Original Geometry:          5 (     18752)
 LAYER Nlvt ................................. Total Original Geometry:          0 (         0)
-LAYER Nwell ................................ Total Original Geometry:         38 (     13712)
+LAYER Nwell ................................ Total Original Geometry:         39 (     13840)
 LAYER Nzvt ................................. Total Original Geometry:          0 (         0)
-LAYER Oxide ................................ Total Original Geometry:         14 (     54016)
+LAYER Oxide ................................ Total Original Geometry:         14 (     54528)
 LAYER Oxide_thk ............................ Total Original Geometry:          0 (         0)
 LAYER PNPdummy ............................. Total Original Geometry:          0 (         0)
 LAYER Phvt ................................. Total Original Geometry:          0 (         0)
-LAYER Pimp ................................. Total Original Geometry:          5 (     19184)
+LAYER Pimp ................................. Total Original Geometry:          5 (     19360)
 LAYER Plvt ................................. Total Original Geometry:          0 (         0)
-LAYER Poly ................................. Total Original Geometry:         73 (    108928)
+LAYER Poly ................................. Total Original Geometry:         73 (    110000)
 LAYER Psub ................................. Total Original Geometry:          0 (         0)
 LAYER ResWdum .............................. Total Original Geometry:          0 (         0)
 LAYER Resdum ............................... Total Original Geometry:          0 (         0)
 LAYER SiProt ............................... Total Original Geometry:          0 (         0)
-LAYER Via1 ................................. Total Original Geometry:          7 (     91024)
+LAYER Via1 ................................. Total Original Geometry:          7 (     91859)
 LAYER Via2 ................................. Total Original Geometry:          0 (         0)
 LAYER Via3 ................................. Total Original Geometry:          0 (         0)
 LAYER Via4 ................................. Total Original Geometry:          0 (         0)
@@ -682,6 +683,6 @@ RULECHECK soft_check_9 ................................. Total Result          0
 ---
 Total CPU Time                    : 2(s)
 Total Real Time                   : 2(s)
-Total Original Geometry           : 1068 (668560)
+Total Original Geometry           : 1075 (674652)
 Total DRC RuleChecks              : 576
 Total DRC Results                 : 0 (0)

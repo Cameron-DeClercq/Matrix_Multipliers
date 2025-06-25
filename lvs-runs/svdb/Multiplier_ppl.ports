@@ -1,0 +1,21 @@
+# SVDB: Port Table (ports)
+# SVDB: Layout Primary Multiplier_ppl
+B1 13 B1 -30690 35580 metal1_conn
+P7 65 P7 26430 -46840 metal1_conn
+PHI 1 PHI -30670 43700 metal1_conn
+P2 67 P2 26430 -19120 metal1_conn
+A0 2 A0 -30660 42100 metal1_conn
+P0 68 P0 26420 36270 metal1_conn
+A1 3 A1 -30680 42500 metal1_conn
+P4 43 P4 26420 -45810 metal1_conn
+P5 56 P5 26420 -46120 metal1_conn
+P1 69 P1 26440 9910 metal1_conn
+A2 4 A2 -30680 42900 metal1_conn
+A3 5 A3 -30680 43300 metal1_conn
+B0 6 B0 -30670 41700 metal1_conn
+B3 7 B3 -30690 -15780 metal1_conn
+GND 21 GND -28540 37850 metal1_conn
+VDD 22 VDD -28550 41150 metal1_conn
+P3 24 P3 26420 -45500 metal1_conn
+B2 12 B2 -30690 13750 metal1_conn
+P6 64 P6 26420 -46430 metal1_conn

@@ -5,7 +5,7 @@ pwd_d=`pwd`
 cd /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs ;\
 /opt/cadence/pegasus/bin/pegasus \
 	--log_dir LOGS \
-	-top_cell Multiplier_ppl \
+	-top_cell sys_arr_ppl \
 	-ui_data \
 	--control /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/pegasusdrcctl \
 	/home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/.technology.rul

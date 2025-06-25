@@ -1,4 +1,4 @@
-CADENCE IHNL111413
+CADENCE IHNL111415
 
 lab1_virt NAND schematic cds0
 accumulator_bitslice inv schematic cds1
@@ -10,6 +10,8 @@ systolic_array AND schematic cds6
 systolic_array XOR_ni schematic cds7
 accumulator_bitslice NOR schematic cds8
 systolic_array Half_Adder schematic cds9
-systolic_array Multiplier schematic cds10
-systolic_array proc_el schematic cds11
-systolic_array sys_arr_unp schematic cds12
+systolic_array dreg5b schematic cds10
+systolic_array dreg8b schematic cds11
+systolic_array Multiplier_ppl schematic cds12
+systolic_array proc_el_ppl schematic cds13
+systolic_array sys_arr_ppl schematic cds14

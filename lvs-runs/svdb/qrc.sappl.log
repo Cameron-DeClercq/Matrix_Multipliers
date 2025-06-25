@@ -1,0 +1,18 @@
+
+
+  Cadence Quantus Extraction - 64-bit Parasitic Extractor - Version
+21.2.0-p060 Fri Jan 21 12:43:56 PST 2022
+---------------------------------------------------------------------------------------------------------------
+                                  Copyright 2022 Cadence Design Systems,
+Inc.
+
+
+WARNING (EXTQRCXOPT-381) : The output_db -hierarchy_delimiter option value cannot be an empty string.
+It is now set to be the same as that of the input_db -hierarchy_delimiter
+option. If input_db -hierarchy_delimiter is not set, then output_db
+-hierarchy_delimiter is set to the default value ("/" character).
+ERROR (LBRCXM-522): File '/home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/svdb/sappl.lvsfile' does not exist
+
+ERROR (LBRCXM-709): *****  Quantus terminated abnormally  *****
+
+

@@ -1,18 +1,20 @@
 CADENCE IHNL11140
 $model
+systolic_array/dreg8b/schematic dreg8b
 accumulator_bitslice/inv/schematic inv
 lab1_virt/NAND/schematic NAND
 systolic_array/AND/schematic AND
-systolic_array/sys_arr_unp/schematic sys_arr_unp
+systolic_array/dreg5b/schematic dreg5b
 accumulator_bitslice/XOR/schematic XOR
-systolic_array/Multiplier/schematic Multiplier
 systolic_array/Full_Adder/schematic Full_Adder
 accumulator_bitslice/FlipFlop/schematic FlipFlop
+systolic_array/sys_arr_ppl/schematic sys_arr_ppl
 systolic_array/XOR_ni/schematic XOR_ni
+systolic_array/proc_el_ppl/schematic proc_el_ppl
 systolic_array/Half_Adder/schematic Half_Adder
-systolic_array/proc_el/schematic proc_el
 accumulator_bitslice/NOR/schematic NOR
 systolic_array/faabs/schematic faabs
+systolic_array/Multiplier_ppl/schematic Multiplier_ppl
 $endmodel
 $net
 $endnet

@@ -9,8 +9,8 @@ logFile	"/home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/PIPO1.LOG"
 maxVertices	2048
 pinAttNum	0
 runDir	"/home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs"
-strmFile	"/home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/Multiplier_ppl.gds.gz"
+strmFile	"/home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/sys_arr_ppl.gds.gz"
 strmVersion	5
 techLib	"gpdk045"
-topCell	"Multiplier_ppl"
+topCell	"sys_arr_ppl"
 view	"layout"

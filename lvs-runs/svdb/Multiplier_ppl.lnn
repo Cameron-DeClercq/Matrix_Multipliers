@@ -1,0 +1,79 @@
+# SVDB: Layout Netlist Names (lnn)
+# SVDB: Layout Primary Multiplier_ppl
+% M2_M1_CDNS_1 1
+% M1_PSUB_CDNS_2 1
+% M1_NWELL_CDNS_3 1
+% M1_PO_CDNS_4 1
+% M2_M1_CDNS_5 1
+% M2_M1_CDNS_6 1
+% pmos1v_CDNS_7 5
+1 S_source_0
+2 D_drain_1
+% nmos1v_CDNS_8 4
+1 S_source_0
+3 D_drain_1
+% nmos1v_CDNS_9 3
+1 S_source_0
+2 D_drain_1
+% pmos1v_CDNS_10 4
+1 S_source_0
+3 D_drain_1
+% Half_Adder 13
+1 B
+2 A
+3 GND
+4 VDD
+5 SUM
+6 COUT
+% NAND 6
+1 VDD
+2 GND
+3 Y
+4 B
+5 A
+% XOR 11
+1 B
+2 A
+3 GND
+4 VDD
+5 Y
+% Full_Adder 12
+1 B
+2 A
+3 CIN
+4 VDD
+5 GND
+6 SUM
+7 COUT
+% AND 7
+1 VDD
+2 GND
+3 B
+4 A
+5 Y
+% FlipFlop 11
+1 VDD
+2 GND
+3 PHI
+4 A
+5 Y
+% Multiplier_ppl 19
+1 PHI
+2 A0
+3 A1
+4 A2
+5 A3
+6 B0
+7 B3
+12 B2
+13 B1
+21 GND
+22 VDD
+24 P3
+43 P4
+56 P5
+64 P6
+65 P7
+67 P2
+68 P0
+69 P1

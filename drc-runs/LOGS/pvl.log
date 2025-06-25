@@ -18,12 +18,12 @@ VIRTUAL_CONNECT -colon no;
 VIRTUAL_CONNECT -semicolon_as_colon yes;
 VIRTUAL_CONNECT -report no;
 VIRTUAL_CONNECT -depth -primary;
-REPORT_SUMMARY -drc "Multiplier_ppl.sum" -replace;
+REPORT_SUMMARY -drc "sys_arr_ppl.sum" -replace;
 MAX_RESULTS -drc 1000;
-RESULTS_DB -drc "/home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/Multiplier_ppl.drc_errors.ascii" -ascii;
+RESULTS_DB -drc "/home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/sys_arr_ppl.drc_errors.ascii" -ascii;
 ABORT_ON_LAYOUT_ERROR yes;
 LAYOUT_FORMAT gdsii;
-LAYOUT_PATH "/home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/Multiplier_ppl.gds.gz";
+LAYOUT_PATH "/home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/sys_arr_ppl.gds.gz";
 
 ########################################################################
 Parsing Rule File /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/.technology.rul ...
@@ -36,7 +36,7 @@ It will be accepted for this run but should be changed to a pegasusRuleSet.
 LAYOUT_PATH "CELLNAME.gds" gdsii;
 [WARN]: LAYOUT_PATH at line 20 in file /ece558_658/pdk/verification/pvs/./pvlDRC.rul is skipped. It is set in control file.
 LAYOUT_PRIMARY "CELLNAME";
-[WARN] Cmd-line override: LAYOUT_PRIMARY "Multiplier_ppl";
+[WARN] Cmd-line override: LAYOUT_PRIMARY "sys_arr_ppl";
 RESULTS_DB -drc "CELLNAME.db" -ascii;
 [WARN]: RESULTS_DB -ascii at line 22 in file /ece558_658/pdk/verification/pvs/./pvlDRC.rul is skipped. It is set in control file.
 INPUT_SCALE 2000;
@@ -15490,6 +15490,6 @@ operation group: 2116/2116
 Completed execution after parsing the rules, as requested by the "-p" flag or "-get_rules" flag 
 
 
-Design rule check finished normally. Tue Apr 29 16:56:50 2025
+Design rule check finished normally. Thu May 15 10:11:34 2025
 
 

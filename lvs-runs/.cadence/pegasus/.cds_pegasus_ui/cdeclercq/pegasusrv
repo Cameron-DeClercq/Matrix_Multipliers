@@ -1,5 +1,5 @@
 [General]
-RunTabLayout=@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\0\0\0\0\0\0\0\0\x3R\0\0\x3\x13\0\0\0\0\0\0\0\0\xff\xff\xff\xff\xff\xff\xff\xff\0\0\0\0\0\0\0\0\x6\xab)
+RunTabLayout=@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\0\0\0\0\0\0\0\0\x3\x4\0\0\x1\x93\0\0\0\0\0\0\0\0\xff\xff\xff\xff\xff\xff\xff\xff\0\0\0\0\0\0\0\0\xe+)
 
 [DRC]
 ZoomMode=Zoom

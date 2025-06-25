@@ -1,0 +1,47 @@
+avParameters(
+	?workingDirectory "/home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/svdb"
+	?techRuleSet ( "typical" )
+	?techLib "/ece558_658/pdk/verification/pvtech.lib"
+	?technology "gpdk045"
+
+)
+rcxParameters(
+	?capCouplingFactor 1.0
+	?capGround "GND"
+	?arrayViasSpacing "auto"
+	?maxFractureLength "infinite"
+	?fractureLengthUnits "MICRONS"
+	?maxMergedViaSize "auto"
+	?netNameSpace "layout"
+	?minC 1e-17
+	?minCByPercentage 0.1
+	?mergeParallelR nil
+	?minR 0.001
+	?pvsRunDir "/home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/svdb"
+	?hierarchyDelimiter "/"
+	?pvsPrimary "sappl"
+	?lvsSource "pvs"
+	?deviceFingerDelimiter "@"
+	?outputHierarchyDelimiter "/"
+	?capModels "no"
+	?parasiticCapModels "no"
+	?parasiticResModels "comment"
+	?parasiticResWidth t
+	?resModels "no"
+	?subNodeChar "#"
+	?outputFormat "spice"
+	?lvsExtractedCellView nil
+	?output "/home/ece558_658_2024/cdeclercq/559/unppl_design/sappl.sp"
+	?outputNetNameSpace "schematic"
+	?runName "sappl"
+	?tempdir "/home/ece558_658_2024/cdeclercq/559/unppl_design/lvs-runs/svdb/sappl/rcx_temp"
+	?rcxSetupDir ( "/ece558_658/pdk/verification/./pvs/../qrc/typical" )
+	?temperature ( 25.0 )
+	?type "full"
+	?extract "both"
+	?capExtractMode "coupled"
+
+)
+(avRCX)
+
+

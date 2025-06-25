@@ -3,15 +3,15 @@ Input File: saupl.sp
 lic:
 lic: FLEXlm: SDK_12.10
 lic: USER:   cdeclercq            HOSTNAME: vlsicad.ecs.umass.edu
-lic: HOSTID: 13ac8554             PID:      1298641
+lic: HOSTID: 13ac8554             PID:      2205833
 lic: Using FLEXlm license file:
 lic: 27020@vlsicad.ecs.umass.edu
 lic: Checkout 1 hspice
 lic: License/Maintenance for hspice will expire on 09-sep-2025/2023.12
-lic: 4(in_use)/50(total) FLOATING license(s) on SERVER 27020@vlsicad.ecs.umass.edu
+lic: 3(in_use)/50(total) FLOATING license(s) on SERVER 27020@vlsicad.ecs.umass.edu
 lic:
 
- init: begin read circuit files, cpu clock= 6.24E+00
+ init: begin read circuit files, cpu clock= 6.06E+00
        option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/ad
        option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/behave
        option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/bjt
@@ -28,29 +28,129 @@ lic:
        option list
        option node
        option post
- init: end read circuit files, cpu clock= 8.67E+00 peak memory=    1764 mb
- init: begin check errors, cpu clock= 8.67E+00
- init: end check errors, cpu clock= 5.19E+01 peak memory=    1764 mb
- init: begin setup matrix, pivot=     0 cpu clock= 5.19E+01
-       establish matrix -- done, cpu clock= 5.23E+01 peak memory=    1764 mb
-       re-order matrix -- done, cpu clock= 5.71E+01 peak memory=    1970 mb
- init: end setup matrix, cpu clock= 5.87E+01 peak memory=    1970 mb
- dcop: begin dcop, cpu clock= 5.87E+01
-       establish matrix -- done, cpu clock= 6.17E+01 peak memory=    1970 mb
-       re-order matrix -- done, cpu clock= 6.70E+01 peak memory=    2209 mb
- dcop: end dcop, cpu clock= 6.76E+01 peak memory=    2209 mb tot_iter=      37
- output: saupl.tr
- sweep: tran tran0    begin, stop_t=  2.50E-08 #sweeps=**** cpu clock= 6.80E+01
- tran: time= 2.5035E-09 tot_iter=    1507 conv_iter=     299 cpu clock= 1.87E+02
- tran: time= 5.0068E-09 tot_iter=    3610 conv_iter=     768 cpu clock= 3.56E+02
- tran: time= 7.5032E-09 tot_iter=    5775 conv_iter=    1260 cpu clock= 5.32E+02
- tran: time= 1.0002E-08 tot_iter=    6987 conv_iter=    1504 cpu clock= 6.28E+02
- tran: time= 1.2520E-08 tot_iter=    8001 conv_iter=    1688 cpu clock= 7.07E+02
- tran: time= 1.5022E-08 tot_iter=    9018 conv_iter=    1871 cpu clock= 7.86E+02
- tran: time= 1.7525E-08 tot_iter=   10029 conv_iter=    2055 cpu clock= 8.66E+02
- tran: time= 2.0005E-08 tot_iter=   11085 conv_iter=    2244 cpu clock= 9.48E+02
- tran: time= 2.2503E-08 tot_iter=   12133 conv_iter=    2433 cpu clock= 1.03E+03
- tran: time= 2.5000E-08 tot_iter=   13168 conv_iter=    2620 cpu clock= 1.11E+03
- sweep: tran tran0    end, cpu clock= 1.11E+03 peak memory=    2209 mb
->info:         ***** hspice job concluded
+ init: end read circuit files, cpu clock= 8.50E+00 peak memory=    1764 mb
+ init: begin check errors, cpu clock= 8.50E+00
+ init: end check errors, cpu clock= 5.23E+01 peak memory=    1764 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 5.23E+01
+       establish matrix -- done, cpu clock= 5.26E+01 peak memory=    1764 mb
+       re-order matrix -- done, cpu clock= 5.76E+01 peak memory=    1970 mb
+ init: end setup matrix, cpu clock= 5.92E+01 peak memory=    1970 mb
+ sweep: parameter       parameter1       begin, #sweeps =   6
+ parameter: tper            =    7.00E+02
+ dcop: begin dcop, cpu clock= 5.93E+01
+       establish matrix -- done, cpu clock= 6.24E+01 peak memory=    1970 mb
+       re-order matrix -- done, cpu clock= 6.77E+01 peak memory=    2393 mb
+ dcop: end dcop, cpu clock= 6.83E+01 peak memory=    2393 mb tot_iter=      41
+ output: saupl.mt0
+ sweep: tran tran1    begin, stop_t=  1.54E-08 #sweeps=**** cpu clock= 6.88E+01
+ tran: time= 1.5428E-09 tot_iter=     857 conv_iter=     159 cpu clock= 1.46E+02
+ tran: time= 3.0853E-09 tot_iter=    1909 conv_iter=     384 cpu clock= 2.43E+02
+ tran: time= 4.6246E-09 tot_iter=    3301 conv_iter=     697 cpu clock= 3.74E+02
+ tran: time= 6.1605E-09 tot_iter=    4696 conv_iter=    1013 cpu clock= 5.06E+02
+ tran: time= 7.7026E-09 tot_iter=    5873 conv_iter=    1290 cpu clock= 6.17E+02
+ tran: time= 9.2455E-09 tot_iter=    6716 conv_iter=    1454 cpu clock= 6.94E+02
+ tran: time= 1.0817E-08 tot_iter=    7518 conv_iter=    1606 cpu clock= 7.67E+02
+ tran: time= 1.2321E-08 tot_iter=    8174 conv_iter=    1724 cpu clock= 8.26E+02
+ tran: time= 1.3874E-08 tot_iter=    8818 conv_iter=    1841 cpu clock= 8.84E+02
+ tran: time= 1.5400E-08 tot_iter=    9403 conv_iter=    1948 cpu clock= 9.37E+02
+ sweep: tran tran1    end, cpu clock= 9.38E+02 peak memory=    2393 mb
+ parameter: tper            =    1.00E+03
+ dcop: begin dcop, cpu clock= 9.38E+02
+       establish matrix -- done, cpu clock= 9.38E+02 peak memory=    2393 mb
+       re-order matrix -- done, cpu clock= 9.38E+02 peak memory=    2393 mb
+       establish matrix -- done, cpu clock= 9.41E+02 peak memory=    2393 mb
+       re-order matrix -- done, cpu clock= 9.41E+02 peak memory=    2393 mb
+ dcop: end dcop, cpu clock= 9.42E+02 peak memory=    2393 mb tot_iter=      82
+ output: saupl.tr0
+ sweep: tran tran2    begin, stop_t=  2.20E-08 #sweeps=**** cpu clock= 9.42E+02
+ tran: time= 2.2054E-09 tot_iter=     942 conv_iter=     179 cpu clock= 1.03E+03
+ tran: time= 4.4024E-09 tot_iter=    2118 conv_iter=     438 cpu clock= 1.14E+03
+ tran: time= 6.6017E-09 tot_iter=    3615 conv_iter=     777 cpu clock= 1.28E+03
+ tran: time= 8.8041E-09 tot_iter=    5069 conv_iter=    1113 cpu clock= 1.42E+03
+ tran: time= 1.1000E-08 tot_iter=    6245 conv_iter=    1382 cpu clock= 1.53E+03
+ tran: time= 1.3208E-08 tot_iter=    7163 conv_iter=    1565 cpu clock= 1.62E+03
+ tran: time= 1.5466E-08 tot_iter=    7970 conv_iter=    1719 cpu clock= 1.69E+03
+ tran: time= 1.7607E-08 tot_iter=    8674 conv_iter=    1848 cpu clock= 1.76E+03
+ tran: time= 1.9808E-08 tot_iter=    9321 conv_iter=    1969 cpu clock= 1.82E+03
+ tran: time= 2.2000E-08 tot_iter=    9940 conv_iter=    2084 cpu clock= 1.88E+03
+ sweep: tran tran2    end, cpu clock= 1.88E+03 peak memory=    2393 mb
+ parameter: tper            =    1.30E+03
+ dcop: begin dcop, cpu clock= 1.88E+03
+       establish matrix -- done, cpu clock= 1.88E+03 peak memory=    2393 mb
+       re-order matrix -- done, cpu clock= 1.88E+03 peak memory=    2393 mb
+       establish matrix -- done, cpu clock= 1.88E+03 peak memory=    2393 mb
+       re-order matrix -- done, cpu clock= 1.88E+03 peak memory=    2393 mb
+ dcop: end dcop, cpu clock= 1.88E+03 peak memory=    2393 mb tot_iter=     123
+ output: saupl.tr0
+ sweep: tran tran3    begin, stop_t=  2.86E-08 #sweeps=**** cpu clock= 1.88E+03
+ tran: time= 2.8608E-09 tot_iter=     979 conv_iter=     189 cpu clock= 1.97E+03
+ tran: time= 5.7241E-09 tot_iter=    2197 conv_iter=     465 cpu clock= 2.09E+03
+ tran: time= 8.5853E-09 tot_iter=    3841 conv_iter=     849 cpu clock= 2.25E+03
+ tran: time= 1.1518E-08 tot_iter=    5308 conv_iter=    1193 cpu clock= 2.39E+03
+ tran: time= 1.4300E-08 tot_iter=    6556 conv_iter=    1488 cpu clock= 2.51E+03
+ tran: time= 1.7164E-08 tot_iter=    7525 conv_iter=    1687 cpu clock= 2.60E+03
+ tran: time= 2.0034E-08 tot_iter=    8339 conv_iter=    1843 cpu clock= 2.67E+03
+ tran: time= 2.2889E-08 tot_iter=    9074 conv_iter=    1979 cpu clock= 2.74E+03
+ tran: time= 2.5782E-08 tot_iter=    9730 conv_iter=    2103 cpu clock= 2.80E+03
+ tran: time= 2.8600E-08 tot_iter=   10360 conv_iter=    2221 cpu clock= 2.86E+03
+ sweep: tran tran3    end, cpu clock= 2.86E+03 peak memory=    2393 mb
+ parameter: tper            =    1.60E+03
+ dcop: begin dcop, cpu clock= 2.86E+03
+       establish matrix -- done, cpu clock= 2.86E+03 peak memory=    2393 mb
+       re-order matrix -- done, cpu clock= 2.86E+03 peak memory=    2393 mb
+       establish matrix -- done, cpu clock= 2.86E+03 peak memory=    2393 mb
+       re-order matrix -- done, cpu clock= 2.86E+03 peak memory=    2393 mb
+ dcop: end dcop, cpu clock= 2.86E+03 peak memory=    2393 mb tot_iter=     164
+ output: saupl.tr0
+ sweep: tran tran4    begin, stop_t=  3.52E-08 #sweeps=**** cpu clock= 2.86E+03
+ tran: time= 3.5275E-09 tot_iter=    1016 conv_iter=     199 cpu clock= 2.95E+03
+ tran: time= 7.0642E-09 tot_iter=    2280 conv_iter=     492 cpu clock= 3.07E+03
+ tran: time= 1.0570E-08 tot_iter=    3941 conv_iter=     878 cpu clock= 3.23E+03
+ tran: time= 1.4110E-08 tot_iter=    5425 conv_iter=    1232 cpu clock= 3.37E+03
+ tran: time= 1.7625E-08 tot_iter=    6661 conv_iter=    1533 cpu clock= 3.48E+03
+ tran: time= 2.1149E-08 tot_iter=    7641 conv_iter=    1738 cpu clock= 3.57E+03
+ tran: time= 2.4666E-08 tot_iter=    8433 conv_iter=    1892 cpu clock= 3.64E+03
+ tran: time= 2.8166E-08 tot_iter=    9193 conv_iter=    2034 cpu clock= 3.71E+03
+ tran: time= 3.1720E-08 tot_iter=    9857 conv_iter=    2161 cpu clock= 3.77E+03
+ tran: time= 3.5200E-08 tot_iter=   10503 conv_iter=    2283 cpu clock= 3.83E+03
+ sweep: tran tran4    end, cpu clock= 3.83E+03 peak memory=    2393 mb
+ parameter: tper            =    1.90E+03
+ dcop: begin dcop, cpu clock= 3.83E+03
+       establish matrix -- done, cpu clock= 3.83E+03 peak memory=    2393 mb
+       re-order matrix -- done, cpu clock= 3.83E+03 peak memory=    2393 mb
+       establish matrix -- done, cpu clock= 3.83E+03 peak memory=    2393 mb
+       re-order matrix -- done, cpu clock= 3.83E+03 peak memory=    2393 mb
+ dcop: end dcop, cpu clock= 3.84E+03 peak memory=    2393 mb tot_iter=     205
+ output: saupl.tr0
+ sweep: tran tran5    begin, stop_t=  4.18E-08 #sweeps=**** cpu clock= 3.84E+03
+ tran: time= 4.1813E-09 tot_iter=    1046 conv_iter=     209 cpu clock= 3.93E+03
+ tran: time= 8.4380E-09 tot_iter=    2199 conv_iter=     482 cpu clock= 4.04E+03
+ tran: time= 1.2566E-08 tot_iter=    3904 conv_iter=     882 cpu clock= 4.20E+03
+ tran: time= 1.6773E-08 tot_iter=    5409 conv_iter=    1245 cpu clock= 4.34E+03
+ tran: time= 2.0900E-08 tot_iter=    6682 conv_iter=    1552 cpu clock= 4.46E+03
+ tran: time= 2.5111E-08 tot_iter=    7694 conv_iter=    1763 cpu clock= 4.55E+03
+ tran: time= 2.9386E-08 tot_iter=    8494 conv_iter=    1919 cpu clock= 4.62E+03
+ tran: time= 3.3449E-08 tot_iter=    9270 conv_iter=    2066 cpu clock= 4.69E+03
+ tran: time= 3.7691E-08 tot_iter=    9955 conv_iter=    2197 cpu clock= 4.75E+03
+ tran: time= 4.1800E-08 tot_iter=   10616 conv_iter=    2323 cpu clock= 4.81E+03
+ sweep: tran tran5    end, cpu clock= 4.81E+03 peak memory=    2393 mb
+ parameter: tper            =    2.20E+03
+ dcop: begin dcop, cpu clock= 4.81E+03
+       establish matrix -- done, cpu clock= 4.81E+03 peak memory=    2393 mb
+       re-order matrix -- done, cpu clock= 4.81E+03 peak memory=    2393 mb
+       establish matrix -- done, cpu clock= 4.81E+03 peak memory=    2393 mb
+       re-order matrix -- done, cpu clock= 4.81E+03 peak memory=    2393 mb
+ dcop: end dcop, cpu clock= 4.81E+03 peak memory=    2393 mb tot_iter=     246
+ output: saupl.tr0
+ sweep: tran tran6    begin, stop_t=  4.84E-08 #sweeps=**** cpu clock= 4.81E+03
+ tran: time= 4.8431E-09 tot_iter=     926 conv_iter=     191 cpu clock= 4.90E+03
+ tran: time= 9.7161E-09 tot_iter=    2093 conv_iter=     468 cpu clock= 5.00E+03
+ tran: time= 1.4543E-08 tot_iter=    3669 conv_iter=     849 cpu clock= 5.15E+03
+ tran: time= 1.9444E-08 tot_iter=    5183 conv_iter=    1211 cpu clock= 5.29E+03
+ tran: time= 2.4225E-08 tot_iter=    6469 conv_iter=    1522 cpu clock= 5.41E+03
+ tran: time= 2.9077E-08 tot_iter=    7375 conv_iter=    1717 cpu clock= 5.49E+03
+ tran: time= 3.4020E-08 tot_iter=    8082 conv_iter=    1858 cpu clock= 5.55E+03
+ tran: time= 3.8722E-08 tot_iter=    8736 conv_iter=    1986 cpu clock= 5.61E+03
+ **error** simulation was stopped by signal SIGINT = 2
+
  lic: Release hspice token(s)

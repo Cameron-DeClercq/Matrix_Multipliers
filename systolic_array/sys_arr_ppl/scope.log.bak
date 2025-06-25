@@ -16,10 +16,493 @@ Mdi:ArrangeIcons
 wm geometry . 1920x980+0+23
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-ScopeSigMgr:loadpffile /home/ece558_658_2024/cdeclercq/559/unppl_design/systolic_array/sys_arr_ppl/sap.tr0 1 openonly
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile /home/ece558_658_2024/cdeclercq/559/unppl_design/systolic_array/sys_arr_ppl/sap_prl.tr0 1 openonly
 # PF:1
 wm geometry .sigmgr._PF:1 232x242+1813+540
-wm geometry .sigmgr._PF:1 232x242+1618+349
+wm geometry .sigmgr._PF:1 232x242+1672+341
+wm geometry .sigmgr._PF:1 232x613+1672+341
+Mdi:Resize 1504 845
+Mdi:Move 5 5
+Mdi:ArrangeIcons
+pf:read PF:1 v(s00_0)
+# WF:1:1
+Graph addsignal WF:1:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:1 v(s00_1)
+# WF:1:2
+Graph addsignal WF:1:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+pf:read PF:1 v(s00_2)
+# WF:1:3
+Graph addsignal WF:1:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+pf:read PF:1 v(s00_3)
+# WF:1:4
+Graph addsignal WF:1:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+pf:read PF:1 v(s00_4)
+# WF:1:5
+Graph addsignal WF:1:5 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal4
+pf:read PF:1 v(s00_5)
+# WF:1:6
+Graph addsignal WF:1:6 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal5
+pf:read PF:1 v(s00_6)
+# WF:1:7
+Graph addsignal WF:1:7 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal6
+pf:read PF:1 v(s00_7)
+# WF:1:8
+Graph addsignal WF:1:8 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal7
+GrXY:NewGraph
+# Graph1
+pf:read PF:1 v(s33_0)
+# WF:1:9
+Graph addsignal WF:1:9 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+Mdi:Resize 638 388
+Mdi:Move 5 5
+Mdi:Resize 1484 847
+Mdi:Move 5 5
+pf:read PF:1 v(s33_1)
+# WF:1:10
+Graph addsignal WF:1:10 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+pf:read PF:1 v(s33_2)
+# WF:1:11
+Graph addsignal WF:1:11 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+pf:read PF:1 v(s33_3)
+# WF:1:12
+Graph addsignal WF:1:12 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+pf:read PF:1 v(s33_4)
+# WF:1:13
+Graph addsignal WF:1:13 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal4
+pf:read PF:1 v(s33_5)
+# WF:1:14
+Graph addsignal WF:1:14 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal5
+pf:read PF:1 v(s33_6)
+# WF:1:15
+Graph addsignal WF:1:15 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal6
+pf:read PF:1 v(s33_7)
+# WF:1:16
+Graph addsignal WF:1:16 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal7
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:Reload 0 {{(1) sap_prl.tr0}}
+Mdi:ArrangeIcons
+GrXY:NewGraph
+# Graph2
+pf:read PF:2 v(a00_0)
+# WF:2:9
+Graph addsignal WF:2:9 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:2 v(a00_1)
+# WF:2:10
+Graph addsignal WF:2:10 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+pf:read PF:2 v(a00_2)
+# WF:2:11
+Graph addsignal WF:2:11 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+pf:read PF:2 v(a00_3)
+# WF:2:12
+Graph addsignal WF:2:12 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+Mdi:ArrangeIcons
+GrXY:NewGraph
+# Graph3
+pf:read PF:2 v(s01_0)
+# WF:2:13
+Graph addsignal WF:2:13 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+Mdi:Resize 447 357
+Mdi:Move 5 5
+Mdi:Resize 1495 846
+Mdi:Move 5 5
+pf:read PF:2 v(s01_1)
+# WF:2:14
+Graph addsignal WF:2:14 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+pf:read PF:2 v(s01_2)
+# WF:2:15
+Graph addsignal WF:2:15 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+pf:read PF:2 v(s01_3)
+# WF:2:16
+Graph addsignal WF:2:16 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+pf:read PF:2 v(s01_4)
+# WF:2:17
+Graph addsignal WF:2:17 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal4
+pf:read PF:2 v(s01_5)
+# WF:2:18
+Graph addsignal WF:2:18 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal5
+pf:read PF:2 v(s01_6)
+# WF:2:19
+Graph addsignal WF:2:19 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal6
+pf:read PF:2 v(s01_7)
+# WF:2:20
+Graph addsignal WF:2:20 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal7
+GrXY:NewGraph
+# Graph4
+pf:read PF:2 v(s02_0)
+# WF:2:21
+Graph addsignal WF:2:21 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:2 v(s02_1)
+# WF:2:22
+Graph addsignal WF:2:22 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+pf:read PF:2 v(s02_2)
+# WF:2:23
+Graph addsignal WF:2:23 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+pf:read PF:2 v(s02_3)
+# WF:2:24
+Graph addsignal WF:2:24 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+pf:read PF:2 v(s02_4)
+# WF:2:25
+Graph addsignal WF:2:25 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal4
+pf:read PF:2 v(s02_5)
+# WF:2:26
+Graph addsignal WF:2:26 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal5
+pf:read PF:2 v(s02_6)
+# WF:2:27
+Graph addsignal WF:2:27 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal6
+pf:read PF:2 v(s02_7)
+# WF:2:28
+Graph addsignal WF:2:28 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal7
+GrXY:NewGraph
+# Graph5
+pf:read PF:2 v(s03_0)
+# WF:2:29
+Graph addsignal WF:2:29 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:2 v(s03_1)
+# WF:2:30
+Graph addsignal WF:2:30 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+pf:read PF:2 v(s03_2)
+# WF:2:31
+Graph addsignal WF:2:31 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+pf:read PF:2 v(s03_3)
+# WF:2:32
+Graph addsignal WF:2:32 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+pf:read PF:2 v(s03_4)
+# WF:2:33
+Graph addsignal WF:2:33 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal4
+pf:read PF:2 v(s03_5)
+# WF:2:34
+Graph addsignal WF:2:34 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal5
+pf:read PF:2 v(s03_6)
+# WF:2:35
+Graph addsignal WF:2:35 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal6
+pf:read PF:2 v(s03_7)
+# WF:2:36
+Graph addsignal WF:2:36 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal7
+GrXY:NewGraph
+# Graph6
+pf:read PF:2 v(s10_0)
+# WF:2:37
+Graph addsignal WF:2:37 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:2 v(s10_1)
+# WF:2:38
+Graph addsignal WF:2:38 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+pf:read PF:2 v(s10_2)
+# WF:2:39
+Graph addsignal WF:2:39 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+pf:read PF:2 v(s10_3)
+# WF:2:40
+Graph addsignal WF:2:40 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+pf:read PF:2 v(s10_4)
+# WF:2:41
+Graph addsignal WF:2:41 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal4
+pf:read PF:2 v(s10_5)
+# WF:2:42
+Graph addsignal WF:2:42 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal5
+pf:read PF:2 v(s10_6)
+# WF:2:43
+Graph addsignal WF:2:43 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal6
+pf:read PF:2 v(s10_7)
+# WF:2:44
+Graph addsignal WF:2:44 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal7
+GrXY:NewGraph
+# Graph7
+pf:read PF:2 v(s11_0)
+# WF:2:45
+Graph addsignal WF:2:45 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:2 v(s11_1)
+# WF:2:46
+Graph addsignal WF:2:46 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+pf:read PF:2 v(s11_2)
+# WF:2:47
+Graph addsignal WF:2:47 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+pf:read PF:2 v(s11_3)
+# WF:2:48
+Graph addsignal WF:2:48 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+pf:read PF:2 v(s11_4)
+# WF:2:49
+Graph addsignal WF:2:49 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal4
+pf:read PF:2 v(s11_5)
+# WF:2:50
+Graph addsignal WF:2:50 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal5
+pf:read PF:2 v(s11_6)
+# WF:2:51
+Graph addsignal WF:2:51 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal6
+pf:read PF:2 v(s11_7)
+# WF:2:52
+Graph addsignal WF:2:52 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal7
+GrXY:NewGraph
+# Graph8
+pf:read PF:2 v(s12_0)
+# WF:2:53
+Graph addsignal WF:2:53 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:2 v(s12_1)
+# WF:2:54
+Graph addsignal WF:2:54 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+pf:read PF:2 v(s12_2)
+# WF:2:55
+Graph addsignal WF:2:55 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+pf:read PF:2 v(s12_3)
+# WF:2:56
+Graph addsignal WF:2:56 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+pf:read PF:2 v(s12_4)
+# WF:2:57
+Graph addsignal WF:2:57 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal4
+pf:read PF:2 v(s12_5)
+# WF:2:58
+Graph addsignal WF:2:58 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal5
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile /home/ece558_658_2024/cdeclercq/559/unppl_design/systolic_array/sys_arr_ppl/sap_prs.tr0 1 openonly
+# PF:3
+wm geometry .sigmgr._PF:3 232x242+1843+570
+wm geometry .sigmgr._PF:3 232x242+1433+342
+wm geometry .sigmgr._PF:3 232x603+1433+342
+Mdi:Resize 617 855
+Mdi:Move 5 5
+pf:read PF:3 v(s12_0)
+# WF:3:1
+Graph addsignal WF:3:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal6
+Graph:Select Graph8
+Graph:DSel
+Graph itemselect Signal6 add
+# Signal6
+Graph itemselect Signal6 add
+# Signal6
+Graph delsignal selected
+Graph:DSel
+pf:read PF:3 v(s12_0)
+# WF:3:1
+Graph addsignal WF:3:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal7
+Graph:Select Graph8
+Graph:DSel
+Graph itemselect Signal7 add
+# Signal7
+wm geometry .sigmgr._PF:3 232x242+1843+570
+wm geometry .sigmgr._PF:3 232x242+1433+342
+wm geometry .sigmgr._PF:3 232x603+1433+342
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph itemselect Signal7 add
+# Signal7
+Graph itemselect Signal7 add
+# Signal7
+Graph itemselect Signal7 add
+# Signal7
+Graph itemselect Signal7 add
+# Signal7
+Graph delsignal selected
+Mdi:ArrangeIcons
+Graph:DSel
+pf:read PF:3 v(s12_0)
+# WF:3:1
+Graph addsignal WF:3:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal8
+pf:read PF:3 v(s12_1)
+# WF:3:2
+Graph addsignal WF:3:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal9
+pf:read PF:3 v(s12_2)
+# WF:3:3
+Graph addsignal WF:3:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal10
+pf:read PF:3 v(s12_3)
+# WF:3:4
+Graph addsignal WF:3:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal11
+pf:read PF:3 v(s12_4)
+# WF:3:5
+Graph addsignal WF:3:5 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal12
+pf:read PF:3 v(s12_5)
+# WF:3:6
+Graph addsignal WF:3:6 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal13
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+GrXY:NewGraph
+# Graph9
+pf:read PF:3 v(a02_0)
+# WF:3:7
+Graph addsignal WF:3:7 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:3 v(a02_1)
+# WF:3:8
+Graph addsignal WF:3:8 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+pf:read PF:3 v(a02_2)
+# WF:3:9
+Graph addsignal WF:3:9 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+pf:read PF:3 v(a02_3)
+# WF:3:10
+Graph addsignal WF:3:10 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+pf:read PF:2 v(a02_0)
+# WF:2:59
+Graph addsignal WF:2:59 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal4
+pf:read PF:2 v(a02_1)
+# WF:2:60
+Graph addsignal WF:2:60 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal5
+pf:read PF:2 v(a02_2)
+# WF:2:61
+Graph addsignal WF:2:61 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal6
+pf:read PF:2 v(a02_2)
+# WF:2:61
+Graph addsignal WF:2:61 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal7
+Mdi:Resize 1033 736
+Mdi:Move 5 5
+Graph:Select Graph9
+Graph:DSel
+Graph itemselect Signal7 add
+# Signal7
+Graph delsignal selected
+Graph:DSel
+pf:read PF:2 v(a02_3)
+# WF:2:62
+Graph addsignal WF:2:62 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal8
+pf:read PF:2 v(b20_0)
+# WF:2:63
+Graph addsignal WF:2:63 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal9
+GrXY:NewGraph
+# Graph10
+pf:read PF:2 v(b20_0)
+# WF:2:63
+Graph addsignal WF:2:63 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+GrXY:NewGraph
+# Graph11
+pf:read PF:3 v(b10_0)
+# WF:3:11
+Graph addsignal WF:3:11 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:3 v(b10_1)
+# WF:3:12
+Graph addsignal WF:3:12 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+pf:read PF:3 v(b10_2)
+# WF:3:13
+Graph addsignal WF:3:13 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+pf:read PF:3 v(b10_3)
+# WF:3:14
+Graph addsignal WF:3:14 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+pf:read PF:2 v(b10_0)
+# WF:2:64
+Graph addsignal WF:2:64 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal4
+pf:read PF:2 v(b10_1)
+# WF:2:65
+Graph addsignal WF:2:65 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal5
+pf:read PF:2 v(b10_2)
+# WF:2:66
+Graph addsignal WF:2:66 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal6
+pf:read PF:2 v(b10_3)
+# WF:2:67
+Graph addsignal WF:2:67 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal7
+Mdi:Resize 1246 780
+Mdi:Move 5 5
+Mdi:Resize 1246 840
+Mdi:Move 5 5
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons

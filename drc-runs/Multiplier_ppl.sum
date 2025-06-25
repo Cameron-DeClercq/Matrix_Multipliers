@@ -1,7 +1,7 @@
 ********************************************************************************
 *** Pegasus DRC SUMMARY
 ***
-Execute on Date/Time    : Tue Apr 29 16:56:50 2025
+Execute on Date/Time    : Sun May 11 11:55:01 2025
 Pegasus VERSION         : 22.20-p009 Wed Jan 18 17:06:09 PST 2023
 Rule Deck Path          : /home/ece558_658_2024/cdeclercq/559/unppl_design/drc-runs/.technology.rul
 Rule Deck Title         :
@@ -25,14 +25,12 @@ DRC Results Database    :
 --- RUNNING TIME WARNINGS
 ---
 /ece558_658/pdk/verification/pvs/./pvlDRC.rul:4253, -para only is set since -project with constraint only supported with -para only.
-[WARN] Stamping conflict in SCONNECT(Multiple source nets stamp one target net)
-       Use lvs_softchk or lvs_report_opt S statement to get detailed information.
 --------------------------------------------------------------------------------
 --- ORIGINAL LAYER STATISTICS
 ---
 LAYER Bondpad .............................. Total Original Geometry:          0 (         0)
 LAYER CapMetal ............................. Total Original Geometry:          0 (         0)
-LAYER Cont ................................. Total Original Geometry:         27 (      3748)
+LAYER Cont ................................. Total Original Geometry:         27 (      4507)
 LAYER ESDdummy ............................. Total Original Geometry:          0 (         0)
 LAYER INDdummy ............................. Total Original Geometry:          0 (         0)
 LAYER M1Resdum ............................. Total Original Geometry:          0 (         0)
@@ -46,8 +44,8 @@ LAYER M8Resdum ............................. Total Original Geometry:          0
 LAYER M9Resdum ............................. Total Original Geometry:          0 (         0)
 LAYER M10Resdum ............................ Total Original Geometry:          0 (         0)
 LAYER M11Resdum ............................ Total Original Geometry:          0 (         0)
-LAYER Metal1 ............................... Total Original Geometry:        325 (      5347)
-LAYER Metal2 ............................... Total Original Geometry:        199 (      3178)
+LAYER Metal1 ............................... Total Original Geometry:        417 (      6453)
+LAYER Metal2 ............................... Total Original Geometry:        315 (      3901)
 LAYER Metal3 ............................... Total Original Geometry:          0 (         0)
 LAYER Metal4 ............................... Total Original Geometry:          0 (         0)
 LAYER Metal5 ............................... Total Original Geometry:          0 (         0)
@@ -60,22 +58,22 @@ LAYER Metal11 .............................. Total Original Geometry:          0
 LAYER NPNdummy ............................. Total Original Geometry:          0 (         0)
 LAYER Nburied .............................. Total Original Geometry:          0 (         0)
 LAYER Nhvt ................................. Total Original Geometry:          0 (         0)
-LAYER Nimp ................................. Total Original Geometry:          5 (       647)
+LAYER Nimp ................................. Total Original Geometry:          5 (       768)
 LAYER Nlvt ................................. Total Original Geometry:          0 (         0)
-LAYER Nwell ................................ Total Original Geometry:         23 (       459)
+LAYER Nwell ................................ Total Original Geometry:         32 (       545)
 LAYER Nzvt ................................. Total Original Geometry:          0 (         0)
-LAYER Oxide ................................ Total Original Geometry:         14 (      1888)
+LAYER Oxide ................................ Total Original Geometry:         14 (      2240)
 LAYER Oxide_thk ............................ Total Original Geometry:          0 (         0)
 LAYER PNPdummy ............................. Total Original Geometry:          0 (         0)
 LAYER Phvt ................................. Total Original Geometry:          0 (         0)
-LAYER Pimp ................................. Total Original Geometry:          5 (       669)
+LAYER Pimp ................................. Total Original Geometry:          5 (       790)
 LAYER Plvt ................................. Total Original Geometry:          0 (         0)
-LAYER Poly ................................. Total Original Geometry:         70 (      3830)
+LAYER Poly ................................. Total Original Geometry:         70 (      4567)
 LAYER Psub ................................. Total Original Geometry:          0 (         0)
 LAYER ResWdum .............................. Total Original Geometry:          0 (         0)
 LAYER Resdum ............................... Total Original Geometry:          0 (         0)
 LAYER SiProt ............................... Total Original Geometry:          0 (         0)
-LAYER Via1 ................................. Total Original Geometry:          7 (      3111)
+LAYER Via1 ................................. Total Original Geometry:          7 (      3795)
 LAYER Via2 ................................. Total Original Geometry:          0 (         0)
 LAYER Via3 ................................. Total Original Geometry:          0 (         0)
 LAYER Via4 ................................. Total Original Geometry:          0 (         0)
@@ -315,7 +313,7 @@ RULECHECK METAL11.SP.1.4 ............................... Total Result          0
 RULECHECK METAL11.SP.1.5 ............................... Total Result          0 (         0)
 RULECHECK METAL11.W.1 .................................. Total Result          0 (         0)
 RULECHECK METAL11.W.2 .................................. Total Result          0 (         0)
-RULECHECK METAL2.A.1 ................................... Total Result         50 (        50)
+RULECHECK METAL2.A.1 ................................... Total Result          0 (         0)
 RULECHECK METAL2.E.1_METAL2.E.2 ........................ Total Result          0 (         0)
 RULECHECK METAL2.EA.1 .................................. Total Result          0 (         0)
 RULECHECK METAL2.L.1 ................................... Total Result          0 (         0)
@@ -481,7 +479,7 @@ RULECHECK NW.SE.4 ...................................... Total Result          0
 RULECHECK NW.SP.1 ...................................... Total Result          0 (         0)
 RULECHECK NW.SP.2 ...................................... Total Result          0 (         0)
 RULECHECK NW.SP.2_2 .................................... Total Result          0 (         0)
-RULECHECK NW.SP.2_3 .................................... Total Result          5 (         5)
+RULECHECK NW.SP.2_3 .................................... Total Result          0 (         0)
 RULECHECK NW.W.1 ....................................... Total Result          0 (         0)
 RULECHECK NWR.E.1 ...................................... Total Result          0 (         0)
 RULECHECK NWR.E.2 ...................................... Total Result          0 (         0)
@@ -673,8 +671,8 @@ RULECHECK soft_check_17 ................................ Total Result          0
 RULECHECK soft_check_18 ................................ Total Result          0 (         0)
 RULECHECK soft_check_2 ................................. Total Result          0 (         0)
 RULECHECK soft_check_3 ................................. Total Result          0 (         0)
-RULECHECK soft_check_4 ................................. Total Result         53 (        57)
-RULECHECK soft_check_5 ................................. Total Result          1 (         1)
+RULECHECK soft_check_4 ................................. Total Result          0 (         0)
+RULECHECK soft_check_5 ................................. Total Result          0 (         0)
 RULECHECK soft_check_6 ................................. Total Result          0 (         0)
 RULECHECK soft_check_7 ................................. Total Result          0 (         0)
 RULECHECK soft_check_8 ................................. Total Result          0 (         0)
@@ -683,7 +681,7 @@ RULECHECK soft_check_9 ................................. Total Result          0
 --- SUMMARY
 ---
 Total CPU Time                    : 2(s)
-Total Real Time                   : 7(s)
-Total Original Geometry           : 675 (22877)
+Total Real Time                   : 2(s)
+Total Original Geometry           : 892 (27566)
 Total DRC RuleChecks              : 576
-Total DRC Results                 : 109 (113)
+Total DRC Results                 : 0 (0)
