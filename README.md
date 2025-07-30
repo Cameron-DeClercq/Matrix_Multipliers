@@ -10,9 +10,9 @@ Change Notes:
 - The second design was altered similarly to support the above change, except the reset logic associated with the input propogation registers were also removed. This way a full matrix multiplication can be realized every 5 cycles after the intial 7-cycle filling of the pipeline without a 6th cycle being necessary as 0's propagate through the pipelined multiplier in the cycle following a reset. This change proved succesful within the schematic, however the layout encountered timing issues during simulation. Further testing is necessary for a proper diagnosis, but the most likely causes currently suspected are either poor clock signal distribution (which could potentially be fixed by including an H-tree for the signal rather than relying only on abutment), or unreliable power distribution.
 
 
-Repo Structure: (in systolic_array)
+Repo Structure: (in systolic_array):
 
-Component
+Component_Name
   - Schematic
   - Symbol (In all folders except those containing highest level design)
   - Layout
